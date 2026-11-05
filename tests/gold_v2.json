@@ -1,0 +1,355 @@
+[
+ {
+  "block_uid": "sn82014782_1802-04-09_1.pdf_/page/1/Table/33",
+  "status": "checked against the newspaper image by Sara (Natchez 1802, 2026-11-05). Gold = what the IMAGE says; OCR errors will show up as disagreements.",
+  "rows_covered": [
+   1,
+   10
+  ],
+  "expected": [
+   {
+    "row_no": 1,
+    "market_place": "Natchez",
+    "price_low": 23,
+    "price_high": null,
+    "price_scale": "dollars",
+    "availability_note": null
+   },
+   {
+    "row_no": 1,
+    "market_place": "N. Orleans",
+    "price_low": 28,
+    "price_high": null,
+    "price_scale": "dollars",
+    "availability_note": null,
+    "note": "IMAGE says 28; OCR printed 23 (OCR error)"
+   },
+   {
+    "row_no": 2,
+    "market_place": "Natchez",
+    "price_low": 3,
+    "price_high": 4,
+    "price_scale": "dollars",
+    "availability_note": null,
+    "note": "image: price is '3 to 4' in the Natchez D. column; OCR moved it into the item label"
+   },
+   {
+    "row_no": 2,
+    "market_place": "N. Orleans",
+    "price_low": null,
+    "price_high": null,
+    "price_scale": null,
+    "availability_note": "none"
+   },
+   {
+    "row_no": 3,
+    "market_place": "Natchez",
+    "price_low": 12,
+    "price_high": null,
+    "price_scale": "dollars",
+    "availability_note": null
+   },
+   {
+    "row_no": 3,
+    "market_place": "N. Orleans",
+    "price_low": 10,
+    "price_high": null,
+    "price_scale": "dollars",
+    "availability_note": null
+   },
+   {
+    "row_no": 4,
+    "market_place": "Natchez",
+    "price_low": null,
+    "price_high": null,
+    "price_scale": null,
+    "availability_note": "none at market"
+   },
+   {
+    "row_no": 4,
+    "market_place": "N. Orleans",
+    "price_low": 18.25,
+    "price_high": null,
+    "price_scale": "dollars",
+    "availability_note": null,
+    "note": "printed '18 | 25' = 18 D 25 C"
+   },
+   {
+    "row_no": 5,
+    "market_place": "N. Orleans",
+    "price_low": null,
+    "price_high": null,
+    "price_scale": null,
+    "availability_note": "none"
+   },
+   {
+    "row_no": 6,
+    "market_place": "Natchez",
+    "price_low": 8,
+    "price_high": null,
+    "price_scale": "dollars",
+    "availability_note": null
+   },
+   {
+    "row_no": 6,
+    "market_place": "N. Orleans",
+    "price_low": 9,
+    "price_high": null,
+    "price_scale": "dollars",
+    "availability_note": null
+   },
+   {
+    "row_no": 7,
+    "market_place": "Natchez",
+    "price_low": 0.75,
+    "price_high": null,
+    "price_scale": "dollars",
+    "availability_note": null,
+    "note": "value is in the C column"
+   },
+   {
+    "row_no": 7,
+    "market_place": "N. Orleans",
+    "price_low": null,
+    "price_high": null,
+    "price_scale": null,
+    "availability_note": "none"
+   },
+   {
+    "row_no": 8,
+    "market_place": "N. Orleans",
+    "price_low": null,
+    "price_high": null,
+    "price_scale": null,
+    "availability_note": "unsaleable",
+    "note": "image: 'unsaleable' (long s); OCR read 'unfaleable'"
+   },
+   {
+    "row_no": 9,
+    "market_place": "Natchez",
+    "price_low": 0.75,
+    "price_high": null,
+    "price_scale": "dollars",
+    "availability_note": null,
+    "note": "value is in the C column"
+   },
+   {
+    "row_no": 10,
+    "market_place": "Natchez",
+    "price_low": 0.75,
+    "price_high": null,
+    "price_scale": "dollars",
+    "availability_note": null,
+    "note": "C column"
+   },
+   {
+    "row_no": 10,
+    "market_place": "N. Orleans",
+    "price_low": 0.75,
+    "price_high": null,
+    "price_scale": "dollars",
+    "availability_note": null,
+    "note": "C column"
+   },
+   {
+    "row_no": 5,
+    "market_place": "Natchez",
+    "price_low": 10,
+    "price_high": 12,
+    "price_scale": "dollars",
+    "availability_note": null,
+    "note": "image: '10 to 12' in the Natchez D. column"
+   },
+   {
+    "row_no": 8,
+    "market_place": "Natchez",
+    "price_low": 1,
+    "price_high": null,
+    "price_scale": "dollars",
+    "availability_note": null,
+    "note": "image: '1' in the Natchez D. column"
+   }
+  ]
+ },
+ {
+  "block_uid": "sn83025588_1800-08-19_1.pdf_/page/2/Table/17",
+  "status": "model reading from exact stored text, UNVERIFIED",
+  "rows_covered": [
+   1,
+   10
+  ],
+  "expected": [
+   {
+    "row_no": 1,
+    "market_place": "Cadiz",
+    "price_low": 28,
+    "price_high": 40,
+    "price_scale": "dollars",
+    "availability_note": null
+   },
+   {
+    "row_no": 2,
+    "market_place": "Cadiz",
+    "price_low": 18,
+    "price_high": 19,
+    "price_scale": "dollars",
+    "availability_note": null
+   },
+   {
+    "row_no": 3,
+    "market_place": "Cadiz",
+    "price_low": 24,
+    "price_high": null,
+    "price_scale": "dollars",
+    "availability_note": "no demand",
+    "note": "printed '24 a 3': high suspect, null"
+   },
+   {
+    "row_no": 4,
+    "market_place": "Cadiz",
+    "price_low": null,
+    "price_high": null,
+    "price_scale": null,
+    "availability_note": "no demand at any price"
+   },
+   {
+    "row_no": 5,
+    "market_place": "Cadiz",
+    "price_low": 5,
+    "price_high": 5.75,
+    "price_scale": "dollars",
+    "availability_note": null
+   },
+   {
+    "row_no": 6,
+    "market_place": "Cadiz",
+    "price_low": 150,
+    "price_high": 160,
+    "price_scale": "dollars",
+    "availability_note": null
+   },
+   {
+    "row_no": 7,
+    "market_place": "Cadiz",
+    "price_low": 8,
+    "price_high": 10,
+    "price_scale": "dollars",
+    "availability_note": null
+   },
+   {
+    "row_no": 8,
+    "market_place": "Cadiz",
+    "price_low": 10,
+    "price_high": 12,
+    "price_scale": "dollars",
+    "availability_note": null
+   },
+   {
+    "row_no": 9,
+    "market_place": "Cadiz",
+    "price_low": 1.5,
+    "price_high": 1.75,
+    "price_scale": "dollars",
+    "availability_note": null
+   }
+  ],
+  "not_observations": {
+   "10": "note row 'precarious articles', no price: should go to unparsed log"
+  }
+ },
+ {
+  "block_uid": "sn83016072_1803-01-03_1.pdf_/page/2/Table/29",
+  "status": "checked against the newspaper image by Sara (Boston 1803, 2026-11-05). Gold = what the IMAGE says; OCR errors show as disagreements.",
+  "rows_covered": [
+   2,
+   11
+  ],
+  "expected": [
+   {
+    "row_no": 2,
+    "market_place": "Boston",
+    "price_low": 120,
+    "price_high": null,
+    "price_scale": "unknown",
+    "availability_note": null,
+    "note": "printed only in To/Cts. column, scale unclear"
+   },
+   {
+    "row_no": 3,
+    "market_place": "Boston",
+    "price_low": 133.33,
+    "price_high": 136.66,
+    "price_scale": "dollars",
+    "availability_note": null
+   },
+   {
+    "row_no": 4,
+    "market_place": "Boston",
+    "price_low": 12.5,
+    "price_high": 13,
+    "price_scale": "dollars",
+    "availability_note": null,
+    "note": "IMAGE: '12 50 - 13'. OCR printed 73 (OCR error). Parser correctly flagged high as suspect and nulled it."
+   },
+   {
+    "row_no": 5,
+    "market_place": "Boston",
+    "price_low": 10.5,
+    "price_high": 11,
+    "price_scale": "dollars",
+    "availability_note": null
+   },
+   {
+    "row_no": 6,
+    "market_place": "Boston",
+    "price_low": 8.5,
+    "price_high": 9,
+    "price_scale": "dollars",
+    "availability_note": null
+   },
+   {
+    "row_no": 7,
+    "market_place": "Boston",
+    "price_low": 6.5,
+    "price_high": 7,
+    "price_scale": "dollars",
+    "availability_note": null
+   },
+   {
+    "row_no": 8,
+    "market_place": "Boston",
+    "price_low": 4,
+    "price_high": 5,
+    "price_scale": "dollars",
+    "availability_note": null,
+    "note": "image: numbers sit under the Dols. column; markdown loses column position"
+   },
+   {
+    "row_no": 9,
+    "market_place": "Boston",
+    "price_low": 5,
+    "price_high": 6,
+    "price_scale": "dollars",
+    "availability_note": null,
+    "note": "image: numbers sit under the Dols. column; markdown loses column position"
+   },
+   {
+    "row_no": 10,
+    "market_place": "Boston",
+    "price_low": 1.16,
+    "price_high": 1.25,
+    "price_scale": "dollars",
+    "availability_note": null
+   },
+   {
+    "row_no": 11,
+    "market_place": "Boston",
+    "price_low": 11,
+    "price_high": 12,
+    "price_scale": "cents",
+    "availability_note": null,
+    "note": "image: 11-12 sit under the Cts. columns (cents per lb); markdown loses column position"
+   }
+  ]
+ }
+]

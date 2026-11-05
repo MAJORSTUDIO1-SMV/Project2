@@ -1,0 +1,268 @@
+{
+  "block_uid": "sn82014782_1802-04-09_1.pdf_/page/1/Table/33",
+  "block_id": "/page/1/Table/33",
+  "filename": "sn82014782_1802-04-09_1.pdf",
+  "year": 1802,
+  "newspaper_id": "sn82014782",
+  "block_type": "Table",
+  "markets": ["Natchez", "New Orleans"],
+  "block_markdown": "PRICES CURRENT.  \nNatchez. N. Orleans.\n\n|                           | D. | C. | D.         | C. |\n|---------------------------|----|----|------------|----|\n| Cotton per cwt.           | 23 |    | 23         |    |\n| Tobacco, do. 3 to 4       | 4  |    | none       |    |\n| Small Castings, do. 12    | 12 |    | 10         |    |\n| Bar Iron, none at market, |    |    | 18         | 25 |\n| Bacon, per do. 10 to 12   |    |    | none       |    |\n| Flour per barrel,         | 8  |    | 9          |    |\n| Whiskey per gallon,       |    | 75 | none       |    |\n| Peach Brandy per do. 1    |    |    | unfaleable |    |\n| Lime per bushel,          |    | 75 |            |    |\n| Corn unhulled per do.     |    | 75 |            | 75 |",
+  "human_expectations": [
+    {
+      "item_as_printed": "Cotton per cwt.",
+      "unit_as_printed": "cwt",
+      "unit_status": "printed",
+      "markets": {
+        "Natchez": {
+          "price_low_as_printed": "23",
+          "price_high_as_printed": "23",
+          "price_low_value": 23.0,
+          "price_high_value": 23.0,
+          "price_scale": "dollars_cents",
+          "availability_note": ""
+        },
+        "New Orleans": {
+          "price_low_as_printed": "23",
+          "price_high_as_printed": "23",
+          "price_low_value": 23.0,
+          "price_high_value": 23.0,
+          "price_scale": "dollars_cents",
+          "availability_note": ""
+        }
+      },
+      "needs_review": false,
+      "review_reason": ""
+    },
+    {
+      "item_as_printed": "Tobacco, do. 3 to 4",
+      "unit_as_printed": null,
+      "unit_status": "not_stated",
+      "markets": {
+        "Natchez": {
+          "price_low_as_printed": "4",
+          "price_high_as_printed": null,
+          "price_low_value": null,
+          "price_high_value": null,
+          "price_scale": "unknown",
+          "availability_note": ""
+        },
+        "New Orleans": {
+          "price_low_as_printed": "none",
+          "price_high_as_printed": null,
+          "price_low_value": null,
+          "price_high_value": null,
+          "price_scale": "unknown",
+          "availability_note": ""
+        }
+      },
+      "needs_review": true,
+      "review_reason": "Label contains '3 to 4' which looks like a range; cells are 4 and none; ambiguous whether 4 is low and missing high, or 4 is the only price"
+    },
+    {
+      "item_as_printed": "Small Castings, do. 12",
+      "unit_as_printed": "cwt",
+      "unit_status": "ditto_of_previous",
+      "markets": {
+        "Natchez": {
+          "price_low_as_printed": "12",
+          "price_high_as_printed": "10",
+          "price_low_value": 12.0,
+          "price_high_value": 10.0,
+          "price_scale": "dollars_cents",
+          "availability_note": "Label contains '12' which may be a qualifier or part of item name"
+        },
+        "New Orleans": {
+          "price_low_as_printed": "10",
+          "price_high_as_printed": null,
+          "price_low_value": 10.0,
+          "price_high_value": null,
+          "price_scale": "dollars_cents",
+          "availability_note": "Label contains '12' which may be a qualifier or part of item name"
+        }
+      },
+      "needs_review": false,
+      "review_reason": ""
+    },
+    {
+      "item_as_printed": "Bar Iron, none at market,",
+      "unit_as_printed": null,
+      "unit_status": "not_stated",
+      "markets": {
+        "Natchez": {
+          "price_low_as_printed": null,
+          "price_high_as_printed": null,
+          "price_low_value": null,
+          "price_high_value": null,
+          "price_scale": "unknown",
+          "availability_note": "none at market"
+        },
+        "New Orleans": {
+          "price_low_as_printed": "18",
+          "price_high_as_printed": "25",
+          "price_low_value": 18.0,
+          "price_high_value": 25.0,
+          "price_scale": "dollars_cents",
+          "availability_note": ""
+        }
+      },
+      "needs_review": false,
+      "review_reason": ""
+    },
+    {
+      "item_as_printed": "Bacon, per do. 10 to 12",
+      "unit_as_printed": "do.",
+      "unit_status": "ditto_of_previous",
+      "markets": {
+        "Natchez": {
+          "price_low_as_printed": null,
+          "price_high_as_printed": null,
+          "price_low_value": null,
+          "price_high_value": null,
+          "price_scale": "unknown",
+          "availability_note": ""
+        },
+        "New Orleans": {
+          "price_low_as_printed": "none",
+          "price_high_as_printed": null,
+          "price_low_value": null,
+          "price_high_value": null,
+          "price_scale": "unknown",
+          "availability_note": ""
+        }
+      },
+      "needs_review": true,
+      "review_reason": "Label contains '10 to 12' range; Natchez cell empty; New Orleans 'none'; ambiguous"
+    },
+    {
+      "item_as_printed": "Flour per barrel,",
+      "unit_as_printed": "barrel",
+      "unit_status": "printed",
+      "markets": {
+        "Natchez": {
+          "price_low_as_printed": "8",
+          "price_high_as_printed": "9",
+          "price_low_value": 8.0,
+          "price_high_value": 9.0,
+          "price_scale": "dollars_cents",
+          "availability_note": ""
+        },
+        "New Orleans": {
+          "price_low_as_printed": "9",
+          "price_high_as_printed": null,
+          "price_low_value": 9.0,
+          "price_high_value": null,
+          "price_scale": "dollars_cents",
+          "availability_note": ""
+        }
+      },
+      "needs_review": false,
+      "review_reason": ""
+    },
+    {
+      "item_as_printed": "Whiskey per gallon,",
+      "unit_as_printed": "gallon",
+      "unit_status": "printed",
+      "markets": {
+        "Natchez": {
+          "price_low_as_printed": "75",
+          "price_high_as_printed": null,
+          "price_low_value": 0.75,
+          "price_high_value": null,
+          "price_scale": "cents",
+          "availability_note": ""
+        },
+        "New Orleans": {
+          "price_low_as_printed": "none",
+          "price_high_as_printed": null,
+          "price_low_value": null,
+          "price_high_value": null,
+          "price_scale": "unknown",
+          "availability_note": ""
+        }
+      },
+      "needs_review": true,
+      "review_reason": "Natchez price '75' is in the Cents column (0.75 dollars), but header says Dols. Cts.; unit 'gallon' printed in item label; New Orleans 'none'"
+    },
+    {
+      "item_as_printed": "Peach Brandy per do. 1",
+      "unit_as_printed": "do.",
+      "unit_status": "ditto_of_previous",
+      "markets": {
+        "Natchez": {
+          "price_low_as_printed": null,
+          "price_high_as_printed": null,
+          "price_low_value": null,
+          "price_high_value": null,
+          "price_scale": "unknown",
+          "availability_note": ""
+        },
+        "New Orleans": {
+          "price_low_as_printed": "unfaleable",
+          "price_high_as_printed": null,
+          "price_low_value": null,
+          "price_high_value": null,
+          "price_scale": "unknown",
+          "availability_note": "unsaleable (OCR: unfaleable)"
+        }
+      },
+      "needs_review": true,
+      "review_reason": "Label contains '1' which may be part of item name; New Orleans price 'unfaleable' (OCR error for unsaleable); row has fewer cells than header"
+    },
+    {
+      "item_as_printed": "Lime per bushel,",
+      "unit_as_printed": "bushel",
+      "unit_status": "printed",
+      "markets": {
+        "Natchez": {
+          "price_low_as_printed": "75",
+          "price_high_as_printed": null,
+          "price_low_value": 0.75,
+          "price_high_value": null,
+          "price_scale": "dollars_cents",
+          "availability_note": ""
+        },
+        "New Orleans": {
+          "price_low_as_printed": null,
+          "price_high_as_printed": null,
+          "price_low_value": null,
+          "price_high_value": null,
+          "price_scale": "unknown",
+          "availability_note": ""
+        }
+      },
+      "needs_review": false,
+      "review_reason": ""
+    },
+    {
+      "item_as_printed": "Corn unhulled per do.",
+      "unit_as_printed": "do.",
+      "unit_status": "ditto_of_previous",
+      "markets": {
+        "Natchez": {
+          "price_low_as_printed": "75",
+          "price_high_as_printed": "75",
+          "price_low_value": 0.75,
+          "price_high_value": 0.75,
+          "price_scale": "dollars_cents",
+          "availability_note": ""
+        },
+        "New Orleans": {
+          "price_low_as_printed": "75",
+          "price_high_as_printed": "75",
+          "price_low_value": 0.75,
+          "price_high_value": 0.75,
+          "price_scale": "dollars_cents",
+          "availability_note": ""
+        }
+      },
+      "needs_review": false,
+      "review_reason": ""
+    }
+  ],
+  "metadata": {
+    "source_block": "sn82014782_1802-04-09_1.pdf_/page/1/Table/33",
+    "created_by": "human",
+    "purpose": "Gold standard for parser v2 verification",
+    "note": "These are UNVERIFIED human-reading expectations to be checked against the original page by a person. The exact block_markdown is printed next to each expectation so you can check against the original page."
+  }
+}

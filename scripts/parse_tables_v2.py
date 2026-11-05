@@ -8,7 +8,7 @@ Usage: python3 -I parse_tables_v2.py table_blocks_md.json outdir
 """
 import json, re, sys, os, csv
 
-AVAIL = re.compile(r"\b(none at market|none|no demand at any price|no demand|unfaleable|unsaleable|unsalable|scarce|plenty|nominal|precarious)\b", re.I)
+AVAIL = re.compile(r"\b(none at market|none|no demand at any price|no demand|unfaleable|unsaleable|unsalable|scarce|plenty|nominal)\b", re.I)
 UNIT = re.compile(r"\b(cwt|bbls?|bls?|bl|bb|barrels?|bushels?|bu|gallons?|gal|lbs?|tons?|tun|pipes?|hhds?|hogsheads?|doz(?:en)?|M|1200|quintals?|chal|bag|bags|ream|reams|keg|kegs|box|boxes)\b\.?", re.I)
 CURR = re.compile(r"\b(dols?|dollars?|cts|cents?|\d+\s*s|\d+\s*d|s|d|l)\.?\b", re.I)
 FIN = re.compile(r"per cent|\bdis\b\.?|discount|premium|bank|insurance|exchange on|bills on|stock|sterling", re.I)
@@ -99,7 +99,7 @@ def market_names(heading, npairs):
 def place_from_heading(heading):
     """Market named in heading, e.g. 'At Cadiz, May 29, 1800.' / 'Wholesale Prices Current at Boston.'"""
     for h in heading[::-1]:
-        m = re.search(r"\bat\s+([A-Z][\w\.\- ]+?)(?:,|\.|$)", h)
+        m = re.search(r"\b[Aa]t\s+([A-Z][\w\.\- ]+?)(?:,|\.|$)", h)
         if m:
             return m.group(1).strip()
         m = re.match(r"^([A-Z][a-z]+(?: [A-Z][a-z]+)*),\s*[A-Z][a-z]+ \d+", h)
@@ -195,6 +195,11 @@ def layout_dc(ctx, blk, tno, heading, rows):
                 o["price_low_as_printed"] = f"{d} {c}"
             elif d and re.fullmatch(r"\d+", d) and not c:
                 o["price_low"] = float(d); o["price_scale"] = "dollars"; o["price_low_as_printed"] = d
+                t = re.search(r"\b(\d+)\s+to\s+(\d+)\s*[,.]?\s*$", label)
+                if k == 0 and t and float(t.group(2)) == float(d):
+                    o["price_low"], o["price_high"] = float(t.group(1)), float(t.group(2))
+                    o["price_low_as_printed"] = t.group(0).strip(" ,.")
+                    o["flags"].append("range_from_end_of_item_label_matches_cell")
             elif c and re.fullmatch(r"\d+", c) and not d:
                 o["price_low"] = int(c) / 100; o["price_scale"] = "dollars"
                 o["price_low_as_printed"] = c + " (cents column)"
@@ -203,12 +208,22 @@ def layout_dc(ctx, blk, tno, heading, rows):
                 o["availability_note"] = (d or c); o["price_low_as_printed"] = None
                 if not AVAIL.search(d or c):
                     o["flags"].append("unrecognised_text_in_price_cell"); o["confidence"] = "low"
+            elif k == 0 and re.search(r"\b\d+(?:\s+to\s+\d+)?\s*[,.]?\s*$", label) and not free_avail:
+                t = re.search(r"\b(\d+)(?:\s+to\s+(\d+))?\s*[,.]?\s*$", label)
+                o["price_low"] = float(t.group(1)); o["price_scale"] = "dollars"
+                o["price_low_as_printed"] = t.group(0).strip(" ,.")
+                if t.group(2):
+                    o["price_high"] = float(t.group(2))
+                o["flags"].append("price_taken_from_end_of_item_label_first_market")
             else:
                 if free_avail and not avail_used:
                     o["availability_note"] = free_avail.group(1) + " (from item label)"
                     o["flags"].append("availability_from_label"); avail_used = True
                 else:
                     continue
+            tail = re.search(r"\b(\d+)(?:\s+to\s+(\d+))?\s*[,.]?\s*$", label)
+            if k == 0 and tail and o["price_low"] is None and not o["availability_note"]:
+                pass
             ctx.obs.append(finalize(o)); made += 1
         if made == 0:
             ctx.unparsed.append({**b, "cells": r, "reason": "row_with_no_price_cells"})

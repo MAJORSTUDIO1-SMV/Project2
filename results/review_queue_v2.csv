@@ -1,11 +1,13 @@
 block_uid,row_no,market,item_as_printed,price_low_as_printed,price_low,price_high,scale,confidence,flags,suspect_fields
-sn82014782_1802-04-09_1.pdf_/page/1/Table/33,2,Natchez,"Tobacco, do. 3 to 4",4,4.0,,dollars,medium,label_contains_numbers,{}
+sn82014782_1802-04-09_1.pdf_/page/1/Table/33,2,Natchez,"Tobacco, do. 3 to 4",3 to 4,3.0,4.0,dollars,medium,label_contains_numbers;range_from_end_of_item_label_matches_cell,{}
 sn82014782_1802-04-09_1.pdf_/page/1/Table/33,2,N. Orleans,"Tobacco, do. 3 to 4",,,,unknown,medium,label_contains_numbers,{}
 sn82014782_1802-04-09_1.pdf_/page/1/Table/33,3,Natchez,"Small Castings, do. 12",12,12.0,,dollars,medium,label_contains_numbers,{}
 sn82014782_1802-04-09_1.pdf_/page/1/Table/33,3,N. Orleans,"Small Castings, do. 12",10,10.0,,dollars,medium,label_contains_numbers,{}
 sn82014782_1802-04-09_1.pdf_/page/1/Table/33,4,Natchez,"Bar Iron, none at market,",,,,unknown,medium,availability_from_label,{}
+sn82014782_1802-04-09_1.pdf_/page/1/Table/33,5,Natchez,"Bacon, per do. 10 to 12",10 to 12,10.0,12.0,dollars,medium,label_contains_numbers;price_taken_from_end_of_item_label_first_market,{}
 sn82014782_1802-04-09_1.pdf_/page/1/Table/33,5,N. Orleans,"Bacon, per do. 10 to 12",,,,unknown,medium,label_contains_numbers,{}
 sn82014782_1802-04-09_1.pdf_/page/1/Table/33,7,Natchez,"Whiskey per gallon,",75 (cents column),0.75,,dollars,medium,value_from_cents_column,{}
+sn82014782_1802-04-09_1.pdf_/page/1/Table/33,8,Natchez,Peach Brandy per do. 1,1,1.0,,dollars,medium,label_contains_numbers;price_taken_from_end_of_item_label_first_market,{}
 sn82014782_1802-04-09_1.pdf_/page/1/Table/33,8,N. Orleans,Peach Brandy per do. 1,,,,unknown,medium,label_contains_numbers,{}
 sn82014782_1802-04-09_1.pdf_/page/1/Table/33,9,Natchez,"Lime per bushel,",75 (cents column),0.75,,dollars,medium,value_from_cents_column,{}
 sn82014782_1802-04-09_1.pdf_/page/1/Table/33,10,Natchez,Corn unhulled per do.,75 (cents column),0.75,,dollars,medium,value_from_cents_column,{}
@@ -357,9 +359,8 @@ sn83016081_1804-12-10_1.pdf_/page/3/Table/40,102,Portland,— do hhd,bx | 37,,,u
 sn83016081_1804-12-10_1.pdf_/page/3/Table/40,103,Portland,— do heading,bx | 38,,,unknown,low,,"{""price_low"": ""From cell not numeric: 'bx'""}"
 sn83016081_1804-12-10_1.pdf_/page/3/Table/40,104,Portland,— do bbl,bx | 20,,,unknown,low,,"{""price_low"": ""From cell not numeric: 'bx'""}"
 sn83016081_1804-12-10_1.pdf_/page/3/Table/40,105,Portland,— R. O. hhd,bx | 13,,,unknown,low,,"{""price_low"": ""From cell not numeric: 'bx'""}"
-sn83025588_1800-08-19_1.pdf_/page/2/Table/17,3,At Cadiz,"Logwood no demand,",24,24.0,,dollars,low,,"{""price_high"": ""high<low""}"
-sn83025588_1800-08-19_1.pdf_/page/2/Table/17,4,At Cadiz,"Tobacco, no demand at any price.",,,,unknown,medium,availability_only_line,{}
-sn83025588_1800-08-19_1.pdf_/page/2/Table/17,10,At Cadiz,"Beef, Pork, Peas, Beans, Pitch, Tar, and Robin, are precarious articles.",,,,unknown,medium,availability_only_line,{}
+sn83025588_1800-08-19_1.pdf_/page/2/Table/17,3,Cadiz,"Logwood no demand,",24,24.0,,dollars,low,,"{""price_high"": ""high<low""}"
+sn83025588_1800-08-19_1.pdf_/page/2/Table/17,4,Cadiz,"Tobacco, no demand at any price.",,,,unknown,medium,availability_only_line,{}
 sn83025588_1800-08-19_1.pdf_/page/2/Table/17,0,Liverpool,"Alfalfa, 1st Pot,",5 1/2 cwt.,5.5,,unknown,medium,price_scale_unknown,{}
 sn83025588_1800-08-19_1.pdf_/page/2/Table/17,1,Liverpool,"1st Pearl,",5 3/4,5.75,,unknown,medium,price_scale_unknown,{}
 sn83025588_1800-08-19_1.pdf_/page/2/Table/17,2,Liverpool,"Bees Wax,",10,10.0,,unknown,medium,price_scale_unknown,{}
@@ -401,12 +402,12 @@ sn83025881_1799-08-17_1.pdf_/page/2/Table/3,10,New Orleans,"Molasses, per bbl. o
 sn83025881_1799-08-17_1.pdf_/page/2/Table/3,11,New Orleans,"Indigo, per cwt.",62 65,,,unknown,low,,"{""price_low"": ""compound_number:62 65""}"
 sn83025881_1799-08-17_1.pdf_/page/2/Table/3,12,New Orleans,"Cordage, per lb.",10 12,,,unknown,low,,"{""price_low"": ""compound_number:10 12""}"
 sn83025881_1799-08-17_1.pdf_/page/2/Table/3,13,New Orleans,"Shaved Deer Skins, per lb.",30 33,,,unknown,low,,"{""price_low"": ""compound_number:30 33""}"
-sn83030007_1788-08-04_1.pdf_/page/1/Table/32,0,,"WHEAT, from",6s. & 6d.,,7.0,unknown,low,price_scale_unknown,"{""price_low"": ""compound_number:6 6""}"
-sn83030007_1788-08-04_1.pdf_/page/1/Table/32,1,,"INDIAN CORN, from",2s. & 6d.,,3.0,unknown,low,price_scale_unknown,"{""price_low"": ""compound_number:2 6""}"
-sn83030007_1788-08-04_1.pdf_/page/1/Table/32,2,,"OATS, from",1s. & 8d.,,,unknown,low,,"{""price_low"": ""compound_number:1 8"", ""price_high"": ""compound_number:1 10""}"
-sn83030007_1788-08-04_1.pdf_/page/1/Table/32,3,,"FLOUR, from",33s.,33.0,34.0,unknown,medium,price_scale_unknown,{}
-sn83030007_1788-08-04_1.pdf_/page/1/Table/32,4,,"Do. Common, from",30s.,30.0,31.0,unknown,medium,price_scale_unknown,{}
-sn83030007_1788-08-04_1.pdf_/page/1/Table/32,5,,"Middlings, from",22s. & 6d.,,24.0,unknown,low,price_scale_unknown,"{""price_low"": ""compound_number:22 6""}"
+sn83030007_1788-08-04_1.pdf_/page/1/Table/32,0,Brandywine-Mills,"WHEAT, from",6s. & 6d.,,7.0,unknown,low,price_scale_unknown,"{""price_low"": ""compound_number:6 6""}"
+sn83030007_1788-08-04_1.pdf_/page/1/Table/32,1,Brandywine-Mills,"INDIAN CORN, from",2s. & 6d.,,3.0,unknown,low,price_scale_unknown,"{""price_low"": ""compound_number:2 6""}"
+sn83030007_1788-08-04_1.pdf_/page/1/Table/32,2,Brandywine-Mills,"OATS, from",1s. & 8d.,,,unknown,low,,"{""price_low"": ""compound_number:1 8"", ""price_high"": ""compound_number:1 10""}"
+sn83030007_1788-08-04_1.pdf_/page/1/Table/32,3,Brandywine-Mills,"FLOUR, from",33s.,33.0,34.0,unknown,medium,price_scale_unknown,{}
+sn83030007_1788-08-04_1.pdf_/page/1/Table/32,4,Brandywine-Mills,"Do. Common, from",30s.,30.0,31.0,unknown,medium,price_scale_unknown,{}
+sn83030007_1788-08-04_1.pdf_/page/1/Table/32,5,Brandywine-Mills,"Middlings, from",22s. & 6d.,,24.0,unknown,low,price_scale_unknown,"{""price_low"": ""compound_number:22 6""}"
 sn83030483_1789-10-07_1.pdf_/page/2/Table/29,1,,"Jamaica Spirits,",5/3.,1.6666666666666667,,unknown,medium,price_scale_unknown,{}
 sn83030483_1789-10-07_1.pdf_/page/2/Table/29,2,,"Antigua Rum,",4/9.,0.4444444444444444,,unknown,medium,price_scale_unknown,{}
 sn83030483_1789-10-07_1.pdf_/page/2/Table/29,3,,"St. Croix, do.",4/6.,0.6666666666666666,,unknown,medium,price_scale_unknown,{}

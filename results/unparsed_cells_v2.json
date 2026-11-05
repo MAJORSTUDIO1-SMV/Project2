@@ -1841,6 +1841,22 @@
  },
  {
   "block_uid": "sn83025588_1800-08-19_1.pdf_/page/2/Table/17",
+  "table_no": 0,
+  "row_no": 10,
+  "filename": "sn83025588_1800-08-19_1.pdf",
+  "newspaper_id": "sn83025588",
+  "issue_date": "1800-08-19",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT. / At Cadiz, May 29, 1800.",
+  "layout": "generic",
+  "cells": [
+   "Beef, Pork, Peas, Beans, Pitch, Tar, and Robin, are precarious articles.",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn83025588_1800-08-19_1.pdf_/page/2/Table/17",
   "table_no": 1,
   "row_no": 10,
   "filename": "sn83025588_1800-08-19_1.pdf",

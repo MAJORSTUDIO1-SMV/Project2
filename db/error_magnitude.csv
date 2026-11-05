@@ -1,0 +1,52 @@
+table,row_no,market,field,image_value,parser_value,status,percent_error,parser_flagged_suspect
+sn82014782,1,Natchez,price_low,23,23.0,same,0.0,False
+sn82014782,1,N. Orleans,price_low,28,23.0,wrong_number,17.9,False
+sn82014782,2,Natchez,price_low,3,3.0,same,0.0,False
+sn82014782,2,Natchez,price_high,4,4.0,same,0.0,False
+sn82014782,3,Natchez,price_low,12,12.0,same,0.0,False
+sn82014782,3,N. Orleans,price_low,10,10.0,same,0.0,False
+sn82014782,4,N. Orleans,price_low,18.25,18.25,same,0.0,False
+sn82014782,6,Natchez,price_low,8,8.0,same,0.0,False
+sn82014782,6,N. Orleans,price_low,9,9.0,same,0.0,False
+sn82014782,7,Natchez,price_low,0.75,0.75,same,0.0,False
+sn82014782,9,Natchez,price_low,0.75,0.75,same,0.0,False
+sn82014782,10,Natchez,price_low,0.75,0.75,same,0.0,False
+sn82014782,10,N. Orleans,price_low,0.75,0.75,same,0.0,False
+sn82014782,5,Natchez,price_low,10,10.0,same,0.0,False
+sn82014782,5,Natchez,price_high,12,12.0,same,0.0,False
+sn82014782,8,Natchez,price_low,1,1.0,same,0.0,False
+sn83025588,1,Cadiz,price_low,38,28.0,wrong_number,26.3,False
+sn83025588,1,Cadiz,price_high,40,40.0,same,0.0,False
+sn83025588,2,Cadiz,price_low,18,18.0,same,0.0,False
+sn83025588,2,Cadiz,price_high,19,19.0,same,0.0,False
+sn83025588,3,Cadiz,price_low,2.5,24.0,wrong_number,860.0,False
+sn83025588,3,Cadiz,price_high,3,,parser_left_empty,,True
+sn83025588,5,Cadiz,price_low,5,5.0,same,0.0,False
+sn83025588,5,Cadiz,price_high,5.5,5.75,wrong_number,4.5,False
+sn83025588,6,Cadiz,price_low,150,150.0,same,0.0,False
+sn83025588,6,Cadiz,price_high,160,160.0,same,0.0,False
+sn83025588,7,Cadiz,price_low,8,8.0,same,0.0,False
+sn83025588,7,Cadiz,price_high,10,10.0,same,0.0,False
+sn83025588,8,Cadiz,price_low,10,10.0,same,0.0,False
+sn83025588,8,Cadiz,price_high,12,12.0,same,0.0,False
+sn83025588,9,Cadiz,price_low,1.5,1.5,same,0.0,False
+sn83025588,9,Cadiz,price_high,1.75,1.75,same,0.0,False
+sn83016072,2,Boston,price_low,120,120.0,same,0.0,False
+sn83016072,3,Boston,price_low,133.33,133.33,same,0.0,False
+sn83016072,3,Boston,price_high,136.66,136.66,same,0.0,False
+sn83016072,4,Boston,price_low,12.5,12.5,same,0.0,False
+sn83016072,4,Boston,price_high,13,,parser_left_empty,,True
+sn83016072,5,Boston,price_low,10.5,10.5,same,0.0,False
+sn83016072,5,Boston,price_high,11,11.0,same,0.0,False
+sn83016072,6,Boston,price_low,8.5,8.5,same,0.0,False
+sn83016072,6,Boston,price_high,9,9.0,same,0.0,False
+sn83016072,7,Boston,price_low,6.5,6.5,same,0.0,False
+sn83016072,7,Boston,price_high,7,7.0,same,0.0,False
+sn83016072,8,Boston,price_low,4,4,same,0.0,False
+sn83016072,8,Boston,price_high,5,5.0,same,0.0,False
+sn83016072,9,Boston,price_low,5,5,same,0.0,False
+sn83016072,9,Boston,price_high,6,6.0,same,0.0,False
+sn83016072,10,Boston,price_low,1.16,1.16,same,0.0,False
+sn83016072,10,Boston,price_high,1.25,1.25,same,0.0,False
+sn83016072,11,Boston,price_low,11,11,same,0.0,False
+sn83016072,11,Boston,price_high,12,12.0,same,0.0,False

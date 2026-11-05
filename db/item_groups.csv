@@ -1,0 +1,285 @@
+first_word,count,example_item_as_printed,product,product_type,rule
+flour,46,"Flour per barrel,",flour,grain_flour,mapped
+tobacco,29,"Tobacco, do. 3 to 4",tobacco,tobacco,mapped
+iron,25,"Iron, Pig, ton",iron,metals,mapped
+corn,24,Corn unhulled per do.,corn,grain_flour,mapped
+hemp,21,"Hemp, per cwt.",hemp,fibers,mapped
+bacon,20,"Bacon, per do. 10 to 12",bacon,provisions,mapped
+do,20,"do. No. 2,",,,inherit_from_previous_row
+salt,11,"Salt, 8 bush.",salt,salt,mapped
+whiskey,10,"Whiskey per gallon,",whiskey,spirits_wine,mapped
+pork,10,"Pork, Bone Middlings, bbl.",pork,provisions,mapped
+staves,10,"Staves, W. Oak pipe, M.",staves,lumber_wood,mapped
+ditto,10,"—Ditto baskets, 12 bottles",,,inherit_from_previous_row
+wheat,10,Wheat,wheat,grain_flour,mapped
+cotton,9,Cotton per cwt.,cotton,fibers,mapped
+liverpool,8,—Liverpool,,,inherit_from_previous_row
+rye,7,Rye,rye,grain_flour,mapped
+country,7,"Country, cwt.",,,inherit_from_previous_row
+molasses,7,"Molasses, gal.",molasses,sugar_sweeteners,mapped
+beef,6,"Beef, mss, 200 lb. bbl.",beef,provisions,mapped
+coffee,6,"Coffee, lb.",coffee,coffee_tea_cocoa,mapped
+st,6,"St. Croix, } 2d",,,inherit_from_previous_row
+sugar,6,"Sugar, Havana white, cwt.",sugar,sugar_sweeteners,mapped
+soap,6,"SOAP, American white",soap,lighting_soap,mapped
+pepper,6,"Pepper,",pepper,spices,mapped
+pimento,6,"Pimento,",pimento,spices,mapped
+white,6,—White,,,inherit_from_previous_row
+cadiz,6,—Cadiz,,,inherit_from_previous_row
+mess,6,Mess,,,inherit_from_previous_row
+ashes,5,"ASHES, Pot, ton,",ashes,potash,mapped
+russia,5,"Russia,",,,inherit_from_previous_row
+lisbon,5,Lisbon,,,inherit_from_previous_row
+indigo,5,"Indigo, Carolina, lb.",indigo,dyes,mapped
+antigua,5,"Antigua, & } 3d",,,inherit_from_previous_row
+candles,5,"CANDLES, Am. tallow, mould, —",candles,lighting_soap,mapped
+hides,5,"HIDES, ship, ing —",hides,hides_furs,mapped
+logwood,5,"Logwood no demand,",logwood,dyes,mapped
+pitch,5,"Pitch,",pitch,naval_stores,mapped
+navy,5,Navy,,,inherit_from_previous_row
+peach,4,Peach Brandy per do. 1,brandy,spirits_wine,mapped
+butter,4,"Butter, inspect 1st qual. lb.",butter,dairy,mapped
+duck,4,"Duck, Russia, bolt",duck,textiles,mapped
+oats,4,Oats,oats,grain_flour,mapped
+rice,4,"Rice, cwt.",rice,grain_flour,mapped
+hhd,4,hhd,,,inherit_from_previous_row
+bbl,4,bbl,,,inherit_from_previous_row
+indian,4,"Indian Corn, braped fane.",corn,grain_flour,mapped
+loaf,4,"Loaf, do.",sugar,sugar_sweeteners,mapped
+barrel,4,—Barrel,,,inherit_from_previous_row
+wax,4,"Wax, Bees pr. lb.",wax,lighting_soap,mapped
+prime,4,Prime,,,inherit_from_previous_row
+lime,3,"Lime per bushel,",lime,other_goods,mapped
+spanish,3,"Spanish, 1st do.",,,inherit_from_previous_row
+american,3,"American,",,,inherit_from_previous_row
+cocoa,3,"Cocoa, Surinam, cwt.",cocoa,coffee_tea_cocoa,mapped
+cheese,3,"Cheese, English",cheese,dairy,mapped
+english,3,English,,,inherit_from_previous_row
+fish,3,"Fish, Table, cwt.",fish,fish,mapped
+n,3,"N Scotia, som.",,,inherit_from_previous_row
+fine,3,Fine,,,inherit_from_previous_row
+gin,3,"Gin, Holland, 1st proof, gal.",gin,spirits_wine,mapped
+leather,3,"Leather, sole, dried, best lb.",hides,hides_furs,mapped
+nails,3,"Nails, ad. } cwt",nails,metals,mapped
+rum,3,"Rum, Jamaica, 4th pr. gal.",rum,spirits_wine,mapped
+brown,3,brown,,,inherit_from_previous_row
+steel,3,"Steel, German, lb.",steel,metals,mapped
+georgia,3,Georgia do.,,,inherit_from_previous_row
+tea,3,"Tea, Hyson, lb.",tea,coffee_tea_cocoa,mapped
+teneriffe,3,Teneriffe,wine,spirits_wine,mapped
+flax,3,"FLAX, —",flax,fibers,mapped
+gunpowder,3,"GUN-POWDER, foreign —",gunpowder,metals,mapped
+hops,3,"HOPS, new —",hops,other_goods,mapped
+oil,3,"OIL, Florence, 30 flasks",oil,lighting_soap,mapped
+tallow,3,"TALLOW, —",candles,lighting_soap,mapped
+lump,3,"Lump, do.",sugar,sugar_sweeteners,mapped
+carolina,3,"Carolina Tobacco,",,,inherit_from_previous_row
+raisins,3,"Raisins, best, pr. keg",raisins,other_goods,mapped
+barbadoes,3,—Barbadoes,,,inherit_from_previous_row
+starch,3,Starch,starch,other_goods,mapped
+mahogany,3,"Mahogany, Honduras, ft.",mahogany,lumber_wood,mapped
+rosin,3,"Rosin, Black, American, cwt.",rosin,naval_stores,mapped
+sperm,3,Sperm.,oil,lighting_soap,mapped
+hogs,3,"Hog's Lard,",lard,provisions,mapped
+hav,3,"Hav. Brown,",sugar,sugar_sweeteners,mapped
+small,2,"Small Castings, do. 12",,,inherit_from_previous_row
+pearl,2,"Pearl,",,,inherit_from_previous_row
+cargo,2,"cargo, No. 1,",,,inherit_from_previous_row
+pilot,2,"pilot,",,,inherit_from_previous_row
+beans,2,"Beans, white,",beans,grain_flour,mapped
+coal,2,"Coal, pit, foreign, chal.",coal,other_goods,mapped
+cordage,2,"Cordage, American, cwt.",cordage,other_goods,mapped
+chocolate,2,"Chocolate, common, lb.",cocoa,coffee_tea_cocoa,mapped
+mackerel,2,"Mackerel, summer",fish,fish,mapped
+fox,2,"Fox, cross",furs,hides_furs,mapped
+minks,2,Minks,furs,hides_furs,mapped
+middlings,2,Middlings,middlings,grain_flour,mapped
+feathers,2,"Feathers, live Geese, lb.",feathers,other_goods,mapped
+sea,2,Sea Fowl,,,inherit_from_previous_row
+7,2,7 by 9,,,inherit_from_previous_row
+boston,2,"Boston, 10 by 8",,,inherit_from_previous_row
+hoops,2,"Hoops, hhd, 12 feet, M.",lumber,lumber_wood,mapped
+lumber,2,"Lumber, Boards, clear, M.",lumber,lumber_wood,mapped
+nail,2,"Nail Rods, ton",nails,metals,mapped
+6d,2,6d. } do,,,inherit_from_previous_row
+similar,2,similar forts } 4th,,,inherit_from_previous_row
+w,2,W. India clayed,,,inherit_from_previous_row
+hyson,2,Hyson Skin,tea,coffee_tea_cocoa,mapped
+bohea,2,"Bohea, best",tea,coffee_tea_cocoa,mapped
+grain,2,"GRAIN, Barley, —",,,inherit_from_previous_row
+spirits,2,"SPIRITS, Brandy, Fr. & ad pr",spirits,spirits_wine,mapped
+sugars,2,"SUGARS, Havana white, —",sugar,sugar_sweeteners,mapped
+tar,2,"Tar,",tar,naval_stores,mapped
+spermaceti,2,—Spermaceti pr. gall.,oil,lighting_soap,mapped
+lower,2,—Lower county,,,inherit_from_previous_row
+shot,2,Shot ditto,shot,metals,mapped
+black,2,Black eyed peas,,,inherit_from_previous_row
+saltpetre,2,"Salt-Petre, refined",saltpetre,other_goods,mapped
+best,2,Best shelled,,,inherit_from_previous_row
+buckwheat,2,Buckwheat,buckwheat,grain_flour,mapped
+jersey,2,"Jersey, do",,,inherit_from_previous_row
+honey,2,Honey,honey,sugar_sweeteners,mapped
+myrtle,2,Myrtle wax,wax,lighting_soap,mapped
+double,2,"double ditto,",,,inherit_from_previous_row
+campeachy,2,Campeachy wood,mahogany,lumber_wood,mapped
+swedish,2,Swedish,,,inherit_from_previous_row
+camp,2,Camp.,,,inherit_from_previous_row
+rappa,2,"Rappa,",,,inherit_from_previous_row
+bar,1,"Bar Iron, none at market,",iron,metals,mapped
+refuse,1,"refuse,",,,inherit_from_previous_row
+bread,1,"Bread, ship, cwt.",,,inherit_from_previous_row
+2d,1,2d do.,,,inherit_from_previous_row
+cogniac,1,"Cogniac, 4th do.",brandy,spirits_wine,mapped
+caudies,1,"Caudies, tal. mo. Am. lb.",candles,lighting_soap,mapped
+dpt,1,d.p.t. do.,,,inherit_from_previous_row
+spermac,1,Spermac. do.,,,inherit_from_previous_row
+island,1,"Island,",,,inherit_from_previous_row
+welshs,1,Welsh's } No. 2 to 1,,,inherit_from_previous_row
+rumneys,1,Rumney's } No. 2 to 1,,,inherit_from_previous_row
+waits,1,Wait's } No. 2 to 1,,,inherit_from_previous_row
+ravens,1,Ravens,,,inherit_from_previous_row
+merchant,1,Merchant,,,inherit_from_previous_row
+wetindia,1,"Wetindia, mark.",,,inherit_from_previous_row
+salmon,1,Salmon,fish,fish,mapped
+furs,1,"Furs, Beaver pelt, lb.",furs,hides_furs,mapped
+bear,1,"Bear, skin",furs,hides_furs,mapped
+red,1,red,,,inherit_from_previous_row
+musquash,1,Musquash,furs,hides_furs,mapped
+sables,1,Sables,furs,hides_furs,mapped
+x,1,X Brand,,,inherit_from_previous_row
+4th,1,4th proof,,,inherit_from_previous_row
+glas,1,"Gla's, Bristol 108 y, box,",glas,other_goods,mapped
+hamburg,1,"Hamburg, 7 by 9",,,inherit_from_previous_row
+8,1,8 by 10,,,inherit_from_previous_row
+6,1,6 by 8,,,inherit_from_previous_row
+north,1,North,,,inherit_from_previous_row
+philadelphia,1,Philadelphia bar,,,inherit_from_previous_row
+swedes,1,Swedes,,,inherit_from_previous_row
+french,1,French,,,inherit_from_previous_row
+lemons,1,"Lemons, box",lemons,other_goods,mapped
+merch,1,merch.,,,inherit_from_previous_row
+shingles,1,Shingles,lumber,lumber_wood,mapped
+8d,1,8d wro. inspect.,,,inherit_from_previous_row
+10d,1,10d do,,,inherit_from_previous_row
+12d,1,12d do,,,inherit_from_previous_row
+sheathing,1,Sheathing } cut &,,,inherit_from_previous_row
+drawing,1,Drawing } wro. l.,,,inherit_from_previous_row
+tobago,1,"Tobago, } 2d",,,inherit_from_previous_row
+newengland,1,New-England,,,inherit_from_previous_row
+east,1,East India white,,,inherit_from_previous_row
+tubb,1,"Tubb,",,,inherit_from_previous_row
+blistered,1,Blistered,,,inherit_from_previous_row
+head,1,head,,,inherit_from_previous_row
+r,1,R. Oak hhd,,,inherit_from_previous_row
+hooks,1,hooks,,,inherit_from_previous_row
+young,1,Young Hyson,tea,coffee_tea_cocoa,mapped
+souchong,1,Souchong,tea,coffee_tea_cocoa,mapped
+wines,1,"Wines, Madeira, gal.",wine,spirits_wine,mapped
+brimstone,1,"BRIMSTONE, roll, —",brimstone,other_goods,mapped
+bricks,1,"BRICKS, —",bricks,other_goods,mapped
+cider,1,"CIDER, liquor, —",cider,other_goods,mapped
+flaxseed,1,"FLAX-SEED, —",,,inherit_from_previous_row
+glass,1,"GLASS, Bricker 10 by 8, —",glass,other_goods,mapped
+hoos,1,"HOOS LARD, 1st fort —",lard,provisions,mapped
+lemmons,1,"LEMMONS, L. & B. n. box",lemmons,other_goods,mapped
+plaister,1,"PLAISTER PARIS, —",plaister,other_goods,mapped
+curaçao,1,"Curaçao Cocoa, cwt.",cocoa,coffee_tea_cocoa,mapped
+havanna,1,"Havanna Sugar white, cwt.",sugar,sugar_sweeteners,mapped
+alfalfa,1,"Alfalfa, 1st Pot,",,,inherit_from_previous_row
+1st,1,"1st Pearl,",,,inherit_from_previous_row
+bees,1,"Bees Wax,",wax,lighting_soap,mapped
+robin,1,"Robin,",rosin,naval_stores,mapped
+turpentine,1,"Turpentine,",turpentine,naval_stores,mapped
+safflower,1,"Safflower,",safflower,dyes,mapped
+wellindia,1,"Well-India cotton, lb.",cotton,fibers,mapped
+jamaica,1,"Jamaica Spirits,",rum,spirits_wine,mapped
+brandy,1,"Brandy,",brandy,spirits_wine,mapped
+geneva,1,"Geneva,",gin,spirits_wine,mapped
+muscovado,1,"Muscovado Sugar,",sugar,sugar_sweeteners,mapped
+superfine,1,"Superfine Flour,",superfine,grain_flour,mapped
+common,1,Common do.,,,inherit_from_previous_row
+virginia,1,Virginia,,,inherit_from_previous_row
+final,1,Final Sett. and other Certificates,,not_goods,not_goods
+indents,1,Indents,,not_goods,not_goods
+state,1,State debts,,not_goods,not_goods
+brig,1,"Brig Hannah, Marshal, Gibraltar,",,not_goods,not_goods
+polly,1,"Polly, Ellwood, Virginia",,not_goods,not_goods
+bank,1,"Bank Subscriptions,",,not_goods,not_goods
+peas,1,"Peas, Albany pr. bushel",peas,grain_flour,mapped
+windward,1,—Windward,,,inherit_from_previous_row
+snake,1,Snake root pr. lb.,,,inherit_from_previous_row
+castile,1,—Castile,,,inherit_from_previous_row
+sail,1,"Sail cloth, English, No. 1, pr. yard,",duck,textiles,mapped
+no,1,—No. 11.,,not_goods,not_goods
+martins,1,—Martins,furs,hides_furs,mapped
+fishers,1,—Fishers,furs,hides_furs,mapped
+bears,1,—Bears,furs,hides_furs,mapped
+racoons,1,—Racoons,furs,hides_furs,mapped
+muskrats,1,—Musk-rats,furs,hides_furs,mapped
+beaver,1,"—Beaver, pr. lb.",furs,hides_furs,mapped
+deer,1,"—Deer, in hair",furs,hides_furs,mapped
+far,1,"Far, N. Jersey, 24 gal. p. bbl.",,,inherit_from_previous_row
+souchoong,1,"—Souchoong,",tea,coffee_tea_cocoa,mapped
+congo,1,"—Congo,",tea,coffee_tea_cocoa,mapped
+fallow,1,"Fallow, refined, per bl.",,,inherit_from_previous_row
+verdigrease,1,Verdigrease pr. lb.,,,inherit_from_previous_row
+varnish,1,"Varnish, per gallon",varnish,other_goods,mapped
+fayal,1,—Fayal,,,inherit_from_previous_row
+claret,1,—Claret,wine,spirits_wine,mapped
+sherry,1,—Sherry pr. gall.,wine,spirits_wine,mapped
+malaga,1,—Malaga,wine,spirits_wine,mapped
+whalebone,1,"Whale-bone, long pr. lb.",whalebone,other_goods,mapped
+castor,1,"Castor, New England, lb.",,,inherit_from_previous_row
+stayes,1,"Stayes, Amer. pipe, per,",staves,lumber_wood,mapped
+barley,1,Barley,barley,grain_flour,mapped
+hogslard,1,Hogslard,lard,provisions,mapped
+limes,1,Limes,limes,other_goods,mapped
+cypress,1,Cypress 24,cypress,other_goods,mapped
+meal,1,Meal,meal,grain_flour,mapped
+natkeens,1,Natkeens,,,inherit_from_previous_row
+not,1,Not refined,,,inherit_from_previous_row
+candy,1,Candy white,sugar,sugar_sweeteners,mapped
+turk,1,Turk Island,,,inherit_from_previous_row
+sheetings,1,"Sheetings, Russia piece",duck,textiles,mapped
+alexandria,1,"Alexandria Bank,",,not_goods,not_goods
+potomac,1,Potomac do,,not_goods,not_goods
+wool,1,"Wool,",wool,fibers,mapped
+dipped,1,"Dipped, single box",,,inherit_from_previous_row
+coarse,1,"Coarse,",,,inherit_from_previous_row
+in,1,In carrots,,not_goods,not_goods
+twine,1,"Twine, lb.",twine,other_goods,mapped
+apple,1,"Apple, new,",,,inherit_from_previous_row
+holland,1,Holland,,,inherit_from_previous_row
+canp,1,Canp.,,,inherit_from_previous_row
+turksisland,1,"Turk's-Island,",,,inherit_from_previous_row
+cattle,1,"Cattle,",cattle,other_goods,mapped
+pipe,1,pipe,,,inherit_from_previous_row
+port,1,"Port,",wine,spirits_wine,mapped
+shoulders,1,shoulders,shoulders,provisions,mapped
+second,1,"second quality, per doz",,,inherit_from_previous_row
+olive,1,Olive,,,inherit_from_previous_row
+shad,1,"Shad, do.",fish,fish,mapped
+mackerell,1,"Mackerell, do.",fish,fish,mapped
+herrings,1,"Herrings, do.",fish,fish,mapped
+codfish,1,"Codfish, per quintal",fish,fish,mapped
+lard,1,"Lard, lb.",lard,provisions,mapped
+hams,1,"Hams, do.",hams,provisions,mapped
+levant,1,Levant by sea,,,inherit_from_previous_row
+every,1,Every other country—short staple,,,inherit_from_previous_row
+clayed,1,Clayed,,,inherit_from_previous_row
+green,1,Green,,,inherit_from_previous_row
+all,1,all other,,,inherit_from_previous_row
+cassia,1,Cassia,cassia,spices,mapped
+cinnamon,1,Cinnamon,cinnamon,spices,mapped
+nutmegs,1,Nutmegs,nutmegs,spices,mapped
+cloves,1,Cloves,cloves,spices,mapped
+pernambuco,1,Pernambuco do.,,,inherit_from_previous_row
+pot,1,Pot Ash,ashes,potash,mapped
+per,1,PER LB. . . . .,,not_goods,not_goods
+for,1,"For August, 1808.",,not_goods,not_goods
+nominal,1,"nominal, at \$ 20 per ton",,not_goods,not_goods
+seamen,1,Seamen begging their bread.,,not_goods,not_goods
+seaisland,1,Sea-Island,cotton,fibers,mapped
+bhd,1,bhd.,,,inherit_from_previous_row
+senisland,1,Sen-Island,cotton,fibers,mapped
+heep,1,"Heep, Russian ton.",hemp,fibers,mapped

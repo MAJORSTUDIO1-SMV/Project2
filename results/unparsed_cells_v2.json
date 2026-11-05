@@ -1,0 +1,4705 @@
+[
+ {
+  "block_uid": "sn83016072_1802-09-27_1.pdf_/page/0/Table/7",
+  "reason": "no_markdown_table_found",
+  "text": "General Prices Current. Table with columns for item, from, and to prices. Items include: ASHES, Pot, to; Pearl; Beef, mels, 200 lb. bbl.; Bread, ship, cwt.; Butter, inspect 18 qual. lb.; Brandy, Fr. 1st proof, Gal.; Coffee, lb.; Cordage, American, cwt.; Cotton, Surinam, lb.; Demerara; Cayenne; W. I."
+ },
+ {
+  "block_uid": "sn83016072_1803-01-03_1.pdf_/page/2/Table/29",
+  "table_no": 0,
+  "row_no": 14,
+  "filename": "sn83016072_1803-01-03_1.pdf",
+  "newspaper_id": "sn83016072",
+  "issue_date": "1803-01-03",
+  "page_number": 2,
+  "heading_as_printed": "Wholesale Prices Current at Boston. / CORRECTED WEEKLY.",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "Brandy, Fr. 1st proof, Gal.",
+   "4th do.",
+   "1 6—"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 3,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "BEER, mels, 200 lb.",
+   "bb 13",
+   "13 50",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 4,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— cargo, No 1, —",
+   "9 50",
+   "10",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 7,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "BACON, —",
+   "lb",
+   "13",
+   "14"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 8,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "BUTTER, —",
+   "lb",
+   "16",
+   "17"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 9,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "BEANS, white, —",
+   "bu",
+   "1",
+   "1 50"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 10,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "BRIMSTONE, roll, —",
+   "cwt",
+   "4 15",
+   "5 25"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 11,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "BRICKS, —",
+   "M",
+   "5 50",
+   "6"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 12,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "COFFEE, —",
+   "lb",
+   "30",
+   "33"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 13,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "CHOCOLATE, —",
+   "lb",
+   "28",
+   "31"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 14,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "CANDLES, Ann. tallow, mould, —",
+   "lb",
+   "19",
+   "20"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 15,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— dip, —",
+   "lb",
+   "17",
+   "18"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 16,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "CHEESE, American, —",
+   "lb",
+   "6",
+   "45"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 17,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "LEDER, liquor, —",
+   "bb",
+   "2",
+   "2 50"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 18,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "FISH, Tible, —",
+   "cwt",
+   "6",
+   "10"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 19,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Merchant N. Foundland, —",
+   "lb",
+   "4 60",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 20,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— West India market, —",
+   "lb",
+   "3 3",
+   "3 7"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 21,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Scales, —",
+   "lb",
+   "3 50",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 22,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— new wives, —",
+   "lb",
+   "4",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 23,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Salmon, —",
+   "lb",
+   "12",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 24,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Herring, —",
+   "lb",
+   "5",
+   "55"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 25,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Mackerell, —",
+   "lb",
+   "7",
+   "25"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 26,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "FLAX, —",
+   "lb",
+   "1",
+   "18"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 27,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "FLAX-SEED, —",
+   "bu",
+   "1 50",
+   "1 75"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 28,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "FLOUR, Superfine",
+   "bb",
+   "11 50",
+   "12 50"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 29,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Fine",
+   "bb",
+   "10 50",
+   "11"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 30,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— X Brand",
+   "bb",
+   "9 50",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 31,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Middlings",
+   "bb",
+   "8",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 32,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Country, —",
+   "cwt",
+   "4",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 33,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "FEATHERS, live Geese",
+   "lb",
+   "64",
+   "67"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 34,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "GRAIN, Barley, —",
+   "bush",
+   "96",
+   "1"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 35,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Corn, Indian, South",
+   "bu",
+   "1",
+   "6"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 36,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— North",
+   "bu",
+   "1",
+   "12"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 37,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Rye",
+   "bu",
+   "1",
+   "20"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 38,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Oats",
+   "bu",
+   "1",
+   "50"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 39,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "GLASS, Brister. 10 by 8, —",
+   "bx",
+   "14",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 40,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— 7 by 9, —",
+   "bx",
+   "21",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 41,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Hamburg, 7 by 9, —",
+   "bx",
+   "11",
+   "11 50"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 42,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— 8 by 10, —",
+   "bx",
+   "11",
+   "11 50"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 43,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "GUN-POWDER, foreign",
+   "lb",
+   "48",
+   "50"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 44,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "HOPS, new",
+   "lb",
+   "7",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 45,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "HOOPS, bhd. 12 feet",
+   "lb",
+   "27",
+   "30"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 46,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Iron",
+   "T",
+   "140",
+   "150"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 47,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "HIDES, shipping",
+   "lb",
+   "12",
+   "13"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 48,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "HOG LARD, 1st fort",
+   "lb",
+   "1",
+   "1 1/2"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 49,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— 2d do.",
+   "lb",
+   "12",
+   "13"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 50,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "IRON, Philadelphia bar",
+   "T",
+   "110",
+   "120"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 51,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Russia, Sable",
+   "lb",
+   "100",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 52,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Sweden",
+   "lb",
+   "115",
+   "123"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 53,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "INDIGO, Carolina",
+   "lb",
+   "2 25",
+   "2 50"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 54,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Spanish float",
+   "lb",
+   "2 25",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 55,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "LIME, half hhd.",
+   "bx",
+   "2 25",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 56,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "LEATHER, fcal, dried, bhd.",
+   "lb",
+   "245",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 57,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "LEMONS, Lisbon",
+   "box",
+   "8",
+   "10"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 58,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "LUMBER, Ken. & Mach. clear,",
+   "M",
+   "18",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 59,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— merck.",
+   "bx",
+   "10",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 60,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Clapboards",
+   "bx",
+   "14",
+   "16"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 61,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Shingles, warranted",
+   "bx",
+   "2 25",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 62,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Laths, per thousand",
+   "bx",
+   "17",
+   "1 05"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 63,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Pine Timber",
+   "ton",
+   "3",
+   "3 45"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 64,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Oak Timber",
+   "ton",
+   "5",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 65,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "MOLASSES, Havana, bhd.",
+   "gal",
+   "52",
+   "56"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 66,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "NAIL RODS, ton",
+   "ton",
+   "120",
+   "130"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 67,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "NAILS, 2d cut, 2 lb per",
+   "M",
+   "26",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 68,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— 3d do 2 3/4 per",
+   "M",
+   "28",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 69,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— 4d do 3 per",
+   "M",
+   "20",
+   "50"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 70,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— 6d do 6 per",
+   "M",
+   "58",
+   "60"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 71,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— 8d do 8 per",
+   "M",
+   "77",
+   "80"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 72,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— 10d do 10 per",
+   "M",
+   "1",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 73,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— 20d 100 lb per",
+   "lb",
+   "1",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 74,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "OIL, Florence, 30 flasks",
+   "case",
+   "8",
+   "01"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 75,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Whale, common",
+   "gal",
+   "50",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 76,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Spermaceti",
+   "gal",
+   "1 25",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 77,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "PORK, Bone Middlings,",
+   "bb 17",
+   "",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 78,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Cargo, No. 1",
+   "bb",
+   "15",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 79,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— do No. 2",
+   "bb",
+   "14",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 80,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "PLASTER PARIS, —",
+   "ton",
+   "5",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 81,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "SOAP, American white",
+   "lb",
+   "10",
+   "14"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 82,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— brown",
+   "lb",
+   "9",
+   "11"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 83,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "SPIRITS, Brandy, Fresh & ad pr",
+   "gal",
+   "86",
+   "90"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 84,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— 4th do",
+   "gal",
+   "1 20",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 85,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Cogniac, 4th",
+   "gal",
+   "1 40",
+   "1 50"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 86,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Barcelone, 1st",
+   "gal",
+   "90",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 87,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— do 4th",
+   "gal",
+   "1 4",
+   "1 8"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 88,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Alicante, 1st",
+   "gal",
+   "96",
+   "1"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 89,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— do 4th",
+   "gal",
+   "1 8",
+   "1 12"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 90,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Gin, Holland 1st",
+   "gal",
+   "90",
+   "92"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 91,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— do do 2d",
+   "gal",
+   "94",
+   "99"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 92,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— American 1st",
+   "gal",
+   "66",
+   "70"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 93,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Rum, Jamaica, 4th",
+   "gal",
+   "96",
+   "1"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 94,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— St. Croix, 3d & 4th",
+   "gal",
+   "50",
+   "94"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 95,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— New-— New-England",
+   "gal",
+   "58",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 96,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "SUGARS, Havana white,",
+   "cwt",
+   "16",
+   "75"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 97,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— do brown,",
+   "cwt",
+   "12",
+   "50"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 98,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "SALT, St. Ubes, hhd.",
+   "bb",
+   "5 50",
+   "6 50"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 99,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "STEEL, Heart & Cab",
+   "lb",
+   "12",
+   "13"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 100,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— Blistered",
+   "lb",
+   "14",
+   "15"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 101,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "STAVES, W. Oak pipe N.",
+   "M",
+   "55",
+   "60"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 102,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— do hhd",
+   "bx",
+   "37",
+   "40"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 103,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— do heading",
+   "bx",
+   "38",
+   "40"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 104,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— do bbl",
+   "bx",
+   "20",
+   "22"
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83016081_1804-12-10_1.pdf_/page/3/Table/40",
+  "table_no": 0,
+  "row_no": 105,
+  "filename": "sn83016081_1804-12-10_1.pdf",
+  "newspaper_id": "sn83016081",
+  "issue_date": "1804-12-10",
+  "page_number": 3,
+  "heading_as_printed": "Wholesale Prices current at Portland. / (CORRECTED WEEKLY.)",
+  "layout": "FromTo_DolsCts",
+  "cells": [
+   "— R. O. hhd",
+   "bx",
+   "13",
+   ""
+  ],
+  "reason": "from_cell_not_numeric"
+ },
+ {
+  "block_uid": "sn83025588_1800-08-19_1.pdf_/page/2/Table/17",
+  "table_no": 1,
+  "row_no": 10,
+  "filename": "sn83025588_1800-08-19_1.pdf",
+  "newspaper_id": "sn83025588",
+  "issue_date": "1800-08-19",
+  "page_number": 2,
+  "heading_as_printed": "Liverpool, June 19.",
+  "layout": "generic",
+  "cells": [
+   "Cotton Georgia, short staple, 200 a 220 Lb.",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn83025881_1796-10-08_1.pdf_/page/1/Table/1",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn83025881_1796-10-08_1.pdf",
+  "newspaper_id": "sn83025881",
+  "issue_date": "1796-10-08",
+  "page_number": 1,
+  "heading_as_printed": "BOSTON, October 3. / Yesterday arrived the ship Minerva, Capt. D. Tanner, in 44 days from London. She brought London papers to the 9th August.",
+  "layout": "generic",
+  "cells": [
+   "London prices current, of American Stocks, &c.",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn83025881_1796-10-08_1.pdf_/page/1/Table/1",
+  "table_no": 0,
+  "row_no": 6,
+  "filename": "sn83025881_1796-10-08_1.pdf",
+  "newspaper_id": "sn83025881",
+  "issue_date": "1796-10-08",
+  "page_number": 1,
+  "heading_as_printed": "BOSTON, October 3. / Yesterday arrived the ship Minerva, Capt. D. Tanner, in 44 days from London. She brought London papers to the 9th August.",
+  "layout": "generic",
+  "cells": [
+   "Merchandise.",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn83025881_1796-10-08_1.pdf_/page/1/Table/1",
+  "table_no": 0,
+  "row_no": 18,
+  "filename": "sn83025881_1796-10-08_1.pdf",
+  "newspaper_id": "sn83025881",
+  "issue_date": "1796-10-08",
+  "page_number": 1,
+  "heading_as_printed": "BOSTON, October 3. / Yesterday arrived the ship Minerva, Capt. D. Tanner, in 44 days from London. She brought London papers to the 9th August.",
+  "layout": "generic",
+  "cells": [
+   "East-India indigo,",
+   "very dull."
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn83025881_1797-02-17_1.pdf_/page/2/Table/49",
+  "reason": "no_markdown_table_found",
+  "text": "PRICE CURRENT at Liverpool, Dec. 15. Prime wheat 7s 6d a 8s per qolb. Superfine flour 31s a 32s bbl. Fine flour 29s a 30s do. Indian corn 2810 a 3s Winchester bushel. A demand for the West-Indies has considerably reduced the stocks at market. Flex seed 6s 9d a 7s Winchester bushel. Pearl ashes 1st q"
+ },
+ {
+  "block_uid": "sn83025887_1792-04-12_1.pdf_/page/3/Table/4",
+  "reason": "no_markdown_table_found",
+  "text": "Table titled 'Prices Current at Philadelphia' with columns for item (e.g., SHES, Bacon, Bees wax, Brandy, Butter, Coals, Coffee, Cotton, Flour, Rye, Ship stuff, Gin, Ginseng, Grain, Hams, Hemp, Hides, Indigo, Iron, Lard, Lead, Myrtle wax, Molasses, Pitch, Pork, Rice, Rosin, Rum, Snake-Root, Sugar, T"
+ },
+ {
+  "block_uid": "sn83025887_1792-06-25_1.pdf_/page/3/Table/30",
+  "reason": "no_markdown_table_found",
+  "text": "Prices Current at Philadelphia. [Dollars equal to 100 cents. ASHES Pot per ton 90 Dols. to 100. Ashes Pearl 137 — 140. Bacon flitches per lb. 7 cents. Bacon shoulders — 6 40. Bees wax, per lb. 25 cents to 27. Brandy, Coniac, per gl. 1 dol. 20 c. to 1 d. 33 c. Brandy, common, 1 dol. 26 c. Butter, in "
+ },
+ {
+  "block_uid": "sn83030007_1788-12-12_1.pdf_/page/1/Table/30",
+  "reason": "no_markdown_table_found",
+  "text": "PRICE CURRENT. CHARLESTON, Nov. 24. Spanish Milled Dollars 4/8. Table listing prices for various goods like Bar Iron, Coals, Hemp, Logwood, Braziletto, Fustick, Lignumvite, Cocoa, Cordage, Coddish, Ship bread, Sugar, French, Spanish, Butte, Country, Candles, Tallow, Coffee, Cheese, Pepper, Pimento, "
+ },
+ {
+  "block_uid": "sn83030483_1789-10-07_1.pdf_/page/2/Table/29",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn83030483_1789-10-07_1.pdf",
+  "newspaper_id": "sn83030483",
+  "issue_date": "1789-10-07",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "PRICE CURRENT.—NEW-YORK.",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn83030483_1789-11-28_1.pdf_/page/3/Table/36",
+  "reason": "no_markdown_table_found",
+  "text": "PRICE CURRENT.—NEW-YORK. NOVEMBER 28. DOLLARS at 8s. Table listing prices for various goods like Jamaica Spirits, Antigua Rum, St. Croix, Molasses, Brandy, etc."
+ },
+ {
+  "block_uid": "sn83030483_1790-10-02_1.pdf_/page/2/Table/32",
+  "reason": "no_markdown_table_found",
+  "text": "PRICE CURRENT.—PUBLIC SECURITIES. FINAL SETTLEMENTS 12 1/2 a 12 3/4. INDENTS 7 1/2. a 7 3/4. STATE SECURITIES 8 3/4."
+ },
+ {
+  "block_uid": "sn83030483_1790-11-03_1.pdf_/page/2/Table/30",
+  "reason": "no_markdown_table_found",
+  "text": "PRICE CURRENT.—PUBLIC SECURITIES. FINAL SETTLEMENTS 12 1/2. INDENTS 7 1/2. NEW LOAN, 6 pr. Cents—few at Market, about 14 1/2."
+ },
+ {
+  "block_uid": "sn83030483_1790-11-13_1.pdf_/page/2/Table/24",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn83030483_1790-11-13_1.pdf",
+  "newspaper_id": "sn83030483",
+  "issue_date": "1790-11-13",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "PRICE CURRENT.—PUBLIC SECURITIES.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn83030483_1790-11-13_1.pdf_/page/2/Table/24",
+  "table_no": 0,
+  "row_no": 1,
+  "filename": "sn83030483_1790-11-13_1.pdf",
+  "newspaper_id": "sn83030483",
+  "issue_date": "1790-11-13",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "FUNDED DEBT.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn83030483_1790-11-13_1.pdf_/page/2/Table/24",
+  "table_no": 0,
+  "row_no": 5,
+  "filename": "sn83030483_1790-11-13_1.pdf",
+  "newspaper_id": "sn83030483",
+  "issue_date": "1790-11-13",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "UNFUNDED DEBT.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn83030483_1790-11-20_1.pdf_/page/2/Table/19",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn83030483_1790-11-20_1.pdf",
+  "newspaper_id": "sn83030483",
+  "issue_date": "1790-11-20",
+  "page_number": 2,
+  "heading_as_printed": "PRICE CURRENT.—PUBLIC SECURITIES.",
+  "layout": "generic",
+  "cells": [
+   "FUNDED DEBT.",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn83030483_1790-11-20_1.pdf_/page/2/Table/19",
+  "table_no": 0,
+  "row_no": 4,
+  "filename": "sn83030483_1790-11-20_1.pdf",
+  "newspaper_id": "sn83030483",
+  "issue_date": "1790-11-20",
+  "page_number": 2,
+  "heading_as_printed": "PRICE CURRENT.—PUBLIC SECURITIES.",
+  "layout": "generic",
+  "cells": [
+   "UNFUNDED DEBT.",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn83030483_1790-11-20_1.pdf_/page/2/Table/19",
+  "table_no": 0,
+  "row_no": 8,
+  "filename": "sn83030483_1790-11-20_1.pdf",
+  "newspaper_id": "sn83030483",
+  "issue_date": "1790-11-20",
+  "page_number": 2,
+  "heading_as_printed": "PRICE CURRENT.—PUBLIC SECURITIES.",
+  "layout": "generic",
+  "cells": [
+   "LATEST ARRIVALS AT THIS PORT.",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn83030483_1790-11-20_1.pdf_/page/2/Table/19",
+  "table_no": 0,
+  "row_no": 10,
+  "filename": "sn83030483_1790-11-20_1.pdf",
+  "newspaper_id": "sn83030483",
+  "issue_date": "1790-11-20",
+  "page_number": 2,
+  "heading_as_printed": "PRICE CURRENT.—PUBLIC SECURITIES.",
+  "layout": "generic",
+  "cells": [
+   "Sloop Friendship, Deal, St. Martins",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn83030483_1790-12-18_1.pdf_/page/2/Table/56",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn83030483_1790-12-18_1.pdf",
+  "newspaper_id": "sn83030483",
+  "issue_date": "1790-12-18",
+  "page_number": 2,
+  "heading_as_printed": "PRICE CURRENT.--PUBLIC SECURITIES.",
+  "layout": "generic",
+  "cells": [
+   "FUNDED DEBT.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn83030483_1790-12-18_1.pdf_/page/2/Table/56",
+  "table_no": 0,
+  "row_no": 4,
+  "filename": "sn83030483_1790-12-18_1.pdf",
+  "newspaper_id": "sn83030483",
+  "issue_date": "1790-12-18",
+  "page_number": 2,
+  "heading_as_printed": "PRICE CURRENT.--PUBLIC SECURITIES.",
+  "layout": "generic",
+  "cells": [
+   "UNFUNDED DEBT.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn83030483_1791-06-15_1.pdf_/page/3/Table/18",
+  "reason": "no_markdown_table_found",
+  "text": "PRICE CURRENT.—PHILADELPHIA. JUNE 15.—DOLLARS at 7/6. Table listing prices for various goods including ANCHORS, Allum, Alhes, Arrack, Brandy, Braziletto, Bricks, Bread, Beer, RUM, SALT, STAVES, SKINS, GRAIN, IRON, TEAS, WINE, OIL, and a COURSE OF EXCHANGE section."
+ },
+ {
+  "block_uid": "sn83030483_1791-06-29_1.pdf_/page/3/Table/12",
+  "reason": "no_markdown_table_found",
+  "text": "PRICE CURRENT.—PHILADELPHIA.\nPER QUANTITY.\nJUNE 28.—DOLLARS at 7/6.\nTable with columns for item, quantity, and price. Items include ANCHORS, Allum, Ashes, Arrack, Brandy, Braziletto, Bricks, Bread, Beer, Boards, Beef, Butter, Cedar, Chocolate, Coal, Coffee, Cinnamon, Calla, Cheese, Candles, Cotton, "
+ },
+ {
+  "block_uid": "sn83030483_1791-08-06_1.pdf_/page/2/Table/20",
+  "reason": "no_markdown_table_found",
+  "text": "Table with 2 columns: PRICE CURRENT.—PUBLIC SECURITIES. FUNDED DEBT. 6 pr. Cents 21 3/4 pr. £. 106 3/4 pr. cent. 3 pr. Cents 12 3/4 12 3/4 63 3/4 do. Deferred 6 pr. Cents 13 3/4 13 3/4 70 do. UNFUNDED DEBT. Final Sett. and other Certificates 100/ par. Indents 12 3/4 12 3/4 63 3/4 do. N. and S. Carol"
+ },
+ {
+  "block_uid": "sn83030483_1791-09-21_1.pdf_/page/2/Table/66",
+  "table_no": 0,
+  "filename": "sn83030483_1791-09-21_1.pdf",
+  "issue_date": "1791-09-21",
+  "reason": "table_no_digits",
+  "heading_as_printed": "",
+  "text": "[[\"From PELOSI'S MARINE LIST.\", \"\", \"\", \"\"], [\"ARRIVALS at the PORT of PHILADELPHIA.\", \"\", \"\", \"\"], [\"Ship <i>Succes</i> ,\", \"<i>Pitt</i> ,\", \"<i>Lisbon</i>\", \"\"], [\"<i>Apollo</i> ,\", \"<i>Billings</i> ,\", \"<i>Oporto</i>\", \"\"], [\"<i>Atlantic</i> ,\", \"<i>Swaine</i> ,\", \"<i>Liverpool</i>\", \"\"], [\"Brig <i>Planter</i> ,\", \"<i>Poole</i> ,\", \"<i>St. Croix</i>\", \"\"], [\"<i>Mary</i> ,\", \"<i>Moll</i> ,\", \"<i>Barbadoes</i>\", \"\"], [\"Prince of Wales,\", \"<i>Dawson</i> ,\", \"<i>Newfoundland</i>\", \"\"], [\"Schooner"
+ },
+ {
+  "block_uid": "sn83030483_1791-09-21_1.pdf_/page/2/Table/66",
+  "table_no": 1,
+  "row_no": 0,
+  "filename": "sn83030483_1791-09-21_1.pdf",
+  "newspaper_id": "sn83030483",
+  "issue_date": "1791-09-21",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "PRICE CURRENT.—PUBLIC SECURITIES.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn83030483_1791-09-21_1.pdf_/page/2/Table/66",
+  "table_no": 1,
+  "row_no": 1,
+  "filename": "sn83030483_1791-09-21_1.pdf",
+  "newspaper_id": "sn83030483",
+  "issue_date": "1791-09-21",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "FUNDED DEBT.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn83030483_1791-09-21_1.pdf_/page/2/Table/66",
+  "table_no": 2,
+  "filename": "sn83030483_1791-09-21_1.pdf",
+  "issue_date": "1791-09-21",
+  "reason": "table_no_digits",
+  "heading_as_printed": "",
+  "text": "[[\"UNFUNDED DEBT.\", \"\", \"\", \"\"]]"
+ },
+ {
+  "block_uid": "sn83030483_1791-10-26_1.pdf_/page/2/Table/55",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn83030483_1791-10-26_1.pdf",
+  "newspaper_id": "sn83030483",
+  "issue_date": "1791-10-26",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "PRICE CURRENT.—PUBLIC SECURITIES.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn83030483_1791-10-26_1.pdf_/page/2/Table/55",
+  "table_no": 0,
+  "row_no": 1,
+  "filename": "sn83030483_1791-10-26_1.pdf",
+  "newspaper_id": "sn83030483",
+  "issue_date": "1791-10-26",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "FUNDED DEBT.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn83030483_1791-10-26_1.pdf_/page/2/Table/55",
+  "table_no": 0,
+  "row_no": 5,
+  "filename": "sn83030483_1791-10-26_1.pdf",
+  "newspaper_id": "sn83030483",
+  "issue_date": "1791-10-26",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "UNFUNDED DEBT.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn83030483_1792-08-08_1.pdf_/page/0/Table/9",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn83030483_1792-08-08_1.pdf",
+  "newspaper_id": "sn83030483",
+  "issue_date": "1792-08-08",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "PRICE CURRENT.",
+   "Dls.",
+   "Cts.",
+   "Dls.",
+   "Cts."
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn83030483_1792-12-12_1.pdf_/page/3/Table/29",
+  "reason": "no_markdown_table_found",
+  "text": "PRICE CURRENT. TABLE with columns for item, quantity, and price in Dls., Cts., and Dls. Cts. Items include Molasses, Muffard, Oil, Anchors, Allum, Ashes, Arrack, Brandy, Brazilletto, Bricks, Bread, Beer, Boards, Bristlestone, Beef, Butter, Candles, Cheese, Chocolate, Cinnamon, Cloves, Cocoa, Coffee,"
+ },
+ {
+  "block_uid": "sn83030565_1787-08-16_1.pdf_/page/3/Table/4",
+  "reason": "no_markdown_table_found",
+  "text": "PRICE CURRENT AT NEW-YORK. WHEAT, Rye, Oats, Indian Corn, Albany Peas, Fine Salt, Packing ditto, Rock ditto, Fine Flour, Common ditto, Bur, Middlings, Beef, Pork, Indian Meal, Rye ditto, Rice, Ship Bread, Muscovado Sugar, Loaf Sugar, Havana ditto, Hyson Tea, Souhong ditto, Bohea ditto, Hams, Butter,"
+ },
+ {
+  "block_uid": "sn84024011_1802-05-15_1.pdf_/page/2/Table/14",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn84024011_1802-05-15_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-05-15",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT at LIVERPOOL.",
+  "layout": "generic",
+  "cells": [
+   "March 25.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 1,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "Pearl, 1/ 1s to 1/ 2s",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 4,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "Good, 4/ 15s to 5/",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 5,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "Middling, 4/ 15s to 4/ 16s",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 7,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "Georgia and S. Carolina, 1s to 2s 8d",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 9,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "superfine, 1/ 8s to 1/ 15s",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 11,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "Indigo, New Orleans, uncertain",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 14,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "Shot, ton, 37/ to 37/ 10s",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 16,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "Honduras, chipt, 13/ to 14/ 15s",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 17,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "unchipt, 8/ to 9/",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 19,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "Jamaica, 9d to 2s",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 20,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "Hispaniola, 1s 2d to 2s 3d",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 23,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "Yellow, 1/ 2s to 1/ 4s",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 24,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "Skins, Deer, in hair, 1s to 12s 6d",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 26,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "bhd. 12/ to 18/ 10s",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 27,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "barrel, 6/ to 9/ 5s",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 29,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "Havanna, white 2/ 9s to 3/ 2s",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 30,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "brown, 1/ 11s to 2/ 5s",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 33,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "Plank, 6/ 10s to 7/ 5s",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 34,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "Pine, 4/ 5s to 4/ 10s",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 35,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "Plank, 10/ 10s to 13/",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 37,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "Middling Brown, 5 3/4 to 8d",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 38,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "Long Leaf, 3d to 5 3/4",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 39,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "Virginia, York River, 3 3/4 to 6 3/4",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 40,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "James River, 3d to 5 3/4",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 41,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "Strip Leaf, 4 3/4 to 6 3/4",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 42,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "Rappahannock, 2 1/2 to 5d",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 43,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "Carolina, 2 3/4 to 4 1/4",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 44,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "South Potomac, 2 1/2 to 4 1/2",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1802-11-13_1.pdf_/page/2/Table/28",
+  "table_no": 0,
+  "row_no": 45,
+  "filename": "sn84024011_1802-11-13_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1802-11-13",
+  "page_number": 2,
+  "heading_as_printed": "PRICES CURRENT—LONDON, Sept 21.",
+  "layout": "generic",
+  "cells": [
+   "Georgia, 2 1/2 to 4 3/4",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1803-03-08_1.pdf_/page/2/Table/12",
+  "table_no": 0,
+  "row_no": 42,
+  "filename": "sn84024011_1803-03-08_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1803-03-08",
+  "page_number": 2,
+  "heading_as_printed": "Prices Current, Liverpool, Jan. 22, 1803.",
+  "layout": "generic",
+  "cells": [
+   "Sea Island",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1803-08-23_1.pdf_/page/2/Table/22",
+  "table_no": 0,
+  "row_no": 1,
+  "filename": "sn84024011_1803-08-23_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1803-08-23",
+  "page_number": 2,
+  "heading_as_printed": "Price Current at Barbadoes, July 27.",
+  "layout": "generic",
+  "cells": [
+   "Biscuit, white, 10 dols. per do."
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024011_1803-08-23_1.pdf_/page/2/Table/22",
+  "table_no": 0,
+  "row_no": 4,
+  "filename": "sn84024011_1803-08-23_1.pdf",
+  "newspaper_id": "sn84024011",
+  "issue_date": "1803-08-23",
+  "page_number": 2,
+  "heading_as_printed": "Price Current at Barbadoes, July 27.",
+  "layout": "generic",
+  "cells": [
+   "The brig Dolphin, from Alexandria, to Barbadoes, struck on Cobler's Rock, and was lost."
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024012_1803-11-01_1.pdf_/page/2/Table/22",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn84024012_1803-11-01_1.pdf",
+  "newspaper_id": "sn84024012",
+  "issue_date": "1803-11-01",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "<i>From a Liverpool Price Current, Sept. 7.</i>",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024012_1803-11-01_1.pdf_/page/2/Table/22",
+  "table_no": 0,
+  "row_no": 21,
+  "filename": "sn84024012_1803-11-01_1.pdf",
+  "newspaper_id": "sn84024012",
+  "issue_date": "1803-11-01",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Flour, superfine 29s to 30s 6 per cwt.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024012_1803-11-01_1.pdf_/page/2/Table/22",
+  "table_no": 0,
+  "row_no": 22,
+  "filename": "sn84024012_1803-11-01_1.pdf",
+  "newspaper_id": "sn84024012",
+  "issue_date": "1803-11-01",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Rice, 37 to 38s per cwt.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024012_1803-11-01_1.pdf_/page/2/Table/22",
+  "table_no": 0,
+  "row_no": 23,
+  "filename": "sn84024012_1803-11-01_1.pdf",
+  "newspaper_id": "sn84024012",
+  "issue_date": "1803-11-01",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Ashes, little demand.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024012_1803-11-01_1.pdf_/page/2/Table/22",
+  "table_no": 0,
+  "row_no": 24,
+  "filename": "sn84024012_1803-11-01_1.pdf",
+  "newspaper_id": "sn84024012",
+  "issue_date": "1803-11-01",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Naval Stores, dull.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024012_1803-11-01_1.pdf_/page/2/Table/22",
+  "table_no": 0,
+  "row_no": 25,
+  "filename": "sn84024012_1803-11-01_1.pdf",
+  "newspaper_id": "sn84024012",
+  "issue_date": "1803-11-01",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Staves declining.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024012_1808-01-25_1.pdf_/page/1/Table/0",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn84024012_1808-01-25_1.pdf",
+  "newspaper_id": "sn84024012",
+  "issue_date": "1808-01-25",
+  "page_number": 1,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Alexandria Price Current.",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024012_1808-01-25_1.pdf_/page/1/Table/0",
+  "table_no": 0,
+  "row_no": 1,
+  "filename": "sn84024012_1808-01-25_1.pdf",
+  "newspaper_id": "sn84024012",
+  "issue_date": "1808-01-25",
+  "page_number": 1,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "CORRECTED WEEKLY.",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024012_1808-01-25_1.pdf_/page/1/Table/0",
+  "table_no": 0,
+  "row_no": 2,
+  "filename": "sn84024012_1808-01-25_1.pdf",
+  "newspaper_id": "sn84024012",
+  "issue_date": "1808-01-25",
+  "page_number": 1,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Articles.",
+   "Per.",
+   "Prices",
+   "",
+   ""
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn84024012_1808-01-25_1.pdf_/page/1/Table/0",
+  "table_no": 0,
+  "row_no": 3,
+  "filename": "sn84024012_1808-01-25_1.pdf",
+  "newspaper_id": "sn84024012",
+  "issue_date": "1808-01-25",
+  "page_number": 1,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "",
+   "",
+   "Dolls.",
+   "Cts.",
+   "D. C."
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn84024012_1808-01-25_1.pdf_/page/1/Table/0",
+  "table_no": 0,
+  "row_no": 41,
+  "filename": "sn84024012_1808-01-25_1.pdf",
+  "newspaper_id": "sn84024012",
+  "issue_date": "1808-01-25",
+  "page_number": 1,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "<b>Lumber</b>",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024012_1808-01-25_1.pdf_/page/1/Table/0",
+  "table_no": 0,
+  "row_no": 42,
+  "filename": "sn84024012_1808-01-25_1.pdf",
+  "newspaper_id": "sn84024012",
+  "issue_date": "1808-01-25",
+  "page_number": 1,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "100ft.",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024012_1808-01-25_1.pdf_/page/1/Table/0",
+  "table_no": 0,
+  "row_no": 75,
+  "filename": "sn84024012_1808-01-25_1.pdf",
+  "newspaper_id": "sn84024012",
+  "issue_date": "1808-01-25",
+  "page_number": 1,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "<b>Spirits</b>",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024012_1808-01-25_1.pdf_/page/1/Table/0",
+  "table_no": 0,
+  "row_no": 76,
+  "filename": "sn84024012_1808-01-25_1.pdf",
+  "newspaper_id": "sn84024012",
+  "issue_date": "1808-01-25",
+  "page_number": 1,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "galls",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024012_1808-01-25_1.pdf_/page/1/Table/0",
+  "table_no": 0,
+  "row_no": 121,
+  "filename": "sn84024012_1808-01-25_1.pdf",
+  "newspaper_id": "sn84024012",
+  "issue_date": "1808-01-25",
+  "page_number": 1,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "<b>PRICE OF STOCKS.</b>",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024012_1808-01-25_1.pdf_/page/1/Table/0",
+  "table_no": 0,
+  "row_no": 124,
+  "filename": "sn84024012_1808-01-25_1.pdf",
+  "newspaper_id": "sn84024012",
+  "issue_date": "1808-01-25",
+  "page_number": 1,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Exchange on London, per",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024013_1809-03-21_1.pdf_/page/2/Table/8",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn84024013_1809-03-21_1.pdf",
+  "newspaper_id": "sn84024013",
+  "issue_date": "1809-03-21",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "PRICE CURRENT.",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024013_1809-03-21_1.pdf_/page/2/Table/8",
+  "table_no": 0,
+  "row_no": 1,
+  "filename": "sn84024013_1809-03-21_1.pdf",
+  "newspaper_id": "sn84024013",
+  "issue_date": "1809-03-21",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Bordeaux, 19th December, 1809.",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024013_1809-03-21_1.pdf_/page/2/Table/8",
+  "table_no": 0,
+  "row_no": 2,
+  "filename": "sn84024013_1809-03-21_1.pdf",
+  "newspaper_id": "sn84024013",
+  "issue_date": "1809-03-21",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "FRANCs.",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024710_1802-06-23_1.pdf_/page/1/Table/60",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn84024710_1802-06-23_1.pdf",
+  "newspaper_id": "sn84024710",
+  "issue_date": "1802-06-23",
+  "page_number": 1,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "THE VIRGINIA ARGUS.",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024710_1802-06-23_1.pdf_/page/1/Table/60",
+  "table_no": 0,
+  "row_no": 1,
+  "filename": "sn84024710_1802-06-23_1.pdf",
+  "newspaper_id": "sn84024710",
+  "issue_date": "1802-06-23",
+  "page_number": 1,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "RICHMOND:",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024710_1802-06-23_1.pdf_/page/1/Table/60",
+  "table_no": 0,
+  "row_no": 2,
+  "filename": "sn84024710_1802-06-23_1.pdf",
+  "newspaper_id": "sn84024710",
+  "issue_date": "1802-06-23",
+  "page_number": 1,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "WEDNESDAY, June 23.",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024710_1802-06-23_1.pdf_/page/1/Table/60",
+  "table_no": 0,
+  "row_no": 3,
+  "filename": "sn84024710_1802-06-23_1.pdf",
+  "newspaper_id": "sn84024710",
+  "issue_date": "1802-06-23",
+  "page_number": 1,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "PRICE CURRENT.",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024710_1802-06-23_1.pdf_/page/1/Table/60",
+  "table_no": 0,
+  "row_no": 4,
+  "filename": "sn84024710_1802-06-23_1.pdf",
+  "newspaper_id": "sn84024710",
+  "issue_date": "1802-06-23",
+  "page_number": 1,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "COUNTRY PRODUCE.",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024710_1804-06-13_1.pdf_/page/2/Table/11",
+  "reason": "no_markdown_table_found",
+  "text": "The Virginia Argus. RICHMOND: WEDNESDAY, JUNE 18, 1804. RICHMOND PRICE CURRENT. CORRECTED WEEKLY. Tobacco 36 3/4 Cash. Wheat 6s 6d do. Flour Fine, 33s do. Do. Sup. 36s do. Corn 30s do. Hemp, Clean £ 50 do. Iron £ 34 do. Bacon 8d do. Whiskey 3s 9d do."
+ },
+ {
+  "block_uid": "sn84024710_1804-09-12_1.pdf_/page/2/Table/26",
+  "reason": "no_markdown_table_found",
+  "text": "PRICES CURRENT—CADIZ, JULY 21. Table with 2 columns: Item, Price. Items include Rice, Kidney beans, Yellow bees-wax, Wax candles, Wheat, Flour, Indian corn, Beef per bbl, Pipe staves, Other staves, Hogshead per lb."
+ },
+ {
+  "block_uid": "sn84024710_1805-03-13_1.pdf_/page/2/Table/14",
+  "reason": "no_markdown_table_found",
+  "text": "VIRGINIA ARGUS. RICHMOND: WEDNESDAY, MARCH 13, 1805. RICHMOND PRICE CURRENT. CORRECTED WEEKLY. Tobacco, 33 3/4 to 36 3/4 Cash. Wheat, 10s 6d to 12s do. Flour, fine, 66 3/4 do. Flour, superfine, 69 3/4 do. Corn, 30s do. Hemp, (clean) £ 52 do. Iron, £ 33 do. Bacon, 9d do. Whiskey, 4s do. Pork, 54s do."
+ },
+ {
+  "block_uid": "sn84024710_1806-01-14_1.pdf_/page/2/Table/19",
+  "reason": "no_markdown_table_found",
+  "text": "RICHMOND PRICE CURRENT. CORRECTED WEEKLY. Tobacco, 33s Cash. Wheat, 7s 6d do. Flour, fine, 36s do. Flour, superfine, 39s do. Corn, 18s do. Hemp, (clean) £ 54 do."
+ },
+ {
+  "block_uid": "sn84024710_1806-04-29_1.pdf_/page/1/Table/12",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn84024710_1806-04-29_1.pdf",
+  "newspaper_id": "sn84024710",
+  "issue_date": "1806-04-29",
+  "page_number": 1,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "RICHMOND PRICE CURRENT.",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024710_1806-04-29_1.pdf_/page/1/Table/12",
+  "table_no": 0,
+  "row_no": 1,
+  "filename": "sn84024710_1806-04-29_1.pdf",
+  "newspaper_id": "sn84024710",
+  "issue_date": "1806-04-29",
+  "page_number": 1,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "(CORRECTED WEEKLY.)",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024710_1806-09-24_1.pdf_/page/2/Table/16",
+  "reason": "no_markdown_table_found",
+  "text": "VIRGINIA ARGUS RICHMOND: WEDNESDAY, SEPTEMBER 24, 1806. RICHMOND PRICE CURRENT. (CORRECTED WEEKLY.) Tobacco, 33s to 36 cask. Wheat, 6s 6d do. Flour, fine, new, 36s do. Flour, superfine, 39s do. Corn, 21s do. Hemp, clean, £ 56 do. Iron, £ 36 do. Bacon, 8d do."
+ },
+ {
+  "block_uid": "sn84024710_1809-11-21_1.pdf_/page/2/Table/11",
+  "reason": "no_markdown_table_found",
+  "text": "Virginia Argus. RICHMOND, TUESDAY, NOVEMBER 21, 1809. Richmond Price Current. [CORRECTED WEEKLY.] CASH. D. C. Tobacco, 6 00 Wheat, new, 1 25 Flour, super-fine, 6 75 Flour, fine, 6 25 Corn, 3 50 Hemp, per ton, 280 00 Iron, 110 00 Bacon, 00 10 Whiskey, 00 75"
+ },
+ {
+  "block_uid": "sn84024736_1807-05-12_1.pdf_/page/0/Table/6",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn84024736_1807-05-12_1.pdf",
+  "newspaper_id": "sn84024736",
+  "issue_date": "1807-05-12",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Richmond Prices Current.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84026272_1800-07-02_1.pdf_/page/1/Table/18",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn84026272_1800-07-02_1.pdf",
+  "newspaper_id": "sn84026272",
+  "issue_date": "1800-07-02",
+  "page_number": 1,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Price Current, New-Brunswick.",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84026272_1800-11-12_1.pdf_/page/2/Table/29",
+  "table_no": 0,
+  "filename": "sn84026272_1800-11-12_1.pdf",
+  "issue_date": "1800-11-12",
+  "reason": "table_not_prices",
+  "heading_as_printed": "",
+  "text": "[[\"ARRIVED.\", \"\"], [\"Schr. Sukey, Stone\", \"St. Jago de Cuba—CLEARED.\"], [\"Brig Perseverance, Swaine\", \"St. Kitts\"], [\"Schr. Meffenger, Stites\", \"Cape Francois\"], [\"Schooner Atlantic, Kingston, from hence, to La Guira is taken and lent into Curacoa by the British frigate <i>Diana</i> . The French have been driven off the island of Curacoa, the British have possession.\", \"\"], [\"Brig Amazon, Devereaux, sent into Kingston on her passage from Port Republic to this port, has been acquitted, except a s"
+ },
+ {
+  "block_uid": "sn84038147_1808-06-10_1.pdf_/page/2/Table/11",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn84038147_1808-06-10_1.pdf",
+  "newspaper_id": "sn84038147",
+  "issue_date": "1808-06-10",
+  "page_number": 2,
+  "heading_as_printed": "From the Orleans Gazette of April 30. **New-Orleans Price Current.** Wholesale Prices Current, in Dollars & Cents' French Weight & Measure, except in Selling Liquors by Wholesale.",
+  "layout": "generic",
+  "cells": [
+   "ARTICLES.",
+   "FROM",
+   "TO"
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn84038147_1808-06-10_1.pdf_/page/2/Table/11",
+  "table_no": 0,
+  "row_no": 1,
+  "filename": "sn84038147_1808-06-10_1.pdf",
+  "newspaper_id": "sn84038147",
+  "issue_date": "1808-06-10",
+  "page_number": 2,
+  "heading_as_printed": "From the Orleans Gazette of April 30. **New-Orleans Price Current.** Wholesale Prices Current, in Dollars & Cents' French Weight & Measure, except in Selling Liquors by Wholesale.",
+  "layout": "generic",
+  "cells": [
+   "",
+   "D.",
+   "C."
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn84038147_1808-06-10_1.pdf_/page/2/Table/11",
+  "table_no": 0,
+  "row_no": 26,
+  "filename": "sn84038147_1808-06-10_1.pdf",
+  "newspaper_id": "sn84038147",
+  "issue_date": "1808-06-10",
+  "page_number": 2,
+  "heading_as_printed": "From the Orleans Gazette of April 30. **New-Orleans Price Current.** Wholesale Prices Current, in Dollars & Cents' French Weight & Measure, except in Selling Liquors by Wholesale.",
+  "layout": "generic",
+  "cells": [
+   "Lumber, 1000 etc.",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "WHOLESALE PRICE CURRENT.",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 1,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "NORFOLK, SATURDAY, APRIL 15, 1809.",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 2,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "ARTICLES.",
+   "Per",
+   "From",
+   "To",
+   "Remark"
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 8,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "4th p.",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 14,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Ship,",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 15,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Butter, Export.",
+   "lb.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 19,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Virginia",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 21,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Carracas",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 25,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Sea-Island",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 26,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "St. Domingo",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 27,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Duck, American",
+   "bolt.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 31,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "No. 1 to 7, English",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 34,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Middlings",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 37,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Fustick",
+   "ton.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 39,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "N. E. 1st p.",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 40,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Grain, Wheat",
+   "bus.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 42,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Oats",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 46,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Indigo,",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 47,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Iron, Pig",
+   "ton.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 48,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "American ref.",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 49,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Russia",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 52,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Meal, Kiln-dried",
+   "bbl.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 54,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "St. Dom.",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 57,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Pepper,",
+   "lb.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 66,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Rosin,",
+   "bbl.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 70,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Salt, St. Martins,",
+   "bus.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 89,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Tallow, Russia",
+   "lb.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn85025815_1809-04-15_1.pdf_/page/0/Table/4",
+  "table_no": 0,
+  "row_no": 94,
+  "filename": "sn85025815_1809-04-15_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1809-04-15",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Lisbon,",
+   "gal.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn83025887_1793-01-16_1.pdf_/page/3/Table/35",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn83025887_1793-01-16_1.pdf",
+  "newspaper_id": "sn83025887",
+  "issue_date": "1793-01-16",
+  "page_number": 3,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "PRICE CURRENT.",
+   "",
+   "Dollars. Cents.",
+   ""
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn83025887_1793-01-16_1.pdf_/page/3/Table/35",
+  "table_no": 0,
+  "row_no": 7,
+  "filename": "sn83025887_1793-01-16_1.pdf",
+  "newspaper_id": "sn83025887",
+  "issue_date": "1793-01-16",
+  "page_number": 3,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Beer, American in bottles",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn83025887_1793-02-13_1.pdf_/page/3/Table/6",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn83025887_1793-02-13_1.pdf",
+  "newspaper_id": "sn83025887",
+  "issue_date": "1793-02-13",
+  "page_number": 3,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "PRICE CURRENT.",
+   "",
+   "Dollars.",
+   "Cents."
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn83021127_1783-07-03_1.pdf_/page/2/Table/11",
+  "table_no": 0,
+  "row_no": 30,
+  "filename": "sn83021127_1783-07-03_1.pdf",
+  "newspaper_id": "sn83021127",
+  "issue_date": "1783-07-03",
+  "page_number": 2,
+  "heading_as_printed": "NEW-YORK, June 25. Extract from the London Price Current, of May 2d, the whole of which may be seen at J. Rivington's.",
+  "layout": "generic",
+  "cells": [
+   "Three per Cent. Consols, Stock 68.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn83021127_1783-07-03_1.pdf_/page/2/Table/11",
+  "table_no": 0,
+  "row_no": 31,
+  "filename": "sn83021127_1783-07-03_1.pdf",
+  "newspaper_id": "sn83021127",
+  "issue_date": "1783-07-03",
+  "page_number": 2,
+  "heading_as_printed": "NEW-YORK, June 25. Extract from the London Price Current, of May 2d, the whole of which may be seen at J. Rivington's.",
+  "layout": "generic",
+  "cells": [
+   "India Stock 139.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn83025442_1810-07-27_1.pdf_/page/0/Table/12",
+  "table_no": 0,
+  "filename": "sn83025442_1810-07-27_1.pdf",
+  "issue_date": "1810-07-27",
+  "reason": "table_no_digits",
+  "heading_as_printed": "",
+  "text": "[[\"Discount Days.\", \"\"], [\"At Providence Bank,\", \"Monday.\"], [\"— Roger Williams Bank,\", \"Wednesday.\"], [\"— Exchange Bank,\", \"Friday.\"]]"
+ },
+ {
+  "block_uid": "sn83025442_1810-10-05_1.pdf_/page/0/Table/12",
+  "table_no": 0,
+  "filename": "sn83025442_1810-10-05_1.pdf",
+  "issue_date": "1810-10-05",
+  "reason": "table_no_digits",
+  "heading_as_printed": "",
+  "text": "[[\"Discount Days.\", \"\"], [\"At Providence Bank,\", \"Monday.\"], [\"— Roger Williams Bank,\", \"Wednesday.\"], [\"— Exchange Bank,\", \"Friday.\"]]"
+ },
+ {
+  "block_uid": "sn83030493_1781-06-04_1.pdf_/page/0/Table/12",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn83030493_1781-06-04_1.pdf",
+  "newspaper_id": "sn83030493",
+  "issue_date": "1781-06-04",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "PRICE CURRENT, in NEW-YORK.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84023378_1800-12-09_1.pdf_/page/2/Table/15",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn84023378_1800-12-09_1.pdf",
+  "newspaper_id": "sn84023378",
+  "issue_date": "1800-12-09",
+  "page_number": 2,
+  "heading_as_printed": "THOMAS CLAPHAM, Secretary. PRICES CURRENT AT CAPE FRANCOIS, November 3d.",
+  "layout": "generic",
+  "cells": [
+   "American Produce.",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84023378_1800-12-09_1.pdf_/page/2/Table/15",
+  "table_no": 0,
+  "row_no": 14,
+  "filename": "sn84023378_1800-12-09_1.pdf",
+  "newspaper_id": "sn84023378",
+  "issue_date": "1800-12-09",
+  "page_number": 2,
+  "heading_as_printed": "THOMAS CLAPHAM, Secretary. PRICES CURRENT AT CAPE FRANCOIS, November 3d.",
+  "layout": "generic",
+  "cells": [
+   "All kinds of Liquors, such as Gin, Brandy, and Rum, are high—Claret Wine from 52 a 56 dols.",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84023378_1800-12-09_1.pdf_/page/2/Table/15",
+  "table_no": 0,
+  "row_no": 15,
+  "filename": "sn84023378_1800-12-09_1.pdf",
+  "newspaper_id": "sn84023378",
+  "issue_date": "1800-12-09",
+  "page_number": 2,
+  "heading_as_printed": "THOMAS CLAPHAM, Secretary. PRICES CURRENT AT CAPE FRANCOIS, November 3d.",
+  "layout": "generic",
+  "cells": [
+   "Island Produce.",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024013_1810-08-15_1.pdf_/page/2/Table/5",
+  "reason": "no_markdown_table_found",
+  "text": "Philadelphia Price Current. FOR AUGUST, 1808. FOR AUGUST 1810. Flour \\$5 11 50 Wheat 1 2 20 Rye 60 1 13 Indian Corn 50 85 Rice 2 25 3 50 Tobacco 5 7 Tar 1 75 2 25 Turpentine 2 75 3 50 Whiskey 39 66 Ship building nominal, at \\$20 per ton at 30 to 35\\$ per ton Seamen begging Fully employed at 22 to 25"
+ },
+ {
+  "block_uid": "sn84024736_1810-02-01_1.pdf_/page/0/Table/5",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn84024736_1810-02-01_1.pdf",
+  "newspaper_id": "sn84024736",
+  "issue_date": "1810-02-01",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "RICHMOND PRICES CURRENT.",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024736_1810-02-01_1.pdf_/page/0/Table/5",
+  "table_no": 0,
+  "row_no": 1,
+  "filename": "sn84024736_1810-02-01_1.pdf",
+  "newspaper_id": "sn84024736",
+  "issue_date": "1810-02-01",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "",
+   "D.",
+   "C."
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn84024736_1810-03-06_1.pdf_/page/0/Table/5",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn84024736_1810-03-06_1.pdf",
+  "newspaper_id": "sn84024736",
+  "issue_date": "1810-03-06",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "RICHMOND PRICES CURRENT.",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024736_1810-03-06_1.pdf_/page/0/Table/5",
+  "table_no": 0,
+  "row_no": 1,
+  "filename": "sn84024736_1810-03-06_1.pdf",
+  "newspaper_id": "sn84024736",
+  "issue_date": "1810-03-06",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "",
+   "D.",
+   "C."
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn84024736_1810-03-13_1.pdf_/page/0/Table/5",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn84024736_1810-03-13_1.pdf",
+  "newspaper_id": "sn84024736",
+  "issue_date": "1810-03-13",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "RICHMOND PRICES CURRENT.",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024736_1810-03-13_1.pdf_/page/0/Table/5",
+  "table_no": 0,
+  "row_no": 1,
+  "filename": "sn84024736_1810-03-13_1.pdf",
+  "newspaper_id": "sn84024736",
+  "issue_date": "1810-03-13",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "",
+   "D.",
+   "C."
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn84024736_1810-03-20_1.pdf_/page/0/Table/5",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn84024736_1810-03-20_1.pdf",
+  "newspaper_id": "sn84024736",
+  "issue_date": "1810-03-20",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "RICHMOND PRICES CURRENT.",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024736_1810-03-20_1.pdf_/page/0/Table/5",
+  "table_no": 0,
+  "row_no": 1,
+  "filename": "sn84024736_1810-03-20_1.pdf",
+  "newspaper_id": "sn84024736",
+  "issue_date": "1810-03-20",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "",
+   "D.",
+   "C."
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn84024736_1810-05-18_1.pdf_/page/0/Table/5",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn84024736_1810-05-18_1.pdf",
+  "newspaper_id": "sn84024736",
+  "issue_date": "1810-05-18",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "RICHMOND PRICES CURRENT.",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024736_1810-05-18_1.pdf_/page/0/Table/5",
+  "table_no": 0,
+  "row_no": 1,
+  "filename": "sn84024736_1810-05-18_1.pdf",
+  "newspaper_id": "sn84024736",
+  "issue_date": "1810-05-18",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "",
+   "D.",
+   "C."
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn84024736_1810-10-02_1.pdf_/page/0/Table/5",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn84024736_1810-10-02_1.pdf",
+  "newspaper_id": "sn84024736",
+  "issue_date": "1810-10-02",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "RICHMOND PRICES CURRENT.",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024736_1810-10-02_1.pdf_/page/0/Table/5",
+  "table_no": 0,
+  "row_no": 1,
+  "filename": "sn84024736_1810-10-02_1.pdf",
+  "newspaper_id": "sn84024736",
+  "issue_date": "1810-10-02",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "",
+   "D.",
+   "C."
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn84024736_1810-10-23_1.pdf_/page/0/Table/5",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn84024736_1810-10-23_1.pdf",
+  "newspaper_id": "sn84024736",
+  "issue_date": "1810-10-23",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "RICHMOND PRICES CURRENT.",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024736_1810-10-23_1.pdf_/page/0/Table/5",
+  "table_no": 0,
+  "row_no": 1,
+  "filename": "sn84024736_1810-10-23_1.pdf",
+  "newspaper_id": "sn84024736",
+  "issue_date": "1810-10-23",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "",
+   "D.",
+   "C."
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn84024736_1810-12-04_1.pdf_/page/0/Table/5",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn84024736_1810-12-04_1.pdf",
+  "newspaper_id": "sn84024736",
+  "issue_date": "1810-12-04",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "RICHMOND PRICES CURRENT.",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn84024736_1810-12-04_1.pdf_/page/0/Table/5",
+  "table_no": 0,
+  "row_no": 1,
+  "filename": "sn84024736_1810-12-04_1.pdf",
+  "newspaper_id": "sn84024736",
+  "issue_date": "1810-12-04",
+  "page_number": 0,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "",
+   "D. C."
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn84024736_1810-12-11_1.pdf_/page/0/Table/5",
+  "reason": "no_markdown_table_found",
+  "text": "RICHMOND PRICES CURRENT. TABLE: TOBACCO, FLOUR—SUPERFINE, DO. FINE, CORN, PER BARREL, WHEAT, BACON, PER LB., WHISKY, PER GALLON, BAR IRON, PER TON, HEMP, PER TON."
+ },
+ {
+  "block_uid": "sn85025815_1810-08-22_1.pdf_/page/2/Table/22",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn85025815_1810-08-22_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1810-08-22",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "PHILADELPHIA PRICES CURRENT.",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1810-08-22_1.pdf_/page/2/Table/22",
+  "table_no": 0,
+  "row_no": 11,
+  "filename": "sn85025815_1810-08-22_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1810-08-22",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Ship building,",
+   "",
+   "In activity"
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn85025815_1810-09-14_1.pdf_/page/2/Table/31",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn85025815_1810-09-14_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1810-09-14",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "WHOLESALE PRICE CURRENT.",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1810-09-14_1.pdf_/page/2/Table/31",
+  "table_no": 0,
+  "row_no": 1,
+  "filename": "sn85025815_1810-09-14_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1810-09-14",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "NORFOLK, FRIDAY SEPT. 14. 1810.",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1810-09-14_1.pdf_/page/2/Table/31",
+  "table_no": 0,
+  "row_no": 2,
+  "filename": "sn85025815_1810-09-14_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1810-09-14",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "ARTICLES.",
+   "Per",
+   "From",
+   "To",
+   "Remark."
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn85025815_1810-09-14_1.pdf_/page/2/Table/31",
+  "table_no": 0,
+  "row_no": 13,
+  "filename": "sn85025815_1810-09-14_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1810-09-14",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Cocoa, Carracas",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1810-09-14_1.pdf_/page/2/Table/31",
+  "table_no": 0,
+  "row_no": 21,
+  "filename": "sn85025815_1810-09-14_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1810-09-14",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "No. 1 to 7, English",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1810-09-14_1.pdf_/page/2/Table/31",
+  "table_no": 0,
+  "row_no": 40,
+  "filename": "sn85025815_1810-09-14_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1810-09-14",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Peas, Black-eyed bus.",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1810-09-14_1.pdf_/page/2/Table/31",
+  "table_no": 0,
+  "row_no": 41,
+  "filename": "sn85025815_1810-09-14_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1810-09-14",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Pepper,",
+   "lb.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn85025815_1810-09-14_1.pdf_/page/2/Table/31",
+  "table_no": 0,
+  "row_no": 73,
+  "filename": "sn85025815_1810-09-14_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1810-09-14",
+  "page_number": 2,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Lisbon, gal.",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1810-09-21_1.pdf_/page/1/Table/0",
+  "table_no": 0,
+  "row_no": 0,
+  "filename": "sn85025815_1810-09-21_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1810-09-21",
+  "page_number": 1,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "WHOLESALE PRICE CURRENT.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1810-09-21_1.pdf_/page/1/Table/0",
+  "table_no": 0,
+  "row_no": 1,
+  "filename": "sn85025815_1810-09-21_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1810-09-21",
+  "page_number": 1,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "NORFOLK, FRIDAY, SEPT. 21, 1810.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1810-09-21_1.pdf_/page/1/Table/0",
+  "table_no": 0,
+  "row_no": 2,
+  "filename": "sn85025815_1810-09-21_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1810-09-21",
+  "page_number": 1,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "ARTICLES.",
+   "Per",
+   "From",
+   "To Remark."
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn85025815_1810-09-21_1.pdf_/page/1/Table/0",
+  "table_no": 0,
+  "row_no": 13,
+  "filename": "sn85025815_1810-09-21_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1810-09-21",
+  "page_number": 1,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Cocoa, Carraas",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1810-09-21_1.pdf_/page/1/Table/0",
+  "table_no": 0,
+  "row_no": 21,
+  "filename": "sn85025815_1810-09-21_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1810-09-21",
+  "page_number": 1,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "No. 1 to 7, English",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1810-09-21_1.pdf_/page/1/Table/0",
+  "table_no": 0,
+  "row_no": 40,
+  "filename": "sn85025815_1810-09-21_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1810-09-21",
+  "page_number": 1,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Peas, Black-eyed bus.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ },
+ {
+  "block_uid": "sn85025815_1810-09-21_1.pdf_/page/1/Table/0",
+  "table_no": 0,
+  "row_no": 41,
+  "filename": "sn85025815_1810-09-21_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1810-09-21",
+  "page_number": 1,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Pepper,",
+   "lb.",
+   "",
+   ""
+  ],
+  "reason": "no_numbers_in_row"
+ },
+ {
+  "block_uid": "sn85025815_1810-09-21_1.pdf_/page/1/Table/0",
+  "table_no": 0,
+  "row_no": 73,
+  "filename": "sn85025815_1810-09-21_1.pdf",
+  "newspaper_id": "sn85025815",
+  "issue_date": "1810-09-21",
+  "page_number": 1,
+  "heading_as_printed": "",
+  "layout": "generic",
+  "cells": [
+   "Lisbon, gal.",
+   "",
+   "",
+   ""
+  ],
+  "reason": "note_or_label_without_price"
+ }
+]

@@ -5,6 +5,7 @@ Derived values are arithmetic inside ONE currency system (s/d -> pence, dollars+
 """
 import csv, json, re, sys, collections
 obs_path, v2_path, out_path = sys.argv[1:4]
+md_path = sys.argv[4] if len(sys.argv) > 4 else None   # optional: clean/table_blocks_md.json (for two-date tables)
 obs = {(o["block_uid"], str(o["row_no"]), o["market_place"] or ""): o for o in json.load(open(obs_path))}
 TOK = re.compile(r"\d+\s*\d?/\d+|\d+")
 def val(t):
@@ -42,8 +43,8 @@ def split(T, cur):
         (a, b), (c, d) = T[:2], T[2:]
         sd = b < 12 and d < 12 and a < 20 and c < 20
         dc = b >= 10 and d >= 10 and b < 100 and d < 100
-        if cur == "lsd" and sd: kind = "sd"
-        elif cur == "dollars" and dc: kind = "dc"
+        if cur == "dollars" and b < 100 and d < 100 and b == int(b) and d == int(d): kind = "dc"
+        elif cur == "lsd" and sd: kind = "sd"
         elif cur == "unknown" and sd and not dc: kind = "sd"
         elif cur == "unknown" and dc and not sd: kind = "dc"
         else: return None, "n4_pair_type_ambiguous"
@@ -54,14 +55,29 @@ def split(T, cur):
         lo, hi = a + b / 100, c + d / 100
         if hi < lo: return None, "n4_high_lower_than_low"
         return dict(rule="dollars_cents_pairs", conf="medium", low=[a, b], high=[c, d], du="dollars", dl=lo, dh=hi), ""
+    if n == 3 and cur != "lsd":
+        a, b, c = T
+        cands = []
+        if b == int(b) and 5 <= b < 100 and a > 0: cands.append(("dollars_cents_then_dollars", [a, b], [c], a + b / 100, c))        # 9 50 10 -> 9.50 to 10
+        if c == int(c) and 5 <= c < 100 and a > 0: cands.append(("dollars_then_dollars_cents", [a], [b, c], a, b + c / 100))        # 4 4 50 -> 4 to 4.50
+        good = [x for x in cands if x[3] <= x[4] and x[4] / x[3] <= 2.5]
+        if len(good) == 1:
+            g = good[0]; return dict(rule="three_numbers_dollars_" + g[0], conf="low" if cur == "unknown" else "medium", low=g[1], high=g[2], du="dollars", dl=g[3], dh=g[4]), ""
+        return None, "n3_dollars_two_readings_possible" if len(good) > 1 else "n3_dollars_no_plausible_reading"
     if n == 3: return None, "n3_ambiguous_one_column_empty"   # 4-column s/d tables leave a column blank: only the image can say which
     return None, f"n{n}_ambiguous"
 
-ALLOWED_WORDS = {"cash", "scarce", "none", "nominal", "dull", "plenty", "demand", "about", "bush", "bushel", "barrel", "gallon", "hhds", "ditto", "pound", "quintal", "pipe", "ton"}
+ALLOWED_WORDS = {"cash", "scarce", "none", "nominal", "dull", "plenty", "demand", "about", "bush", "bushel", "barrel", "gallon", "hhds", "ditto", "pound", "quintal", "pipe", "ton", "quin", "quint", "quintl"}
 MARK_SD = re.compile(r"(\d+)\s*s\b\.?\s*(?:&|and)?\s*(\d+(?:\s*\d[/-]\d)?)\s*d\b", re.I)
 MARK_S = re.compile(r"(\d+)\s*s\b", re.I)
 MARK_PENCE_FRAC = re.compile(r"(\d+)\s*d\.?\s+(\d)[-/](\d)\b", re.I)    # '7d 1-2' = 7 1/2 pence
 rows = list(csv.DictReader(open(v2_path, encoding="utf-8")))
+TWO_DATE = set()
+if md_path:
+    for b in json.load(open(md_path)):
+        if re.search(r"For\s+\w+,?\s+1[78]\d\d.*For\s+\w+,?\s+1[78]\d\d", b["block_markdown"][:600], re.S): TWO_DATE.add(b["block_uid"])
+FIN = re.compile(r"pr\.?\s*(cents?|£)|certificates|indents|state debts|deferred", re.I)
+UNIT_STRIP = re.compile(r"\b\d+\s*lbs?\.?|quint'?l\.?|\bton\b|\bcwt\b\.?|\bbbl\b\.?|\bquin\.?|\bM\.", re.I)
 DC_BLOCKS = {x["block_uid"] for x in rows if re.search(r"\d\s*c\b", x["price_low_as_printed"] + " " + x["price_high_as_printed"])}
 new = ["split_rule", "split_confidence", "split_note", "price_low_parts", "price_high_parts", "price_low_derived", "price_high_derived", "derived_unit"]
 cnt = collections.Counter()
@@ -69,9 +85,17 @@ for r in rows:
     for c in new: r[c] = ""
     o = obs.get((r["block_uid"], r["row_no"], r["market_place"]), {})
     s = (o.get("suspect_fields") or {}).get("price_low", "")
+    if r["block_uid"] in TWO_DATE:   # every row of a two-year comparison table, compound or not
+        r["split_rule"], r["split_note"] = "two_dates_not_low_high", "table compares two different years (1808 and 1810): the two numbers are NOT low and high"; cnt["two_dates_not_low_high"] += 1; continue
     if not s.startswith("compound_number:"): continue
-    T = [val(t.replace(" ", " ")) for t in TOK.findall(s.split(":", 1)[1])]
+    _txt = UNIT_STRIP.sub(" ", r["price_low_as_printed"])
+    T = [val(t) for t in TOK.findall(_txt)]
+    if not T or len(T) > 6: T = [val(t) for t in TOK.findall(s.split(":", 1)[1])]
     low_txt, high_txt = r["price_low_as_printed"], r["price_high_as_printed"]
+    if r["block_uid"] in TWO_DATE:
+        r["split_rule"], r["split_note"] = "two_dates_not_low_high", "table compares two different years (1808 and 1810): the two numbers are NOT low and high"; cnt["two_dates_not_low_high"] += 1; continue
+    if FIN.search(r["item_as_printed"] + " " + low_txt):
+        r["split_rule"], r["split_note"] = "financial_not_goods", "public securities / bank quote: belongs in financial_quotes"; cnt["financial_not_goods"] += 1; continue
     res = None; why = ""
     # guard 1: words from a neighbouring column sit inside the price cell -> do not guess
     bad_words = [w for w in re.findall(r"[A-Za-z]{4,}", low_txt + " " + high_txt) if w.lower() not in ALLOWED_WORDS]

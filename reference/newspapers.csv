@@ -1,0 +1,7 @@
+newspaper_id,city,evidence,confidence
+sn84024710,Richmond,"masthead ""The Virginia Argus, Richmond"" seen in table image (1802, 1804)",high
+sn84024736,Richmond,"table title ""Richmond Prices Current"" (1807 image)",high
+sn85025815,Norfolk,"table title ""Wholesale Price-Current, Norfolk"" (1810 images)",high
+sn83030493,New York,"table title ""Price Current, in New-York"" (1781 image)",high
+sn84024012,Alexandria,"1808-01-25 table lists ""Alexandria Bank"" stocks; other issues of this id not verified",medium
+sn82014782,Lexington,Kentucky Gazette (title from file); masthead not yet checked,medium

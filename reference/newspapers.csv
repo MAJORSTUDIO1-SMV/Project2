@@ -1,7 +1,14 @@
-newspaper_id,city,evidence,confidence
-sn84024710,Richmond,"masthead ""The Virginia Argus, Richmond"" seen in table image (1802, 1804)",high
-sn84024736,Richmond,"table title ""Richmond Prices Current"" (1807 image)",high
-sn85025815,Norfolk,"table title ""Wholesale Price-Current, Norfolk"" (1810 images)",high
-sn83030493,New York,"table title ""Price Current, in New-York"" (1781 image)",high
-sn84024012,Alexandria,"1808-01-25 table lists ""Alexandria Bank"" stocks; other issues of this id not verified",medium
-sn82014782,Lexington,Kentucky Gazette (title from file); masthead not yet checked,medium
+newspaper_id,city,evidence,confidence,note
+sn82014782,Lexington,"Masthead 1800: ""The Kentucky Gazette... Lexington""",high,
+sn83016072,Portland,"Masthead 1802: ""Jenks' Portland Gazette, Maine Advertiser""",high,
+sn83016081,Portland,"1805: published by E. A. Jenks, Portland",high,
+sn83025588,Portsmouth,"Masthead 1802: New Hampshire Gazette, Portsmouth",high,
+sn83025881,Philadelphia,Masthead 1798: Gazette of the United States and Philadelphia Daily Advertiser,high,1796 table is a Boston reprint of London prices: city only a fallback
+sn83030483,New York (before 1790-11) / Philadelphia (after),"Masthead 1789: Gazette of the US (New York then); moved to Philadelphia late 1790 (outside knowledge, verify)",medium,city by issue date
+sn83030493,New York,"Masthead 1781: New-York Weekly Gazette, the Mercury",high,
+sn84023378,Portsmouth,"Masthead 1800: John Dearborn, The Republican Ledger, Portsmouth NH",high,
+sn84024012,Alexandria,Masthead 1804: Alexandria Daily Advertiser,high,
+sn84024710,Richmond,"Masthead 1805: Virginia Argus, Richmond",high,
+sn84024736,Richmond,"Masthead 1807: The Enquirer, Richmond",high,
+sn84026272,Philadelphia,"Masthead 1800: Gazette of the United States & Daily Advertiser, Philadelphia",high,"1800-07-02 table is titled ""Price Current, New-Brunswick"": printed market, not Philadelphia"
+sn85025815,Norfolk,Masthead 1809: Norfolk Gazette and Publick Ledger,high,Norfolk paper also reprints Philadelphia tables

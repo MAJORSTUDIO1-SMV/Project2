@@ -54,12 +54,15 @@ def split(T, cur):
         lo, hi = a + b / 100, c + d / 100
         if hi < lo: return None, "n4_high_lower_than_low"
         return dict(rule="dollars_cents_pairs", conf="medium", low=[a, b], high=[c, d], du="dollars", dl=lo, dh=hi), ""
-    if n == 3 and cur == "lsd" and T[1] < 20 and T[2] < 12:
-        pence = lambda x: x[0] * 240 + x[1] * 12 + x[2]
-        return dict(rule="lsd_three_numbers_single", conf="medium", low=T, high=None, du="pence", dl=pence(T), dh=None), ""
+    if n == 3: return None, "n3_ambiguous_one_column_empty"   # 4-column s/d tables leave a column blank: only the image can say which
     return None, f"n{n}_ambiguous"
 
+ALLOWED_WORDS = {"cash", "scarce", "none", "nominal", "dull", "plenty", "demand", "about", "bush", "bushel", "barrel", "gallon", "hhds", "ditto", "pound", "quintal", "pipe", "ton"}
+MARK_SD = re.compile(r"(\d+)\s*s\b\.?\s*(?:&|and)?\s*(\d+(?:\s*\d[/-]\d)?)\s*d\b", re.I)
+MARK_S = re.compile(r"(\d+)\s*s\b", re.I)
+MARK_PENCE_FRAC = re.compile(r"(\d+)\s*d\.?\s+(\d)[-/](\d)\b", re.I)    # '7d 1-2' = 7 1/2 pence
 rows = list(csv.DictReader(open(v2_path, encoding="utf-8")))
+DC_BLOCKS = {x["block_uid"] for x in rows if re.search(r"\d\s*c\b", x["price_low_as_printed"] + " " + x["price_high_as_printed"])}
 new = ["split_rule", "split_confidence", "split_note", "price_low_parts", "price_high_parts", "price_low_derived", "price_high_derived", "derived_unit"]
 cnt = collections.Counter()
 for r in rows:
@@ -68,13 +71,47 @@ for r in rows:
     s = (o.get("suspect_fields") or {}).get("price_low", "")
     if not s.startswith("compound_number:"): continue
     T = [val(t.replace(" ", " ")) for t in TOK.findall(s.split(":", 1)[1])]
-    res, why = split(T, r["currency_unit"])
+    low_txt, high_txt = r["price_low_as_printed"], r["price_high_as_printed"]
+    res = None; why = ""
+    # guard 1: words from a neighbouring column sit inside the price cell -> do not guess
+    bad_words = [w for w in re.findall(r"[A-Za-z]{4,}", low_txt + " " + high_txt) if w.lower() not in ALLOWED_WORDS]
+    if bad_words:
+        r["split_rule"], r["split_note"] = "unresolved", "text_in_price_cell:" + bad_words[0]; cnt["unresolved:text_in_price_cell"] += 1; continue
+    # guard 2: a pence mark with no readable shilling mark (e.g. '38 9d' may be '3s 9d') -> do not guess
+    # rule A: explicit marks decide  ('6s 6d', '22s. & 6d.')
+    # rule 0: tables written "1d 67c" = 1 DOLLAR 67 CENTS (d = dollars, c = cents), recognised table-wide
+    if r["block_uid"] in DC_BLOCKS:
+        amts = []
+        for m in re.finditer(r"(\d+)\s*d\b(?:\s*(\d+)\s*c\b)?", low_txt + " " + high_txt):
+            amts.append((int(m[1]), int(m[2]) if m[2] else 0))
+        if amts:
+            res = dict(rule="marked_dollars_cents", conf="high", low=list(amts[0]), high=list(amts[1]) if len(amts) > 1 else None, du="dollars",
+                       dl=amts[0][0] + amts[0][1] / 100, dh=(amts[1][0] + amts[1][1] / 100) if len(amts) > 1 else None)
+            if res["dh"] is not None and res["dh"] < res["dl"]: res = None
+    mk = MARK_SD.search(low_txt) if res is None else None
+    mp = MARK_PENCE_FRAC.search(low_txt) if res is None else None
+    if mk:
+        sh, pe = val(mk[1]), val(mk[2].replace("-", " ") if mk[2] else "0")
+        res = dict(rule="marked_shillings_pence", conf="high", low=[sh, pe], high=None, du="pence", dl=sh * 12 + pe, dh=None)
+        hm = MARK_SD.search(high_txt) or MARK_S.search(high_txt)
+        if hm:
+            hs = val(hm[1]); hp = val(hm[2]) if hm.lastindex and hm.lastindex >= 2 and hm[2] else 0
+            res["high"] = [hs, hp]; res["dh"] = hs * 12 + hp
+    elif mp:
+        pe = val(mp[1]) + int(mp[2]) / int(mp[3])
+        res = dict(rule="marked_pence_fraction", conf="high", low=[pe], high=None, du="pence", dl=pe, dh=None)
+    elif res is None and re.search(r"\d\s*d\b", low_txt) and not re.search(r"\d\s*s\b", low_txt):
+        r["split_rule"], r["split_note"] = "unresolved", "pence_mark_without_shilling_mark"; cnt["unresolved:pence_mark_without_shilling_mark"] += 1; continue
+    if res is None and len(T) == 3 and r["currency_unit"] == "lsd" and high_txt:
+        H = [val(t) for t in TOK.findall(high_txt)]
+        if len(H) == 3 and T[1] < 20 and T[2] < 12 and H[1] < 20 and H[2] < 12:
+            pence = lambda x: x[0] * 240 + x[1] * 12 + x[2]
+            if pence(H) >= pence(T):
+                res = dict(rule="lsd_three_plus_three", conf="medium", low=T, high=H, du="pence", dl=pence(T), dh=pence(H))
+    if res is None:
+        res, why = split(T, r["currency_unit"])
     if res is None:
         r["split_rule"], r["split_note"] = "unresolved", why; cnt["unresolved:" + why] += 1; continue
-    if res["rule"] == "lsd_three_numbers_single" and r["price_high_as_printed"]:
-        H = [val(t) for t in TOK.findall(r["price_high_as_printed"])]
-        if len(H) == 3 and H[1] < 20 and H[2] < 12:
-            res["high"] = H; res["dh"] = H[0] * 240 + H[1] * 12 + H[2]; res["rule"] = "lsd_three_plus_three"
     r["split_rule"], r["split_confidence"] = res["rule"], res["conf"]
     r["split_note"] = "inferred from number layout; check against image"
     r["price_low_parts"] = "-".join(fmt(x) for x in res["low"]); r["price_high_parts"] = "-".join(fmt(x) for x in res["high"]) if res["high"] else ""

@@ -1,0 +1,729 @@
+/* story_v1.css — final story page (copied from style_v3.css on 2026-11-24, overrides at the end).
+   Fonts (2026-11-24, Sara): Jost = titles, texts, buttons, map (geometric, Century Gothic style);
+   DM Mono = receipts only (typewriter idea, cleaner). Change them in the STORY :root block below. */
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+
+:root {
+  /* page = the sea of the drawn maps, so the map has no box around it */
+  --sea: #9daec2;
+  --ink: #16202b;          /* main text on the blue */
+  --ink-2: #33404f;        /* secondary text on the blue */
+  --card: #fdfdfb;         /* receipt paper: white, not sepia */
+  --card-ink: #1b1b1b;
+  --card-ink-2: #5d6168;
+  --rule: #c9ccd1;
+
+  --up: #2e7d32;           /* price went up (owner's choice: green) */
+  --down: #b3261e;         /* price went down (red) */
+
+  /* region colors sampled from the drawn maps */
+  --ne: #6b4768;
+  --ma: #60867b;
+  --so: #c18f38;
+  --br: #b25b78;
+  --op: #5f6b78;
+
+  --font-title: 'Libre Caslon Display', 'Libre Caslon Text', Georgia, serif;
+  --font-serif: 'Libre Caslon Text', Georgia, serif;
+  --font-text: 'Courier Prime', 'Courier New', monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  background: var(--sea);
+  color: var(--ink);
+  font-family: var(--font-text);
+  font-size: 16px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+
+button { font: inherit; }
+
+/* ============================================================
+   Title band (above the map)
+   ============================================================ */
+.top {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 18px 28px 8px;
+}
+.top__title { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 22px; }
+.top h1 {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: clamp(2.3rem, 3.6vw, 3.6rem);
+  line-height: 1;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+.top .subtitle {
+  font-size: 1.1rem;
+  margin: 0 0 10px;
+  color: var(--ink);
+}
+.steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 28px;
+  font-size: 1rem;
+  color: var(--ink-2);
+  counter-reset: step;
+}
+.steps li { counter-increment: step; }
+.steps li::before {
+  content: counter(step);
+  display: inline-grid;
+  place-items: center;
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 8px;
+  border: 1.5px solid var(--ink);
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.85em;
+  color: var(--ink);
+}
+
+/* ============================================================
+   Layout: map (+ controls) | receipt | periods (Period view only)
+   ============================================================ */
+.stage {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 470px;
+  gap: 24px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 28px 48px;
+  align-items: start;
+}
+.map-col { min-width: 0; }
+
+.receipt-col {
+  position: sticky;
+  top: 14px;
+  max-height: calc(100vh - 28px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+.receipt-col { padding: 4px 4px 24px; }
+
+@media (max-width: 1100px) {
+  .stage { grid-template-columns: minmax(0, 1fr); }
+  .receipt-col { position: static; max-height: none; overflow: visible; }
+}
+
+/* ============================================================
+   Map
+   ============================================================ */
+.map-wrapper {
+  position: relative;
+  /* as big as possible, but short enough that the controls stay on screen */
+  width: min(100%, calc((100vh - 290px) * 4 / 3));
+  min-width: min(100%, 620px);
+  margin: 0 auto;
+  aspect-ratio: 1600 / 1200;
+}
+.map-drawing {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.map-drawing.is-on { opacity: 1; }
+.map-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.map-region, .map-city-hit { cursor: pointer; }
+.map-region { fill: #fff; fill-opacity: 0; transition: fill-opacity 0.15s; }
+.map-region.is-hover { fill-opacity: 0.22; }
+.map-region:focus { outline: none; }
+
+/* labels drawn by the page (the drawings have no text) */
+.map-labels { pointer-events: none; }
+.lbl-region {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 0.04em;
+  fill: var(--ink);
+  paint-order: stroke;
+  stroke: #f4f2ec;
+  stroke-width: 7px;
+  stroke-linejoin: round;
+}
+.lbl-region.is-selected { font-size: 44px; }
+.lbl-city {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 25px;
+  fill: var(--ink);
+  paint-order: stroke;
+  stroke: #f4f2ec;
+  stroke-width: 5px;
+  stroke-linejoin: round;
+}
+.lbl-context {
+  font-family: var(--font-serif);
+  font-size: 19px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  fill: #6b665f;
+}
+.lbl-context-sub { font-family: var(--font-serif); font-style: italic; font-size: 17px; fill: #7a756d; }
+.lbl-water {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 28px;
+  letter-spacing: 0.3em;
+  fill: #50637a;
+}
+.lbl-inset {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 30px;
+  fill: var(--ink);
+}
+
+.map-tip {
+  position: fixed;
+  z-index: 60;
+  pointer-events: none;
+  background: var(--ink);
+  color: #fff;
+  font-family: var(--font-text);
+  font-size: 0.85rem;
+  padding: 6px 10px;
+  border-radius: 3px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+.map-tip.is-on { opacity: 1; }
+
+/* ============================================================
+   Controls (below the map, centered)
+   ============================================================ */
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 6px;
+}
+.ctl-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.ctl-row[hidden] { display: none; }
+
+.btn {
+  font-family: var(--font-text);
+  font-size: 0.95rem;
+  padding: 7px 14px;
+  border: 1.5px solid var(--ink);
+  border-radius: 3px;
+  background: var(--card);
+  color: var(--ink);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.btn:hover { background: #e9edf2; }
+.btn:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+.btn[aria-pressed="true"] { background: var(--ink); color: #fff; }
+.btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* region buttons carry their map color */
+.btn--region { font-weight: 700; padding: 8px 16px; border-width: 2px; }
+.btn--region::before {
+  content: '';
+  display: inline-block;
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 50%;
+  margin-right: 8px;
+  background: var(--c);
+  vertical-align: 0;
+}
+.btn--region[aria-pressed="true"] { background: var(--c); border-color: var(--c); color: #fff; }
+.btn--region[aria-pressed="true"]::before { background: #fff; }
+.btn--region.btn--so[aria-pressed="true"] { color: #1b1b1b; }
+.btn--region.btn--so[aria-pressed="true"]::before { background: #1b1b1b; }
+.btn--ne { --c: var(--ne); }
+.btn--ma { --c: var(--ma); }
+.btn--so { --c: var(--so); }
+.btn--br { --c: var(--br); }
+
+.btn--city { font-size: 0.88rem; padding: 5px 12px; }
+
+.ctl-label {
+  font-family: var(--font-title);
+  font-size: 1.55rem;
+  min-width: 9ch;
+  text-align: center;
+  line-height: 1.1;
+}
+.ctl-slider {
+  width: 260px;
+  accent-color: var(--ink);
+  cursor: pointer;
+}
+.ctl-select {
+  font-family: var(--font-text);
+  font-size: 0.95rem;
+  padding: 6px 8px;
+  border: 1.5px solid var(--ink);
+  border-radius: 3px;
+  background: var(--card);
+  color: var(--ink);
+  min-width: 200px;
+}
+.ctl-hint { font-size: 0.85rem; color: var(--ink-2); margin: 0; }
+
+/* ============================================================
+   Receipt (Byrne-like: flat color band, clean white card)
+   ============================================================ */
+.r-card {
+  position: relative;
+  background: var(--card);
+  color: var(--card-ink);
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(20, 30, 45, 0.12), 0 8px 24px rgba(20, 30, 45, 0.14);
+  overflow: hidden;
+}
+.r-band { padding: 16px 22px 14px; color: #fff; }
+.r-band--ne { background: var(--ne); }
+.r-band--ma { background: var(--ma); }
+.r-band--so { background: var(--so); color: #1b1b1b; }
+.r-band--br { background: var(--br); }
+.r-band--op { background: var(--op); }
+.r-band__title {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.05;
+  margin: 0;
+}
+.r-band__sub { margin: 6px 0 0; font-size: 1rem; }
+
+.r-body { padding: 14px 22px 18px; position: relative; }
+.r-meta, .r-count { margin: 0 0 4px; font-size: 0.85rem; color: var(--card-ink-2); }
+.r-count { margin-bottom: 8px; }
+
+.r-section {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 16px 0 4px;
+  padding-bottom: 3px;
+  border-bottom: 1.5px solid var(--card-ink);
+}
+
+.r-line {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 4px 4px;
+  margin: 0 -4px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.r-line:hover, .r-line:focus-visible { background: #eef1f4; outline: none; }
+.r-line.is-static { cursor: default; }
+.r-line.is-static:hover { background: none; }
+.r-line__name { white-space: nowrap; }
+.r-line__unit { font-size: 0.8em; color: var(--card-ink-2); white-space: nowrap; }
+.r-line__dots { flex: 1; min-width: 12px; border-bottom: 1.5px dotted #a9adb3; transform: translateY(-4px); }
+.r-line__price { font-weight: 700; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.r-line__price.is-prov { font-weight: 400; color: #3f444b; }
+.r-line__chg { width: 4.6em; text-align: right; font-size: 0.82em; white-space: nowrap; font-weight: 700; }
+.r-line__chg.is-up { color: var(--up); }
+.r-line__chg.is-down { color: var(--down); }
+.r-line__chg.is-flat { color: var(--card-ink-2); font-weight: 400; }
+.r-line__flag { width: 1.1em; font-size: 0.8em; color: #8a5a00; cursor: help; }
+
+.r-notquoted { font-size: 0.82rem; color: var(--card-ink-2); margin: 12px 0 0; line-height: 1.5; }
+.r-notquoted__label { font-style: italic; }
+
+.r-trade { margin-top: 18px; border-top: 1.5px solid var(--card-ink); }
+.r-trade__toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--card-ink);
+  cursor: pointer;
+  text-align: left;
+}
+.r-trade__toggle:focus-visible { outline: 2px solid var(--card-ink); }
+.r-trade__icon {
+  display: inline-grid;
+  place-items: center;
+  width: 1.4em;
+  height: 1.4em;
+  border: 1.5px solid var(--card-ink);
+  border-radius: 50%;
+  font-family: var(--font-text);
+  font-size: 1rem;
+  letter-spacing: 0;
+}
+.r-trade__content[hidden] { display: none; }
+
+.r-foot { margin-top: 18px; padding-top: 10px; border-top: 1px solid var(--rule); font-size: 0.75rem; color: var(--card-ink-2); }
+.r-foot p { margin: 0 0 3px; }
+.r-foot__hint { font-style: italic; }
+
+/* empty receipt: blurred ghost lines + a clear note */
+.r-ghost { filter: blur(4px); opacity: 0.55; user-select: none; }
+.r-empty-note {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 30px;
+}
+.r-empty-note strong { font-family: var(--font-title); font-weight: 400; font-size: 1.5rem; }
+.r-empty-note p { margin: 8px 0 0; font-size: 0.95rem; max-width: 30ch; }
+
+.drill-link {
+  display: block;
+  margin: 14px auto 0;
+  background: var(--card);
+  border: 1.5px solid var(--ink);
+  border-radius: 3px;
+  padding: 8px 14px;
+  font-family: var(--font-text);
+  font-size: 0.95rem;
+  color: var(--ink);
+  cursor: pointer;
+}
+.drill-link:hover { background: #e9edf2; }
+
+/* ============================================================
+   Period text (only in Period view), under the controls
+   ============================================================ */
+.period-panel {
+  max-width: 760px;
+  margin: 18px auto 0;
+  background: var(--card);
+  color: var(--card-ink);
+  border-left: 6px solid var(--c, var(--ink));
+  border-radius: 2px;
+  padding: 14px 20px 16px;
+  box-shadow: 0 1px 2px rgba(20, 30, 45, 0.12), 0 6px 18px rgba(20, 30, 45, 0.12);
+}
+.period-panel[hidden] { display: none; }
+.period-panel__title { font-family: var(--font-title); font-weight: 400; font-size: 1.5rem; margin: 0 0 6px; }
+.period-panel__text { margin: 0; font-size: 0.95rem; line-height: 1.6; }
+
+/* ============================================================
+   Price chart popover
+   ============================================================ */
+.chart-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(22, 32, 43, 0.45);
+  display: grid;
+  place-items: center;
+  padding: 16px;
+}
+.chart-pop {
+  position: relative;
+  width: min(720px, 100%);
+  max-height: calc(100vh - 32px);
+  overflow: auto;
+  background: var(--card);
+  color: var(--card-ink);
+  border-radius: 2px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
+}
+.chart-pop__head { padding: 16px 56px 12px 22px; color: #fff; }
+.chart-pop__head.r-band--so { color: #1b1b1b; }
+.chart-pop__head h2 { font-family: var(--font-title); font-weight: 400; font-size: 2rem; margin: 0; line-height: 1.05; }
+.chart-pop__head p { margin: 4px 0 0; }
+.chart-pop__close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.85);
+  color: #1b1b1b;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.chart-pop__info { padding: 12px 22px 0; font-size: 0.88rem; }
+.chart-pop__info p { margin: 0 0 4px; }
+.chart-pop__printed { color: var(--card-ink-2); font-size: 0.8rem; }
+.chart-pop__chart { padding: 4px 12px 0; }
+.chart-svg { width: 100%; height: auto; display: block; font-family: var(--font-text); }
+.chart-axis text { font-family: var(--font-text); font-size: 12px; fill: var(--card-ink-2); }
+.chart-axis path, .chart-axis line { stroke: #9aa0a7; }
+.chart-period-line { stroke: #d7dade; stroke-dasharray: 3 3; }
+.chart-period-text { font-size: 11px; fill: #8b9097; }
+.chart-hl { fill: #f3e6a6; opacity: 0.75; }
+.chart-dot { cursor: crosshair; }
+.chart-pop__tip {
+  min-height: 3.2em;
+  margin: 0 22px;
+  font-size: 0.82rem;
+  color: var(--card-ink-2);
+  opacity: 0.25;
+}
+.chart-pop__tip.is-on { opacity: 1; color: var(--card-ink); }
+.chart-pop__tip strong, .chart-pop__tip span { display: block; }
+.chart-pop__legend { margin: 6px 22px 16px; font-size: 0.75rem; color: var(--card-ink-2); }
+.chart-pop__none { padding: 20px 10px; color: var(--card-ink-2); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
+
+/* phones: let long product names wrap instead of being cut */
+@media (max-width: 520px) {
+  .top { padding: 14px 16px 6px; }
+  .stage { padding: 0 16px 40px; }
+  .r-body { padding: 12px 14px 16px; }
+  .r-line__name { white-space: normal; }
+  .r-line__unit { display: none; }
+  .r-line__chg { width: 3.8em; }
+  .ctl-slider { width: 200px; }
+}
+
+/* ============================================================
+   Receipt header v2b: white paper, region color as INK
+   (title, rules and details in the region color; products and prices stay black)
+   ============================================================ */
+.r-card--ne { --rc: var(--ne); }
+.r-card--ma { --rc: #4f7468; }   /* a touch darker than the map green, to read on white */
+.r-card--so { --rc: #94671a; }   /* darker ochre: the map ochre is too light for small text */
+.r-card--br { --rc: #a24c69; }
+.r-card--op { --rc: var(--op); }
+
+.r-card .r-band,
+.chart-pop .chart-pop__head {
+  background: none;
+  color: var(--rc);
+  text-align: center;
+  padding: 22px 22px 12px;
+  margin: 0 22px;
+  border-bottom: 4px double var(--rc);
+}
+.r-card .r-band__title { font-size: 2.2rem; letter-spacing: 0.01em; }
+.r-card .r-band__sub {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 3px 0 0;
+  border-top: 1.5px solid var(--rc);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+}
+.chart-pop .chart-pop__head { padding-right: 56px; padding-left: 56px; }
+.chart-pop .chart-pop__close { background: none; color: var(--rc); }
+
+.r-card .r-meta,
+.r-card .r-count { color: var(--rc); text-align: center; }
+.r-card .r-section { color: var(--rc); border-bottom-color: var(--rc); }
+.r-card .r-line__dots { border-bottom-color: var(--rc); opacity: 0.55; }
+.r-card .r-notquoted__label { color: var(--rc); }
+.r-card .r-trade { border-top-color: var(--rc); }
+.r-card .r-trade__toggle { color: var(--rc); }
+.r-card .r-trade__icon { border-color: var(--rc); }
+.r-card .r-foot { border-top: 4px double var(--rc); color: var(--rc); }
+.r-card.r-card--empty .r-empty-note strong { color: var(--rc); }
+
+/* Receipt header v2c: structure of a printed receipt (title, centered lines, date row) */
+.r-head { padding: 26px 22px 6px; color: var(--rc); text-align: center; }
+.r-head__title { font-family: var(--font-title); font-weight: 400; font-size: 2.3rem; line-height: 1.05; margin: 0 0 12px; }
+.r-head__line { margin: 0 0 4px; font-size: 0.95rem; }
+.r-head__date {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 22px;
+  font-size: 0.95rem;
+  text-align: left;
+}
+.r-head__date span:last-child { text-align: right; }
+.r-card .r-body { padding-top: 4px; }
+
+.r-head__place span { white-space: nowrap; }
+
+/* ============================================================
+   STORY PAGE (2026-11-24) — overrides
+   ============================================================ */
+:root {
+  --font-ui: 'Jost', 'Century Gothic', 'Avenir Next', sans-serif;
+  --font-title: 'Jost', 'Century Gothic', sans-serif;
+  --font-serif: 'Jost', 'Century Gothic', sans-serif;
+  --font-text: 'DM Mono', 'Courier New', monospace;   /* receipts */
+  --pad: clamp(20px, 4vw, 64px);
+}
+body { font-family: var(--font-ui); }
+html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+
+/* --- navigation --- */
+.nav {
+  position: sticky; top: 0; z-index: 40;
+  display: flex; align-items: center; gap: 22px; flex-wrap: wrap;
+  padding: 12px var(--pad);
+  background: var(--sea);
+  border-bottom: 1.5px solid rgba(22, 32, 43, 0.25);
+  font-family: var(--font-ui);
+}
+.nav__title { font-family: var(--font-title); font-size: 1.3rem; margin-right: auto; color: var(--ink); text-decoration: none; }
+.nav a.nav__link { color: var(--ink); text-decoration: none; font-size: 0.95rem; letter-spacing: 0.04em; }
+.nav a.nav__link:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+/* --- sections --- */
+.sec { margin: 0; padding: 64px var(--pad) 40px; }
+.sec + .sec { border-top: 1.5px solid rgba(22, 32, 43, 0.18); }
+.sec__kicker { font-family: var(--font-ui); text-transform: uppercase; letter-spacing: 0.16em; font-size: 0.8rem; margin: 0 0 8px; color: var(--ink-2); }
+.sec__title { font-family: var(--font-title); font-weight: 500; font-size: clamp(2.2rem, 4vw, 3.4rem); line-height: 1.05; margin: 0 0 16px; }
+.sec__lead { font-size: 1.15rem; font-weight: 300; max-width: 70ch; margin: 0 0 28px; }
+.sec p { max-width: 70ch; }
+
+/* --- intro --- */
+.intro { padding-top: 90px; padding-bottom: 70px; }
+.intro__title { font-family: var(--font-title); font-weight: 500; letter-spacing: -0.01em; font-size: clamp(3rem, 7vw, 5.6rem); line-height: 1; margin: 0 0 18px; }
+.intro__sub { font-size: 1.2rem; margin: 0 0 30px; }
+.intro__q { font-family: var(--font-title); font-weight: 300; font-size: 1.7rem; max-width: 34ch; margin: 0 0 22px; }
+.intro__map { display: flex; gap: 10px; flex-wrap: wrap; font-family: var(--font-ui); margin-top: 30px; }
+.intro__map a { display: block; padding: 10px 16px; border: 1.5px solid var(--ink); border-radius: 3px; color: var(--ink); text-decoration: none; background: var(--card); }
+.intro__map a span { display: block; font-size: 0.75rem; color: var(--ink-2); }
+
+/* --- placeholders (work in progress) --- */
+.ph {
+  border: 2px dashed rgba(22, 32, 43, 0.45);
+  border-radius: 4px;
+  background: rgba(253, 253, 251, 0.45);
+  padding: 22px 24px;
+  font-family: var(--font-ui);
+  color: var(--ink-2);
+}
+.ph__tag { display: inline-block; font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; background: var(--ink); color: #fff; padding: 3px 8px; border-radius: 2px; margin-bottom: 10px; }
+.ph h3 { font-family: var(--font-title); font-weight: 400; font-size: 1.6rem; color: var(--ink); margin: 0 0 6px; }
+.ph p { margin: 0 0 6px; }
+.ph img { display: block; max-width: 100%; margin-top: 12px; border-radius: 2px; }
+.ph-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+.finding { font-family: var(--font-title); font-weight: 400; font-size: 1.45rem; color: var(--ink); margin: 0 0 24px; max-width: 46ch; }
+
+/* --- receipts section: small map + controls | big receipt | period text --- */
+.stage {
+  grid-template-columns: 320px minmax(0, 1fr);
+  grid-template-areas: "map receipt" "panel receipt";
+  grid-template-rows: auto 1fr;
+  gap: 24px 48px;
+  max-width: none;
+  margin: 0;
+  padding: 0 var(--pad) 60px;
+}
+.map-col { grid-area: map; position: sticky; top: 64px; }
+.receipt-col { grid-area: receipt; position: static; max-height: none; overflow: visible; }
+.period-panel { grid-area: panel; align-self: start; }
+#receipt-container { max-width: 880px; margin: 0; }
+@media (min-width: 1450px) {
+  .stage { grid-template-columns: 320px minmax(0, 880px) minmax(260px, 1fr); grid-template-areas: "map receipt panel"; grid-template-rows: auto; }
+  .period-panel { position: sticky; top: 64px; margin-top: 0 !important; }
+}
+.map-wrapper { width: 100%; min-width: 0; }
+.controls { align-items: stretch; gap: 10px; margin-top: 10px; }
+.ctl-row { justify-content: flex-start; }
+.ctl-slider { width: 150px; }
+.ctl-label { font-size: 1.2rem; min-width: 0; }
+.map-caption { font-family: var(--font-ui); font-size: 0.9rem; margin: 6px 0 0; color: var(--ink); }
+.map-caption strong { font-weight: 400; font-size: 1.05rem; color: var(--c, var(--ink)); }
+
+.btn, .ctl-select, .drill-link { font-family: var(--font-ui); }
+.btn--region { font-weight: 400; padding: 6px 12px; font-size: 0.9rem; }
+.btn { font-size: 0.88rem; padding: 6px 12px; }
+.period-panel { margin: 14px 0 0; max-width: none; font-size: 0.85rem; padding: 14px 16px; }
+.period-panel__title { font-size: 1.3rem !important; }
+
+/* map labels: Jost, no white halo */
+.lbl-initial {
+  font-family: var(--font-ui);
+  font-size: 80px;
+  letter-spacing: 0.06em;
+  fill: #fff;            /* white letters (no halo) read on the grey and on the colored region */
+  opacity: 0.9;
+}
+.lbl-initial.is-selected { opacity: 1; font-size: 96px; font-weight: 700; }
+.lbl-port { font-family: var(--font-ui); font-size: 50px; fill: var(--ink); }
+.map-port-dot { fill: var(--ink); }
+.map-port-dot.is-main { fill: var(--c, var(--ink)); stroke: #fff; stroke-width: 4px; }
+
+/* bigger receipts */
+.r-card { font-size: 1.08rem; }
+.r-card .r-line { font-size: 1.05rem; padding: 5px 4px; }
+.r-head__title { font-size: 2.9rem; }
+.r-head__line, .r-head__date { font-size: 1.05rem; }
+
+/* period chart */
+.chart-pop { max-width: 760px; }
+.chart-band { fill: #f2f3f4; }
+.chart-band.is-current { fill: #f3e6a6; opacity: 0.8; }
+.chart-band-label { font-family: var(--font-ui); font-size: 13px; fill: #5d6168; }
+.chart-band-label.is-current { fill: #1b1b1b; font-weight: 700; }
+.chart-band-sub { font-family: var(--font-text); font-size: 11px; fill: #8b9097; }
+.chart-median { stroke-width: 4px; stroke-linecap: round; }
+.chart-median.is-current { stroke-width: 6px; }
+.chart-median-label { font-family: var(--font-text); font-size: 14px; font-weight: 700; paint-order: stroke; stroke: #fff; stroke-width: 5px; stroke-linejoin: round; }
+.chart-median-label.is-current { font-size: 17px; }
+.chart-n { font-family: var(--font-text); font-size: 10.5px; fill: #8b9097; }
+.chart-noprice { font-family: var(--font-ui); font-size: 12px; fill: #9aa0a7; font-style: italic; }
+
+/* data & sources */
+.limits { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px 40px; padding: 0; list-style: none; }
+.limits li { background: var(--card); color: var(--card-ink); padding: 16px 18px; border-radius: 2px; font-size: 0.95rem; }
+.limits strong { display: block; font-family: var(--font-ui); font-weight: 400; font-size: 1.05rem; margin-bottom: 4px; }
+.sources { font-size: 0.95rem; }
+.sources a { color: var(--ink); }
+.foot { margin: 0; padding: 30px var(--pad) 60px; font-family: var(--font-ui); font-size: 0.85rem; color: var(--ink-2); }
+
+@media (max-width: 900px) {
+  .stage { grid-template-columns: minmax(0, 1fr); grid-template-areas: "map" "receipt" "panel"; }
+  .map-col { position: static; max-width: 420px; margin: 0 auto; }
+}
+.map-ports { pointer-events: none; }
+
+/* Jost needs a bit more weight where Caslon Display was used */
+.r-head__title, .chart-pop__head h2, .period-panel__title, .r-empty-note strong { font-weight: 500; }
+.r-section, .r-trade__toggle { font-family: var(--font-ui); font-weight: 600; }
+.sec p, .intro p, .limits li, .sources { font-family: var(--font-ui); }
+.limits li { font-size: 1rem; }
+.period-panel__text { font-family: var(--font-ui); font-size: 0.95rem; }
+.lbl-initial.is-selected { font-weight: 600; }

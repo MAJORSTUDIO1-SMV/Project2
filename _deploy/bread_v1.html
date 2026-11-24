@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weighed by Law — The assize of bread, 1773–1810</title>
+  <link rel="stylesheet" href="assets/style_v2.css">
+  <link rel="stylesheet" href="assets/bread_v1.css">
+</head>
+<body>
+  <main class="bread-main">
+    <!-- Header -->
+    <header class="bread-header">
+      <p class="bread-header__subtitle">Revolution Prices · Bread station</p>
+      <h1 class="bread-header__title">Weighed by Law</h1>
+      <p class="bread-header__subtitle-small">The assize of bread, 1773–1810</p>
+      <p class="bread-header__lead">City officials printed the "assize of bread": the weight or the price a loaf had to have, set from the price of flour. When flour got dearer, the loaf shrank or its price went up.</p>
+    </header>
+
+    <!-- Navigation Panel -->
+    <section class="bread-nav" aria-label="Bread station navigation">
+      <div class="bread-nav__row">
+        <span class="bread-nav__label">Region</span>
+        <div class="bread-nav__chips" id="region-chips" role="radiogroup" aria-label="Region">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+      <div class="bread-nav__row">
+        <span class="bread-nav__label">City</span>
+        <div class="bread-nav__chips" id="city-chips" role="radiogroup" aria-label="City">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+      <div class="bread-nav__row">
+        <span class="bread-nav__label">Period</span>
+        <div class="bread-nav__chips" id="period-chips" role="radiogroup" aria-label="Period">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+      <div class="bread-nav__row">
+        <span class="bread-nav__label">Year</span>
+        <div class="bread-nav__chips" id="year-chips" role="radiogroup" aria-label="Year">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Two columns: Receipt + Shelf -->
+    <section class="bread-content" aria-label="Bread station content">
+      <!-- Left: Receipt card -->
+      <article class="bread-receipt" aria-label="Assize notice receipt" id="bread-receipt">
+        <div class="bread-receipt__placeholder">Select a notice to see the receipt</div>
+      </article>
+
+      <!-- Right: Shelf -->
+      <section class="bread-shelf" aria-label="What one coin bought" id="bread-shelf">
+        <div class="bread-shelf__placeholder">Select a notice to see the shelf</div>
+      </section>
+    </section>
+  </main>
+
+  <script src="data/bread_v2.js"></script>
+  <script src="assets/bread_v1.js"></script>
+</body>
+</html>

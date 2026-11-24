@@ -1,0 +1,529 @@
+/* Bread v1 styles — loads after style_v2.css */
+
+/* ===== CSS Custom Properties for Region Inks ===== */
+:root {
+  /* Region inks (from style_v2.css lines 21-25) */
+  --ink-ne: #6b4768;   /* New England */
+  --ink-ma: #60867b;   /* Mid-Atlantic */
+  --ink-so: #c18f38;   /* South */
+  --ink-br: #b25b78;   /* Britain */
+  --ink-op: #5f6b78;   /* Other */
+
+  /* Bread-specific colors */
+  --bread-bg: #9daec2;           /* Sea-blue background */
+  --shelf-brown: #6b4a2b;        /* Shelf line */
+  --crust-fill: #d9a35c;         /* Loaf crust fill */
+  --crust-stroke: #5a3a1c;       /* Loaf crust stroke */
+  --slash-stroke: #5a3a1c;       /* Loaf slash marks */
+  --coin-gold: #c8a24a;          /* Coin fill */
+  --coin-border: #7a5a1c;        /* Coin border */
+  --flour-bar: var(--c, var(--ink-ma)); /* Flour bar, defaults to Mid-Atlantic ink */
+  --flour-bar-estimate-border: var(--c, var(--ink-ma)); /* Estimate bar border */
+
+  /* Receipt colors (from style_v2.css) */
+  --card: #fdfdfb;
+  --card-ink: #1b1b1b;
+  --card-ink-2: #5d6168;
+  --rule: #c9ccd1;
+  --paper-edge: var(--rule);
+  --dashed-grey: #9aa5b1;        /* Dashed separator color */
+
+  /* Nav panel */
+  --nav-bg: rgba(255, 255, 255, 0.85);
+  --nav-border: #e0e4e8;
+  --chip-bg: #fff;
+  --chip-border: #c9ccd1;
+  --chip-hover: #eef1f4;
+  --chip-selected-text: #fff;
+  --chip-disabled: #c9ccd1;
+  --chip-disabled-text: #8a939c;
+
+  /* Typography (from style_v2.css) */
+  --font-title: 'Libre Caslon Display', 'Libre Caslon Text', Georgia, serif;
+  --font-serif: 'Libre Caslon Text', Georgia, serif;
+  --font-text: 'Courier Prime', 'Courier New', monospace;
+
+  /* Grey note color (accessibility: >= 4.5:1 on white) */
+  --note-grey: #4a5866;
+}
+
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bread-bg);
+  color: var(--card-ink);
+  font-family: var(--font-text);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===== Main layout ===== */
+.bread-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+/* ===== Header ===== */
+.bread-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.bread-header__subtitle {
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-2);
+  margin: 0 0 8px;
+}
+
+.bread-header__title {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: clamp(2.2rem, 3.5vw, 2.75rem);
+  color: var(--card-ink);
+  margin: 0 0 4px;
+  line-height: 1.2;
+}
+
+.bread-header__subtitle-small {
+  font-family: var(--font-text);
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  color: var(--card-ink-2);
+  margin: 0 0 12px;
+  font-weight: 400;
+}
+
+.bread-header__lead {
+  font-family: var(--font-text);
+  font-size: 1rem;
+  color: var(--card-ink-2);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ===== Navigation Panel ===== */
+.bread-nav {
+  background: var(--nav-bg);
+  border: 1px solid var(--nav-border);
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  backdrop-filter: blur(4px);
+}
+
+.bread-nav__row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.bread-nav__row:last-child {
+  margin-bottom: 0;
+}
+
+.bread-nav__label {
+  font-family: var(--font-serif);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-2);
+  min-width: 60px;
+  flex-shrink: 0;
+}
+
+.bread-nav__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+/* Chip buttons */
+.bread-chip {
+  appearance: none;
+  border: 1px solid var(--chip-border);
+  background: var(--chip-bg);
+  color: var(--card-ink);
+  font-family: var(--font-text);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: 999px;
+  min-height: 44px;
+  min-width: 44px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.bread-chip:hover:not(:disabled) {
+  background: var(--chip-hover);
+}
+
+.bread-chip:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+.bread-chip[aria-pressed="true"] {
+  background: var(--c, var(--ink-ma));
+  border-color: var(--c, var(--ink-ma));
+  color: var(--chip-selected-text);
+}
+
+.bread-chip[aria-pressed="true"]:focus-visible {
+  outline-color: var(--c, var(--ink-ma));
+}
+
+.bread-chip:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: var(--chip-disabled);
+  border-color: var(--chip-disabled);
+  color: var(--chip-disabled-text);
+}
+
+/* Region chip specific colors */
+.bread-chip--region[aria-pressed="true"] {
+  background: var(--c);
+  border-color: var(--c);
+  color: #fff;
+}
+
+.bread-chip--region[aria-pressed="true"]:focus-visible {
+  outline-color: var(--c);
+}
+
+/* South region has light text on selected */
+.bread-chip--region.bread-chip--so[aria-pressed="true"] {
+  color: #1b1b1b;
+}
+
+/* ===== Content layout ===== */
+.bread-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .bread-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== Receipt card ===== */
+.bread-receipt {
+  background: var(--card);
+  border-radius: 4px;
+  border-top: 6px solid var(--c, var(--ink-ma));
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.bread-receipt__placeholder {
+  padding: 40px 24px;
+  text-align: center;
+  color: var(--card-ink-2);
+  font-family: var(--font-text);
+  font-size: 0.95rem;
+}
+
+/* Receipt content */
+.bread-receipt__content {
+  padding: 24px;
+}
+
+/* Receipt header: "Assize of Bread" + city */
+.bread-receipt__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+
+.bread-receipt__title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--c, var(--ink-ma));
+  margin: 0;
+}
+
+.bread-receipt__city {
+  font-family: var(--font-text);
+  font-size: 0.9rem;
+  color: var(--card-ink-2);
+  margin: 0;
+  text-align: right;
+}
+
+/* Dashed separator */
+.bread-receipt__divider {
+  border: none;
+  border-top: 1px dashed var(--dashed-grey);
+  margin: 12px 0;
+}
+
+/* Field rows */
+.bread-receipt__field {
+  margin-bottom: 10px;
+}
+
+.bread-receipt__label {
+  font-family: var(--font-text);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--card-ink-2);
+  margin: 0 0 2px;
+}
+
+.bread-receipt__value {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--card-ink);
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* Printed price - big */
+.bread-receipt__price {
+  font-family: var(--font-title);
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-weight: 400;
+  color: var(--c, var(--ink-ma));
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Weight of loaf */
+.bread-receipt__weight {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 2.5vw, 1.875rem);
+  font-weight: 400;
+  color: var(--card-ink);
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Bread type line */
+.bread-receipt__bread-type {
+  font-family: var(--font-text);
+  font-size: 0.85rem;
+  color: var(--card-ink-2);
+  margin: 4px 0 0;
+}
+
+/* Price per pound section */
+.bread-receipt__ppp {
+  margin-top: 4px;
+}
+
+.bread-receipt__ppp-value {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  color: var(--card-ink);
+  margin: 0;
+}
+
+.bread-receipt__ppp-note {
+  font-family: var(--font-text);
+  font-size: 0.75rem;
+  color: var(--note-grey);
+  margin: 2px 0 0;
+}
+
+/* One coin bought */
+.bread-receipt__one-coin {
+  font-family: var(--font-text);
+  font-size: 0.9rem;
+  color: var(--card-ink);
+  margin: 8px 0 0;
+}
+
+/* Flour section */
+.bread-receipt__flour {
+  margin-top: 4px;
+}
+
+.bread-receipt__flour-label {
+  font-family: var(--font-text);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--card-ink-2);
+  margin: 0 0 2px;
+}
+
+.bread-receipt__flour-value {
+  font-family: var(--font-text);
+  font-size: 0.9rem;
+  color: var(--card-ink);
+  margin: 0;
+}
+
+.bread-receipt__flour-source {
+  font-family: var(--font-text);
+  font-size: 0.75rem;
+  color: var(--note-grey);
+  margin: 2px 0 0;
+}
+
+.bread-receipt__flour-note {
+  font-family: var(--font-text);
+  font-size: 0.75rem;
+  color: var(--note-grey);
+  margin: 2px 0 0;
+  font-style: italic;
+}
+
+/* Newspaper section */
+.bread-receipt__newspaper {
+  font-family: var(--font-text);
+  font-size: 0.85rem;
+  color: var(--card-ink-2);
+  margin: 0;
+}
+
+.bread-receipt__reprints {
+  font-family: var(--font-text);
+  font-size: 0.75rem;
+  color: var(--note-grey);
+  margin: 2px 0 0;
+}
+
+/* Link */
+.bread-receipt__link {
+  display: inline-block;
+  margin-top: 8px;
+  font-family: var(--font-text);
+  font-size: 0.85rem;
+  color: var(--ink);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.bread-receipt__link:hover {
+  color: var(--ink-2);
+}
+
+/* Hidden obs_id for checking */
+.bread-receipt__obs-id {
+  display: none;
+}
+
+/* ===== Receipt figure (loaf + coins) ===== */
+.bread-receipt__figure {
+  margin: 8px 0;
+}
+
+.bread-receipt__figure-pair {
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+  justify-content: center;
+}
+
+.bread-receipt__loaf-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bread-receipt__coins-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bread-loaf {
+  display: block;
+}
+
+.bread-receipt__figure-caption {
+  font-family: var(--font-text);
+  font-size: 0.75rem;
+  color: var(--note-grey);
+  margin: 8px 0 0;
+  text-align: center;
+  max-width: 200px;
+}
+
+.bread-coin-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bread-coin-stack__label {
+  font-family: var(--font-text);
+  font-size: 0.75rem;
+  color: var(--note-grey);
+  margin: 8px 0 0;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.bread-receipt__figure-none {
+  font-family: var(--font-text);
+  font-size: 0.85rem;
+  color: var(--note-grey);
+  text-align: center;
+  padding: 16px;
+  font-style: italic;
+}
+
+/* ===== Shelf placeholder ===== */
+.bread-shelf {
+  background: var(--card);
+  border-radius: 4px;
+  border-top: 6px solid var(--c, var(--ink-ma));
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  min-height: 300px;
+}
+
+.bread-shelf__placeholder {
+  padding: 40px 24px;
+  text-align: center;
+  color: var(--card-ink-2);
+  font-family: var(--font-text);
+  font-size: 0.95rem;
+}
+
+/* ===== Scrollable shelf row (for later) ===== */
+.bread-shelf__row {
+  overflow-x: auto;
+  padding: 16px;
+  padding-bottom: 40px; /* space for flour bars */
+}
+
+.bread-shelf__row::-webkit-scrollbar {
+  height: 8px;
+}
+
+.bread-shelf__row::-webkit-scrollbar-track {
+  background: var(--card);
+}
+
+.bread-shelf__row::-webkit-scrollbar-thumb {
+  background: var(--rule);
+  border-radius: 4px;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prices Current, 1770–1810</title>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=IM+Fell+Double+Pica:ital@0;1&display=swap" rel="stylesheet">
+<style>
+/* VOICE: a printer's advertisement column, polite and dense
+   IDEA: one column of an Early American newspaper: Prices Current + Assize of Bread
+   PICTURE: woodcut loaf at the top; goods as one run-on paragraph
+   COLOUR and TYPE: newsprint #F3EBD8, charcoal ink #1E1C1A; IM Fell
+   LAYOUT: a single 430px column framed by a double rule, printer's bars between sections */
+:root{color-scheme:light;--bg:#F3EBD8;--ink:#1E1C1A;--ink2:#4a443d}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:#d9cfb8;color:var(--ink);font:17px/1.42 'IM Fell English',Georgia,serif;overflow-x:clip}
+.page{min-height:100vh;display:flex;justify-content:center;padding:clamp(16px,4vw,48px) 12px}
+.col{width:min(100%,440px);background:var(--bg);border:3px double var(--ink);padding:18px 20px 22px;position:relative;
+ background-image:radial-gradient(circle at 18% 12%,rgba(150,110,60,.10) 0 30px,transparent 60px),radial-gradient(circle at 82% 64%,rgba(150,110,60,.08) 0 24px,transparent 52px),radial-gradient(circle at 40% 92%,rgba(150,110,60,.07) 0 18px,transparent 44px)}
+.spot{display:block;margin:2px auto 6px;width:120px;height:auto;color:var(--ink)}
+h1{font:400 30px/1 'IM Fell Double Pica',serif;text-align:center;margin:4px 0 2px;letter-spacing:.02em}
+.sub{text-align:center;font-style:italic;margin:0 0 6px}
+.sc{font-family:'IM Fell English SC',serif;letter-spacing:.04em}
+hr.bar{border:0;border-top:4px solid var(--ink);margin:10px 0 2px}
+hr.thin{border:0;border-top:1px solid var(--ink);margin:2px 0 10px}
+.per{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 12px;font-style:italic;font-size:15px;margin:6px 0}
+.per button{font:inherit;background:none;border:0;padding:6px 2px;cursor:pointer;color:var(--ink);min-height:36px}
+.per button[aria-pressed=true]{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+.per button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+p.run{text-align:justify;hyphens:auto;margin:0 0 8px}
+p.run b{font-weight:400;font-family:'IM Fell English SC',serif}
+.cap{font-size:22px;float:left;line-height:.9;margin:3px 4px 0 0;font-family:'IM Fell Double Pica',serif}
+.assize{text-align:center}
+.assize .big{font:400 24px/1.1 'IM Fell Double Pica',serif;margin:4px 0}
+.none{font-style:italic;text-align:center;color:var(--ink2)}
+.imprint{text-align:center;font-size:13px;font-style:italic;margin-top:10px}
+.note{font:13px/1.4 system-ui,sans-serif;color:#3d372f;margin:10px 0 0;text-align:center}
+</style>
+</head>
+<body>
+<div class="page"><div style="width:min(100%,440px)">
+<article class="col" aria-label="Prices Current and Assize of Bread">
+ <svg class="spot" viewBox="0 0 120 70" aria-hidden="true">
+  <defs><clipPath id="lc"><path d="M14 58 C14 20 38 12 60 12 C82 12 106 20 106 58 Z"/></clipPath></defs>
+  <g clip-path="url(#lc)" stroke="currentColor"><line x1="62" y1="30" x2="110" y2="30" stroke-width="1.6"/><line x1="58" y1="36" x2="110" y2="36" stroke-width="1.8"/><line x1="56" y1="42" x2="110" y2="42" stroke-width="2.2"/><line x1="54" y1="48" x2="110" y2="48" stroke-width="2.6"/><line x1="52" y1="54" x2="110" y2="54" stroke-width="3"/></g>
+  <path d="M14 58 C14 20 38 12 60 12 C82 12 106 20 106 58 Z" fill="none" stroke="currentColor" stroke-width="3"/>
+  <path d="M36 32 l10 -8 M56 27 l10 -8 M76 32 l10 -8" stroke="currentColor" stroke-width="2.6"/>
+  <rect x="6" y="58" width="108" height="4" fill="currentColor"/>
+ </svg>
+ <h1>PRICES CURRENT.</h1>
+ <p class="sub">With the <span class="sc">Assize of Bread</span>, for the Cities of <i>New-York</i> and <i>Philadelphia</i>.</p>
+ <div class="per" role="group" aria-label="Period" id="per"></div>
+ <hr class="bar"><hr class="thin">
+ <p class="run" id="intro"></p>
+ <p class="run" id="goods"></p>
+ <hr class="bar"><hr class="thin">
+ <div class="assize" id="assize"></div>
+ <hr class="bar"><hr class="thin">
+ <p class="imprint">Printed for the Publick, from the Prices Current of the Mid-Atlantic Newspapers, 1770–1810.</p>
+</article>
+<p class="note">Concept mockup in a 1770–1790 letterpress style. The wording is illustrative; every price is a real median of the printed prices (US$, ≈ = converted from pounds and shillings), and the bread figures come from real assize notices.</p>
+</div></div>
+<script>
+{
+const D={"corn (Indian)": {"s": "Grain & Flour", "u": "bushel", "v": [0.417, 0.953, 0.5, 0.573, 0.775], "n": [6, 30, 9, 18, 1], "pv": [1, 1, 1, 0, 0]}, "wheat": {"s": "Grain & Flour", "u": "bushel", "v": [0.771, 1.5, 0.906, 1.03, 1.7], "n": [10, 21, 11, 20, 3], "pv": [1, 1, 1, 1, 1]}, "beef": {"s": "Meat", "u": "barrel", "v": [6.0, 11.25, 6.812, 7.5, 11.25], "n": [12, 24, 18, 25, 4], "pv": [1, 1, 1, 1, 0]}, "oats": {"s": "Grain & Flour", "u": "bushel", "v": [null, 0.198, 0.312, 0.35, 0.445], "n": [0, 1, 2, 8, 3], "pv": [0, 1, 1, 0, 0]}, "rye": {"s": "Grain & Flour", "u": "bushel", "v": [null, 0.565, 0.562, 1.0, 0.7], "n": [0, 1, 9, 5, 1], "pv": [0, 1, 1, 1, 0]}, "butter": {"s": "Dairy", "u": "lb", "v": [null, 0.078, 0.12, 0.113, 0.158], "n": [0, 3, 6, 18, 1], "pv": [0, 1, 1, 0, 0]}, "cheese": {"s": "Dairy", "u": "lb", "v": [null, 0.039, null, 0.115, null], "n": [0, 3, 0, 15, 0], "pv": [0, 1, 0, 0, 0]}, "chocolate/cocoa": {"s": "Groceries", "u": "dozen", "v": [null, 3.25, null, null, null], "n": [0, 31, 0, 0, 0], "pv": [0, 1, 0, 0, 0]}, "coffee": {"s": "Groceries", "u": "lb", "v": [null, 0.125, 0.177, 0.185, 0.26], "n": [0, 5, 4, 22, 1], "pv": [0, 1, 1, 0, 0]}, "salt": {"s": "Groceries", "u": "bushel", "v": [null, 0.25, 0.219, 0.33, 1.06], "n": [0, 9, 6, 38, 8], "pv": [0, 1, 1, 0, 0]}, "tea": {"s": "Groceries", "u": "lb", "v": [null, 0.452, 0.833, 0.53, 1.01], "n": [0, 1, 13, 55, 6], "pv": [0, 1, 1, 0, 0]}, "sugar": {"s": "Sugar & Molasses", "u": "lb", "v": [null, 0.219, 0.151, 0.175, 0.28], "n": [0, 3, 5, 66, 3], "pv": [0, 1, 1, 0, 0]}, "brandy": {"s": "Wine & Spirits", "u": "gallon", "v": [null, 1.289, null, 0.95, 0.535], "n": [0, 1, 0, 26, 1], "pv": [0, 1, 0, 0, 0]}, "rum": {"s": "Wine & Spirits", "u": "gallon", "v": [null, 0.5, 0.539, 0.965, 1.1], "n": [0, 8, 19, 51, 7], "pv": [0, 1, 1, 0, 0]}, "wine": {"s": "Wine & Spirits", "u": "pipe", "v": [null, 140.0, null, 123.0, null], "n": [0, 4, 0, 25, 0], "pv": [0, 1, 0, 0, 0]}, "cotton": {"s": "Staples", "u": "lb", "v": [null, 0.129, 0.417, 0.33, 0.4], "n": [0, 1, 1, 24, 5], "pv": [0, 1, 1, 0, 0]}, "beans/peas": {"s": "Grain & Flour", "u": "bushel", "v": [null, null, 0.75, 0.73, null], "n": [0, 0, 3, 3, 0], "pv": [0, 0, 1, 0, 0]}, "ship bread": {"s": "Grain & Flour", "u": "cwt", "v": [null, null, 2.5, 3.071, 6.25], "n": [0, 0, 13, 8, 2], "pv": [0, 0, 1, 1, 0]}, "flour": {"s": "Grain & Flour", "u": "barrel", "v": [null, null, 5.125, 5.06, 9.5], "n": [0, 0, 28, 49, 8], "pv": [0, 0, 1, 1, 0]}, "rice": {"s": "Grain & Flour", "u": "cwt", "v": [null, null, 4.042, 2.88, 5.0], "n": [0, 0, 4, 10, 1], "pv": [0, 0, 1, 0, 0]}, "bacon/hams": {"s": "Meat", "u": "lb", "v": [null, null, 0.078, 0.095, 0.105], "n": [0, 0, 5, 34, 1], "pv": [0, 0, 1, 1, 0]}, "pork": {"s": "Meat", "u": "barrel", "v": [null, null, 11.458, 10.918, 20.0], "n": [0, 0, 10, 38, 1], "pv": [0, 0, 1, 0, 0]}, "molasses": {"s": "Sugar & Molasses", "u": "gallon", "v": [null, null, 0.24, 0.47, 0.55], "n": [0, 0, 6, 17, 1], "pv": [0, 0, 1, 0, 0]}, "wax": {"s": "Household", "u": "lb", "v": [null, null, 0.406, 0.215, 0.3], "n": [0, 0, 1, 10, 1], "pv": [0, 0, 1, 0, 0]}, "barley": {"s": "Grain & Flour", "u": "bushel", "v": [null, null, null, 1.015, 0.785], "n": [0, 0, 0, 13, 4], "pv": [0, 0, 0, 0, 0]}, "meal (corn/rye)": {"s": "Grain & Flour", "u": "barrel", "v": [null, null, null, 3.05, 4.75], "n": [0, 0, 0, 8, 6], "pv": [0, 0, 0, 0, 0]}, "lard": {"s": "Meat", "u": "lb", "v": [null, null, null, 0.095, 0.155], "n": [0, 0, 0, 11, 3], "pv": [0, 0, 0, 0, 0]}, "fish": {"s": "Fish", "u": "barrel", "v": [null, null, null, 6.0, 7.25], "n": [0, 0, 0, 5, 8], "pv": [0, 0, 0, 0, 0]}, "spices": {"s": "Groceries", "u": "lb", "v": [null, null, null, 0.295, 0.34], "n": [0, 0, 0, 32, 5], "pv": [0, 0, 0, 1, 0]}, "starch": {"s": "Groceries", "u": "lb", "v": [null, null, null, 0.07, 0.105], "n": [0, 0, 0, 4, 1], "pv": [0, 0, 0, 0, 0]}, "beer/cider": {"s": "Wine & Spirits", "u": "dozen", "v": [null, null, null, 1.6, null], "n": [0, 0, 0, 20, 0], "pv": [0, 0, 0, 0, 0]}, "gin": {"s": "Wine & Spirits", "u": "gallon", "v": [null, null, null, 1.4, 1.175], "n": [0, 0, 0, 19, 1], "pv": [0, 0, 0, 0, 0]}, "flax": {"s": "Staples", "u": "lb", "v": [null, null, null, 0.115, 0.13], "n": [0, 0, 0, 10, 1], "pv": [0, 0, 0, 0, 0]}, "tobacco": {"s": "Staples", "u": "cwt", "v": [null, null, null, 3.33, 5.75], "n": [0, 0, 0, 71, 7], "pv": [0, 0, 0, 0, 0]}, "candles/oil": {"s": "Household", "u": "gallon", "v": [null, null, null, 0.66, 4.41], "n": [0, 0, 0, 36, 6], "pv": [0, 0, 0, 0, 0]}, "soap": {"s": "Household", "u": "lb", "v": [null, null, null, 0.08, 0.13], "n": [0, 0, 0, 16, 3], "pv": [0, 0, 0, 0, 0]}, "ashes (pot/pearl)": {"s": "Naval Stores", "u": "ton", "v": [null, null, null, 120.0, null], "n": [0, 0, 0, 27, 0], "pv": [0, 0, 0, 1, 0]}, "cordage/canvas": {"s": "Naval Stores", "u": "cwt", "v": [null, null, null, 8.818, 15.75], "n": [0, 0, 0, 20, 5], "pv": [0, 0, 0, 1, 0]}}
+;
+const P=[['Colonial','1770–1775','the late Colonial Years'],['War','1776–1783','the late War'],['Confederation','1784–1789','the Years of the Confederation'],['1790s','1790–1799','the Seventeen-Nineties'],['1800–1810','1800–1810','the first Years of this Century']];
+const BREAD=[
+ {t:'In <i>Philadelphia</i>, December 1773, One Penny bought a white Loaf of',w:'6½ oz.',s:'from a Table of the Assize printed at Philadelphia'},
+ {t:'In <i>New-York</i>, February 1, 1779, the Loaf at Twenty-one Coppers was to weigh',w:'2 lb.',s:'New-York Gazette; and the Weekly Mercury'},
+ {t:'In <i>New-York</i>, October 30, 1787, the Six-penny Loaf of wheaten Bread was to weigh',w:'2 lb. 5 oz.',s:'and the Three-penny Loaf 1 lb. 2½ oz. · New-York Packet'},
+ null,null];
+const ORDER=['Grain & Flour','Meat','Dairy','Fish','Groceries','Sugar & Molasses','Wine & Spirits','Staples','Household'];
+const unit={bushel:'bushel',barrel:'barrel',lb:'pound',cwt:'hundredweight',gallon:'gallon',dozen:'dozen'};
+const cap=s=>s.replace(/(^|[\s\/(])([a-z])/g,(m,a,b)=>a+b.toUpperCase());
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let cur=2;
+function money(v,prov){return (prov?'≈ ':'')+'$'+v.toFixed(2)}
+function render(){
+ document.getElementById('per').innerHTML=P.map((p,i)=>`<button type="button" aria-pressed="${i===cur}" data-i="${i}">${p[0]}</button>`).join(' ');
+ document.querySelectorAll('#per button').forEach(b=>b.onclick=()=>{cur=+b.dataset.i;render()});
+ const items=Object.entries(D).filter(([k,e])=>e.v[cur]!=null).sort((a,b)=>ORDER.indexOf(a[1].s)-ORDER.indexOf(b[1].s));
+ document.getElementById('intro').innerHTML=`<span class="cap">T</span>HE Publick is respectfully informed that the following were the current Prices of Goods in the Ports of this Region during ${P[cur][2]}, <i>${P[cur][1]}</i>; ${items.length} Articles in all, being the Middle of the several Prices printed.`;
+ document.getElementById('goods').innerHTML=items.map(([k,e])=>`<b>${esc(cap(k))}</b>, ${money(e.v[cur],e.pv[cur])} the ${unit[e.u]||esc(e.u)}`).join('; ')+'.';
+ const b=BREAD[cur];
+ const a=document.getElementById('assize');a.hidden=!b;a.previousElementSibling.hidden=!b;a.previousElementSibling.previousElementSibling.hidden=!b;
+ a.innerHTML=b?'<div class="sc" style="font-size:19px">Assize of Bread.</div>'+`<p style="margin:4px 0">${b.t}</p><div class="big">${b.w}</div><p style="margin:0;font-style:italic;font-size:14px">${b.s}</p>`:'';
+}
+render();
+}
+</script>
+</body>
+</html>

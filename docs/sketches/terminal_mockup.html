@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Price Current Terminal</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* VOICE: an institutional trading desk, dense and exact
+   IDEA: the newspaper "prices current" read as a market terminal
+   PICTURE: the price chart of the selected good across the five periods, with prints below
+   COLOUR and TYPE: slate #0B0E11, panels #181C22, green #0ECB81 / red #F6465D, blue #2962FF; Inter + JetBrains Mono
+   LAYOUT: ribbon, then watchlist | chart | ticket, blotter across the bottom */
+:root{color-scheme:dark;--bg:#0B0E11;--pn:#181C22;--ln:#262C36;--tx:#EAECEF;--mu:#848E9C;--up:#0ECB81;--dn:#F6465D;--ac:#2962FF;--am:#F0B90B}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--tx);font:13px/1.4 Inter,system-ui,sans-serif;overflow-x:clip}
+.mono,td.n,.tick{font-family:'JetBrains Mono',monospace;font-variant-numeric:tabular-nums}
+header{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:8px 12px;border-bottom:1px solid var(--ln)}
+.brand{font-weight:600;letter-spacing:.02em}.brand span{color:var(--mu);font-weight:400}
+.tf{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+.tf button,.btn{font:500 12px Inter,sans-serif;color:var(--mu);background:var(--pn);border:1px solid var(--ln);border-radius:3px;padding:7px 10px;cursor:pointer;min-height:32px}
+.tf button[aria-pressed=true]{color:#fff;background:var(--ac);border-color:var(--ac)}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--am);outline-offset:1px}
+.ribbon{overflow:hidden;border-bottom:1px solid var(--ln);background:var(--pn);white-space:nowrap}
+.track{display:inline-flex;gap:28px;padding:7px 12px;animation:run 60s linear infinite}
+@media (prefers-reduced-motion:reduce){.track{animation:none}}
+@keyframes run{to{transform:translateX(-50%)}}
+.tick b{color:var(--tx);font-weight:500;margin-right:6px}.up{color:var(--up)}.dn{color:var(--dn)}.nw{color:var(--am)}
+.grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1.4fr) minmax(0,.85fr);gap:1px;background:var(--ln)}
+.pane{background:var(--pn);padding:10px 12px;min-height:0}
+.ph{display:flex;justify-content:space-between;align-items:baseline;color:var(--mu);font-size:11px;letter-spacing:.04em;margin-bottom:8px}
+.ph strong{color:var(--tx);font-size:13px;letter-spacing:0}
+.scroll{overflow:auto;max-height:470px}
+table{width:100%;border-collapse:collapse}
+th{position:sticky;top:0;background:var(--pn);color:var(--mu);font-weight:500;font-size:11px;text-align:right;padding:5px 6px;border-bottom:1px solid var(--ln);cursor:pointer;white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+td{padding:5px 6px;border-bottom:1px solid #1f242c;text-align:right;white-space:nowrap}
+tbody tr{cursor:pointer}tbody tr:hover{background:#1f252e}tr.sel{background:#1c2a4a}
+td .u{color:var(--mu);font-size:11px;margin-left:4px}
+.big{font:500 28px 'JetBrains Mono',monospace}
+.fig{position:relative;height:300px}.fig svg{position:absolute;inset:0;width:100%;height:100%}
+.vol{position:relative;height:90px;margin-top:6px}.vol svg{position:absolute;inset:0;width:100%;height:100%}
+label{display:block;color:var(--mu);font-size:11px;margin:10px 0 4px}
+select,input{width:100%;font:16px 'JetBrains Mono',monospace;color:var(--tx);background:var(--bg);border:1px solid var(--ln);border-radius:3px;padding:8px}
+.side{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-bottom:6px}
+.side button{min-height:40px;font-weight:600}
+.side .on{background:var(--up);color:#06281a;border-color:var(--up)}
+.go{width:100%;margin-top:12px;min-height:44px;background:var(--ac);color:#fff;border-color:var(--ac);font-size:13px}
+.est{display:flex;justify-content:space-between;margin-top:10px;color:var(--mu)}.est span:last-child{color:var(--tx)}
+.bottom{background:var(--pn);border-top:1px solid var(--ln);padding:10px 12px}
+.sum{display:flex;gap:28px;flex-wrap:wrap;margin:6px 0 10px}.sum div{color:var(--mu);font-size:11px}.sum div b{display:block;color:var(--tx);font:500 18px 'JetBrains Mono',monospace}
+.note{color:var(--mu);font-size:12px;padding:10px 12px 18px;max-width:900px}
+.x{background:none;border:0;color:var(--mu);cursor:pointer;font-size:14px;min-height:28px}
+@media(max-width:980px){.grid{grid-template-columns:minmax(0,1fr)}}
+</style>
+</head>
+<body>
+<header>
+ <div class="brand">PRICE CURRENT TERMINAL <span>· Mid-Atlantic · New York · Philadelphia</span></div>
+ <div class="tf" role="group" aria-label="Period" id="tf"></div>
+</header>
+<div class="ribbon" aria-label="Changes against the previous period"><div class="track mono" id="rib"></div></div>
+<div class="grid">
+ <section class="pane"><div class="ph"><strong>Watchlist</strong><span id="wlc"></span></div>
+  <div class="scroll"><table><thead><tr><th data-k="t">Good</th><th data-k="l">Last</th><th data-k="c">Chg</th><th data-k="p">Chg %</th><th data-k="n">Prints</th><th data-k="r">Lo–Hi</th></tr></thead><tbody id="wl"></tbody></table></div>
+ </section>
+ <section class="pane"><div class="ph"><strong id="ct"></strong><span id="cs"></span></div>
+  <div class="big" id="cl"></div>
+  <div class="fig"><svg id="ch" aria-label="Price by period"></svg></div>
+  <div class="ph" style="margin:4px 0 0"><span>PRINTS PER PERIOD (number of printed prices)</span></div>
+  <div class="vol"><svg id="vo" aria-hidden="true"></svg></div>
+ </section>
+ <section class="pane"><div class="ph"><strong>Order ticket</strong><span>your basket</span></div>
+  <div class="side" role="group" aria-label="Side"><button type="button" class="btn on" id="buy">BUY</button><button type="button" class="btn" id="sell" title="Remove from basket">SELL</button></div>
+  <label for="og">Good</label><select id="og"></select>
+  <label for="oq">Quantity <span id="ou"></span></label><input id="oq" type="number" min="0" step="1" value="1" inputmode="numeric">
+  <div class="est"><span>Est. cost, this period</span><span class="mono" id="e1"></span></div>
+  <div class="est"><span>Same, previous period</span><span class="mono" id="e0"></span></div>
+  <button type="button" class="btn go" id="go">Add to basket</button>
+ </section>
+</div>
+<section class="bottom"><div class="ph"><strong>Basket · positions</strong><span id="bp"></span></div>
+ <div class="sum" id="sum"></div>
+ <div class="scroll" style="max-height:none"><table><thead><tr><th>Good</th><th>Qty</th><th>Price now</th><th>Cost now</th><th>Cost prev. period</th><th>Chg %</th><th></th></tr></thead><tbody id="bl"></tbody></table></div>
+</section>
+<p class="note">Concept mockup in a trading-terminal style. Prices are real medians of the prices printed in Mid-Atlantic newspapers (US$; many converted from pounds and shillings). Historical price currents have no bids, asks, volume or live ticks: "Last" is the period median, "Chg" compares with the previous period, and "Prints" counts how many distinct printed prices the median comes from.</p>
+<script>
+{
+const D={"corn (Indian)": {"s": "Grain & Flour", "u": "bushel", "v": [0.417, 0.953, 0.5, 0.573, 0.775], "n": [6, 30, 9, 18, 1], "pv": [1, 1, 1, 0, 0]}, "wheat": {"s": "Grain & Flour", "u": "bushel", "v": [0.771, 1.5, 0.906, 1.03, 1.7], "n": [10, 21, 11, 20, 3], "pv": [1, 1, 1, 1, 1]}, "beef": {"s": "Meat", "u": "barrel", "v": [6.0, 11.25, 6.812, 7.5, 11.25], "n": [12, 24, 18, 25, 4], "pv": [1, 1, 1, 1, 0]}, "oats": {"s": "Grain & Flour", "u": "bushel", "v": [null, 0.198, 0.312, 0.35, 0.445], "n": [0, 1, 2, 8, 3], "pv": [0, 1, 1, 0, 0]}, "rye": {"s": "Grain & Flour", "u": "bushel", "v": [null, 0.565, 0.562, 1.0, 0.7], "n": [0, 1, 9, 5, 1], "pv": [0, 1, 1, 1, 0]}, "butter": {"s": "Dairy", "u": "lb", "v": [null, 0.078, 0.12, 0.113, 0.158], "n": [0, 3, 6, 18, 1], "pv": [0, 1, 1, 0, 0]}, "cheese": {"s": "Dairy", "u": "lb", "v": [null, 0.039, null, 0.115, null], "n": [0, 3, 0, 15, 0], "pv": [0, 1, 0, 0, 0]}, "chocolate/cocoa": {"s": "Groceries", "u": "dozen", "v": [null, 3.25, null, null, null], "n": [0, 31, 0, 0, 0], "pv": [0, 1, 0, 0, 0]}, "coffee": {"s": "Groceries", "u": "lb", "v": [null, 0.125, 0.177, 0.185, 0.26], "n": [0, 5, 4, 22, 1], "pv": [0, 1, 1, 0, 0]}, "salt": {"s": "Groceries", "u": "bushel", "v": [null, 0.25, 0.219, 0.33, 1.06], "n": [0, 9, 6, 38, 8], "pv": [0, 1, 1, 0, 0]}, "tea": {"s": "Groceries", "u": "lb", "v": [null, 0.452, 0.833, 0.53, 1.01], "n": [0, 1, 13, 55, 6], "pv": [0, 1, 1, 0, 0]}, "sugar": {"s": "Sugar & Molasses", "u": "lb", "v": [null, 0.219, 0.151, 0.175, 0.28], "n": [0, 3, 5, 66, 3], "pv": [0, 1, 1, 0, 0]}, "brandy": {"s": "Wine & Spirits", "u": "gallon", "v": [null, 1.289, null, 0.95, 0.535], "n": [0, 1, 0, 26, 1], "pv": [0, 1, 0, 0, 0]}, "rum": {"s": "Wine & Spirits", "u": "gallon", "v": [null, 0.5, 0.539, 0.965, 1.1], "n": [0, 8, 19, 51, 7], "pv": [0, 1, 1, 0, 0]}, "wine": {"s": "Wine & Spirits", "u": "pipe", "v": [null, 140.0, null, 123.0, null], "n": [0, 4, 0, 25, 0], "pv": [0, 1, 0, 0, 0]}, "cotton": {"s": "Staples", "u": "lb", "v": [null, 0.129, 0.417, 0.33, 0.4], "n": [0, 1, 1, 24, 5], "pv": [0, 1, 1, 0, 0]}, "beans/peas": {"s": "Grain & Flour", "u": "bushel", "v": [null, null, 0.75, 0.73, null], "n": [0, 0, 3, 3, 0], "pv": [0, 0, 1, 0, 0]}, "ship bread": {"s": "Grain & Flour", "u": "cwt", "v": [null, null, 2.5, 3.071, 6.25], "n": [0, 0, 13, 8, 2], "pv": [0, 0, 1, 1, 0]}, "flour": {"s": "Grain & Flour", "u": "barrel", "v": [null, null, 5.125, 5.06, 9.5], "n": [0, 0, 28, 49, 8], "pv": [0, 0, 1, 1, 0]}, "rice": {"s": "Grain & Flour", "u": "cwt", "v": [null, null, 4.042, 2.88, 5.0], "n": [0, 0, 4, 10, 1], "pv": [0, 0, 1, 0, 0]}, "bacon/hams": {"s": "Meat", "u": "lb", "v": [null, null, 0.078, 0.095, 0.105], "n": [0, 0, 5, 34, 1], "pv": [0, 0, 1, 1, 0]}, "pork": {"s": "Meat", "u": "barrel", "v": [null, null, 11.458, 10.918, 20.0], "n": [0, 0, 10, 38, 1], "pv": [0, 0, 1, 0, 0]}, "molasses": {"s": "Sugar & Molasses", "u": "gallon", "v": [null, null, 0.24, 0.47, 0.55], "n": [0, 0, 6, 17, 1], "pv": [0, 0, 1, 0, 0]}, "wax": {"s": "Household", "u": "lb", "v": [null, null, 0.406, 0.215, 0.3], "n": [0, 0, 1, 10, 1], "pv": [0, 0, 1, 0, 0]}, "barley": {"s": "Grain & Flour", "u": "bushel", "v": [null, null, null, 1.015, 0.785], "n": [0, 0, 0, 13, 4], "pv": [0, 0, 0, 0, 0]}, "meal (corn/rye)": {"s": "Grain & Flour", "u": "barrel", "v": [null, null, null, 3.05, 4.75], "n": [0, 0, 0, 8, 6], "pv": [0, 0, 0, 0, 0]}, "lard": {"s": "Meat", "u": "lb", "v": [null, null, null, 0.095, 0.155], "n": [0, 0, 0, 11, 3], "pv": [0, 0, 0, 0, 0]}, "fish": {"s": "Fish", "u": "barrel", "v": [null, null, null, 6.0, 7.25], "n": [0, 0, 0, 5, 8], "pv": [0, 0, 0, 0, 0]}, "spices": {"s": "Groceries", "u": "lb", "v": [null, null, null, 0.295, 0.34], "n": [0, 0, 0, 32, 5], "pv": [0, 0, 0, 1, 0]}, "starch": {"s": "Groceries", "u": "lb", "v": [null, null, null, 0.07, 0.105], "n": [0, 0, 0, 4, 1], "pv": [0, 0, 0, 0, 0]}, "beer/cider": {"s": "Wine & Spirits", "u": "dozen", "v": [null, null, null, 1.6, null], "n": [0, 0, 0, 20, 0], "pv": [0, 0, 0, 0, 0]}, "gin": {"s": "Wine & Spirits", "u": "gallon", "v": [null, null, null, 1.4, 1.175], "n": [0, 0, 0, 19, 1], "pv": [0, 0, 0, 0, 0]}, "flax": {"s": "Staples", "u": "lb", "v": [null, null, null, 0.115, 0.13], "n": [0, 0, 0, 10, 1], "pv": [0, 0, 0, 0, 0]}, "tobacco": {"s": "Staples", "u": "cwt", "v": [null, null, null, 3.33, 5.75], "n": [0, 0, 0, 71, 7], "pv": [0, 0, 0, 0, 0]}, "candles/oil": {"s": "Household", "u": "gallon", "v": [null, null, null, 0.66, 4.41], "n": [0, 0, 0, 36, 6], "pv": [0, 0, 0, 0, 0]}, "soap": {"s": "Household", "u": "lb", "v": [null, null, null, 0.08, 0.13], "n": [0, 0, 0, 16, 3], "pv": [0, 0, 0, 0, 0]}, "ashes (pot/pearl)": {"s": "Naval Stores", "u": "ton", "v": [null, null, null, 120.0, null], "n": [0, 0, 0, 27, 0], "pv": [0, 0, 0, 1, 0]}, "cordage/canvas": {"s": "Naval Stores", "u": "cwt", "v": [null, null, null, 8.818, 15.75], "n": [0, 0, 0, 20, 5], "pv": [0, 0, 0, 1, 0]}}
+;
+const P=['Colonial','War','Confed.','1790s','1800–10'];
+const U={bushel:'bu',barrel:'bbl',lb:'lb',cwt:'cwt',gallon:'gal',dozen:'doz'};
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const sym=k=>k==='ship bread'?'SHIPBRD':k.replace(/\(.*?\)/g,'').split(/[\s\/]/)[0].toUpperCase().slice(0,7);
+const $=id=>document.getElementById(id);
+let cur=2,sel='flour',sort={k:'t',d:1},side='buy';const basket=new Map([['flour',1],['sugar',10],['tea',1],['coffee',5],['butter',4]]);
+const f=v=>v==null?'—':'$'+v.toFixed(2);
+function prevIdx(e,i){return i>0&&e.v[i-1]!=null?i-1:-1}
+function rows(){return Object.entries(D).filter(([k,e])=>e.v[cur]!=null).map(([k,e])=>{const pi=prevIdx(e,cur),pv=pi>=0?e.v[pi]:null,vs=e.v.filter(x=>x!=null);return{k,e,t:sym(k),l:e.v[cur],c:pv==null?null:e.v[cur]-pv,p:pv==null?null:(e.v[cur]/pv-1)*100,n:e.n[cur],r:Math.max(...vs)-Math.min(...vs),lo:Math.min(...vs),hi:Math.max(...vs)}})}
+function cls(x){return x==null?'nw':x>0?'up':x<0?'dn':''}
+function tf(){$('tf').innerHTML=P.map((p,i)=>`<button type="button" aria-pressed="${i===cur}" data-i="${i}">${p}</button>`).join('');$('tf').querySelectorAll('button').forEach(b=>b.onclick=()=>{cur=+b.dataset.i;if(D[sel].v[cur]==null)sel=rows()[0].k;all()})}
+function ribbon(){const r=rows().filter(x=>x.p!=null).sort((a,b)=>Math.abs(b.p)-Math.abs(a.p));const h=(r.length?r:rows()).map(x=>`<span class="tick"><b>${esc(x.t)}</b>${f(x.l)} <span class="${cls(x.p)}">${x.p==null?'NEW':(x.p>0?'+':'')+x.p.toFixed(1)+'%'}</span></span>`).join('');$('rib').innerHTML=h+h}
+function watch(){const r=rows().sort((a,b)=>{const A=a[sort.k],B=b[sort.k];if(A==null)return 1;if(B==null)return -1;return(A>B?1:A<B?-1:0)*sort.d});$('wlc').textContent=r.length+' goods';
+ $('wl').innerHTML=r.map(x=>`<tr data-k="${esc(x.k)}" class="${x.k===sel?'sel':''}"><td>${esc(x.t)}<span class="u">${esc(U[x.e.u]||x.e.u)}</span></td><td class="n">${f(x.l)}</td><td class="n ${cls(x.c)}">${x.c==null?'—':(x.c>0?'+':'')+x.c.toFixed(2)}</td><td class="n ${cls(x.p)}">${x.p==null?'NEW':(x.p>0?'+':'')+x.p.toFixed(1)+'%'}</td><td class="n">${x.n}</td><td class="n">${f(x.lo)}–${f(x.hi).slice(1)}</td></tr>`).join('');
+ $('wl').querySelectorAll('tr').forEach(t=>t.onclick=()=>{sel=t.dataset.k;$('og').value=sel;all()})}
+document.querySelectorAll('th[data-k]').forEach(h=>h.onclick=()=>{sort.d=sort.k===h.dataset.k?-sort.d:1;sort.k=h.dataset.k;watch()});
+const ch=$('ch'),vo=$('vo');
+function chart(){const e=D[sel];$('ct').textContent=sym(sel)+' · '+sel+' per '+e.u;const pi=prevIdx(e,cur),p=pi>=0?(e.v[cur]/e.v[pi]-1)*100:null;$('cl').innerHTML=`${f(e.v[cur])} <span class="${cls(p)}" style="font-size:15px">${p==null?'NEW this period':(p>0?'+':'')+p.toFixed(1)+'% vs '+P[pi]}</span>`;$('cs').textContent=e.pv[cur]?'≈ converted':'printed in $';
+ const W=ch.clientWidth,H=ch.clientHeight,m={l:48,r:12,t:14,b:24},mx=Math.max(...e.v.filter(x=>x!=null))*1.15,x=i=>m.l+(i+.5)*(W-m.l-m.r)/5,y=v=>H-m.b-(v/mx)*(H-m.t-m.b);let s='';
+ for(let k=0;k<=4;k++){const v=mx*k/4,yy=y(v);s+=`<line x1="${m.l}" x2="${W-m.r}" y1="${yy}" y2="${yy}" stroke="#262C36"/><text x="${m.l-6}" y="${yy+4}" text-anchor="end" fill="#848E9C" font-size="11" font-family="JetBrains Mono">$${v.toFixed(v<2?2:0)}</text>`}
+ s+=`<rect x="${x(cur)-(W-m.l-m.r)/10}" y="${m.t}" width="${(W-m.l-m.r)/5}" height="${H-m.t-m.b}" fill="#2962FF" opacity=".12"/>`;
+ let path='';e.v.forEach((v,i)=>{if(v==null)return;path+=(path&&e.v[i-1]!=null?'L':'M')+x(i)+' '+y(v)});s+=`<path d="${path}" fill="none" stroke="#EAECEF" stroke-width="1.6"/>`;
+ e.v.forEach((v,i)=>{s+=`<text x="${x(i)}" y="${H-6}" text-anchor="middle" fill="${i===cur?'#EAECEF':'#848E9C'}" font-size="11">${P[i]}</text>`;if(v==null)return;const c=i>0&&e.v[i-1]!=null?(v>=e.v[i-1]?'#0ECB81':'#F6465D'):'#F0B90B';s+=`<circle cx="${x(i)}" cy="${y(v)}" r="${i===cur?6:4}" fill="${c}"><title>${P[i]}: ${f(v)} (${e.n[i]} prints)</title></circle><text x="${x(i)}" y="${y(v)-11}" text-anchor="middle" fill="#EAECEF" font-size="11" font-family="JetBrains Mono">${f(v)}</text>`});
+ ch.innerHTML=s;
+ const VW=vo.clientWidth,VH=vo.clientHeight,nm=Math.max(...e.n,1);let t='';e.n.forEach((n,i)=>{const bw=(VW-m.l-m.r)/5*.5,hh=(n/nm)*(VH-18);t+=`<rect x="${x(i)-bw/2}" y="${VH-14-hh}" width="${bw}" height="${hh}" fill="${i===cur?'#2962FF':'#3a4250'}"/><text x="${x(i)}" y="${VH-2}" text-anchor="middle" fill="#848E9C" font-size="10.5" font-family="JetBrains Mono">${n}</text>`});vo.innerHTML=t}
+new ResizeObserver(()=>chart()).observe(ch);
+function ticket(){const r=rows();const o=$('og');const keep=o.value;o.innerHTML=r.map(x=>`<option value="${esc(x.k)}">${esc(x.t)} · ${esc(x.k)} (${esc(x.e.u)})</option>`).join('');o.value=r.some(x=>x.k===sel)?sel:(r.some(x=>x.k===keep)?keep:r[0].k);est()}
+function est(){const e=D[$('og').value],q=Math.max(0,+$('oq').value||0),pi=prevIdx(e,cur);$('ou').textContent='('+e.u+')';$('e1').textContent=f(e.v[cur]*q);$('e0').textContent=pi>=0?f(e.v[pi]*q):'not printed'}
+$('og').onchange=()=>{sel=$('og').value;est();watch();chart()};$('oq').oninput=est;
+$('buy').onclick=()=>{side='buy';$('buy').classList.add('on');$('sell').classList.remove('on');$('go').textContent='Add to basket'};
+$('sell').onclick=()=>{side='sell';$('sell').classList.add('on');$('buy').classList.remove('on');$('go').textContent='Remove from basket'};
+$('go').onclick=()=>{const k=$('og').value,q=Math.max(0,+$('oq').value||0);const n=(basket.get(k)||0)+(side==='buy'?q:-q);if(n>0)basket.set(k,n);else basket.delete(k);blotter()};
+function blotter(){let now=0,prev=0,both=0,nb=0;const rs=[...basket].map(([k,q])=>{const e=D[k],v=e.v[cur],pi=prevIdx(e,cur),pv=pi>=0?e.v[pi]:null;if(v==null)return `<tr><td>${esc(sym(k))}</td><td class="n">${q}</td><td class="n" colspan="4" style="color:#848E9C">not printed this period</td><td><button class="x" data-k="${esc(k)}" aria-label="Remove">×</button></td></tr>`;
+  now+=v*q;if(pv!=null){prev+=pv*q;both+=v*q;nb++}const p=pv!=null?(v/pv-1)*100:null;
+  return `<tr><td>${esc(sym(k))}<span class="u">${esc(U[e.u]||e.u)}</span></td><td class="n">${q}</td><td class="n">${f(v)}</td><td class="n">${f(v*q)}</td><td class="n">${pv==null?'—':f(pv*q)}</td><td class="n ${cls(p)}">${p==null?'NEW':(p>0?'+':'')+p.toFixed(1)+'%'}</td><td><button class="x" data-k="${esc(k)}" aria-label="Remove">×</button></td></tr>`});
+ $('bl').innerHTML=rs.join('')||'<tr><td colspan="7" style="color:#848E9C;text-align:left">Your basket is empty. Use the order ticket to add goods.</td></tr>';
+ $('bl').querySelectorAll('.x').forEach(b=>b.onclick=()=>{basket.delete(b.dataset.k);blotter()});
+ const ch2=prev>0?(both/prev-1)*100:null;$('bp').textContent=basket.size+' positions · '+P[cur];
+ $('sum').innerHTML=`<div>Basket value, ${P[cur]}<b>${f(now)}</b></div><div>Same goods, previous period<b>${prev>0?f(prev):'—'}</b></div><div>Change, goods priced in both (${nb})<b class="${cls(ch2)}">${ch2==null?'—':(ch2>0?'+':'')+ch2.toFixed(1)+'%'}</b></div>`}
+function all(){tf();ribbon();watch();chart();ticket();blotter()}
+all();
+}
+</script>
+</body>
+</html>

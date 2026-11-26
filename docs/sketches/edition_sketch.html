@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edition sketch — The Daily Cost of Revolution</title>
+  <!-- SKETCH (2026-11-25). Layout "A": one front page per edition, 3 columns, small map fixed top-left.
+       Two styles on the same page: contemporary (default) and old (?style=old).
+       Data for Mid-Atlantic · Confederation is written into the sketch; nothing else is touched. -->
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=IM+Fell+Double+Pica:ital@0;1&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="edition_sketch.css">
+</head>
+<body>
+  <div class="switch" role="group" aria-label="Style">
+    <button type="button" data-style="new">Contemporary</button>
+    <button type="button" data-style="old">Old style</button>
+  </div>
+
+  <div class="paper">
+    <!-- MASTHEAD -->
+    <header class="mast">
+      <div class="mast__top">
+        <span class="only-new">Vol. III · No. 2</span><span class="only-old">Numb. II.</span>
+        <span class="mast__motto"><span class="only-new">Printed prices from American newspapers, 1770–1810</span><span class="only-old">Containing the freshest Prices Current, and the Assize of Bread</span></span>
+        <span id="m-yrs">1784–1789</span>
+      </div>
+      <h1 class="mast__title">The Daily Cost of Revolution</h1>
+      <div class="mast__date">
+        <span class="dl" id="dR">Mid-Atlantic</span> edition · <span class="dl" id="dP">Confederation</span>, <span id="dY">1784–1789</span>
+      </div>
+      <div class="opts" id="opts"></div>
+    </header>
+
+    <main class="front">
+      <!-- LEFT: small map (stays fixed while you scroll) + intelligence -->
+      <aside class="col col--left">
+        <div class="sticky">
+          <svg class="map" id="map" viewBox="0 0 640 440" role="img" aria-label="Map of the regions"></svg>
+          <p class="map__cap" id="cap">Main ports: New York and Philadelphia</p>
+          <h3 class="head">Intelligence</h3>
+          <h4 class="kicker">Confederation, 1784–1789</h4>
+          <p class="body">After a rush of British imports, the young country falls into a depression. Hard money is scarce, debts are hard to pay, and Britain closes its West Indian islands to American ships, a key market for flour and fish. Several states print paper money. Farmers' anger over debts and taxes leads to Shays' Rebellion in Massachusetts (1786–87). The Constitution is written in 1787 and the new government starts in 1789.</p>
+        </div>
+      </aside>
+
+      <!-- CENTRE: lead + market receipt -->
+      <section class="col col--mid">
+        <h2 class="lead">Tea dearer, <i>bread cheaper</i></h2>
+        <p class="deck">New York and Philadelphia after the war, as the merchants' price currents and the bakers' notices printed it.</p>
+        <div class="orn only-old">❦</div>
+        <h3 class="head">Your Market</h3>
+        <p class="hint">Every good printed in this edition. Strike out what you would not buy.</p>
+        <div class="market">
+          <div class="receipt" id="rec"></div>
+          <div class="basket">
+            <div class="big" id="big"></div>
+            <p id="bt"></p>
+            <p class="small" id="lo"></p>
+            <div class="hist" id="hist"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RIGHT: assize of bread -->
+      <section class="col col--right">
+        <h3 class="head">Assize of Bread</h3>
+        <h4 class="kicker kicker--big">Same coin, <i>bigger loaf</i></h4>
+        <p class="body">In New York the weight of a loaf was set by law from the price of flour. In 1779, under British occupation, 21 coppers bought two pounds. In 1787, six pence bought 2 lb. 5 oz.: a pound of bread cost about a third of what it had in the war.</p>
+        <figure class="loaf">
+          <svg id="l1" viewBox="0 0 280 170"></svg>
+          <figcaption><span class="when">February 1779</span><span class="what">21 coppers · 2 lb.</span><span class="per">≈ $0.094 a pound</span></figcaption>
+        </figure>
+        <figure class="loaf">
+          <svg id="l2" viewBox="0 0 280 170"></svg>
+          <figcaption><span class="when">October 1787</span><span class="what">six pence · 2 lb. 5 oz.</span><span class="per red">≈ $0.027 a pound</span></figcaption>
+        </figure>
+        <p class="src">Sources: <a href="https://tile.loc.gov/storage-services/service/ndnp/dlc/batch_dlc_annegreen_ver02/data/sn83030493/print/1779020101/0001.pdf" target="_blank" rel="noopener">New-York Gazette; and the Weekly Mercury, 1 Feb. 1779</a> · <a href="https://tile.loc.gov/storage-services/service/ndnp/dlc/batch_dlc_bureau_ver02/data/sn83030137/print/1787103001/0004.pdf" target="_blank" rel="noopener">New-York Packet, 30 Oct. 1787</a>. ≈ provisional conversion.</p>
+      </section>
+    </main>
+
+    <!-- YEAR BY YEAR -->
+    <section class="evo">
+      <h3 class="head">Year by Year · Flour, a Barrel</h3>
+      <svg id="evo" viewBox="0 0 1000 230"></svg>
+      <p class="small">Median printed price per year, only the years that have one. Red: this edition.</p>
+    </section>
+
+    <footer class="reader">
+      <h3 class="head">To the Reader</h3>
+      <p class="body">These pages show only what was printed and survives. The prices are wholesale prices printed in port for merchants, not what a family paid at the shop; about half were printed in pounds and shillings and converted to dollars (marked ≈). Each list is counted once, however often it was reprinted. The years and months for which no list survives are shown in the Explore section.</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+  <script src="edition_sketch.js"></script>
+</body>
+</html>
